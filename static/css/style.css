@@ -596,7 +596,7 @@ Start small devices style
     line-height: 1.9em;
     font-family: 'a Atmospheric', sans-serif !important;
     color: #4e3a7c !important;
-    width: 700px;
+    /*width: 700px;*/
 }
 .small-dvc-inside p{
   font-weight: bold;
@@ -609,10 +609,10 @@ Start small devices style
 
 .small-device-sltn .small-dvc-img img{
     width: 100%;
-    min-width: 614px;
+   /* min-width: 614px;*/
     position: relative;
-    right: 24%;
-    top: 100px;
+    /*right: 24%;
+    top: 100px;*/
 }
 /* -------------------------------- 
 

@@ -665,8 +665,8 @@
 	}
 	.small-device-sltn .small-dvc-img img{
         width: 100%;
-        min-width: 600px !important;
-        right: 11% !important;
+       /* min-width: 600px !important;*/
+        /*right: 11% !important;*/
         top: 0 !important;
 	}
 	.small-dvc-inside h2 {
