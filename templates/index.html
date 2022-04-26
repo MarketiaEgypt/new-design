@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<html dir="{% if LANGUAGE_CODE == 'en' %}ltr{% else %}rtl{% endif %}">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% trans "Marketia for Business Solutions" %}</title>
+    <!-- Standard Favicon -->
+    <link rel="icon" href="{% static 'img/logo.png' %}">
+
+    <!-- Touch Icons - iOS and Android 2.1+ -->
+    <link rel="apple-touch-icon" href="img/fav/android-icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/android-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png" />
+    
+    <!--bootstrap v4.0.0-->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    {% else %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min-rtl.css' %}">
+    {% endif %}    
+
+    <!--reset css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+    <!--main style-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/uni-style.css' %}">
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}" />
+    {% else %}
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style-rtl.css'%}" />
+    {% endif %}    
+
+    <!--slick slider-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}"/>
+    <!-- animate css -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <!-- venobox -->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+        <link rel="stylesheet" href="{% static 'css/venobox.css' %}">
+    {% else %}    
+        <link rel="stylesheet" href="{% static 'css/venobox-rtl.css' %}">
+    {% endif %}
+    <!--owl slider-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.min.css' %}"/>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}"/>
+    {% else %}    
+        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min-rtl.css' %}"/>
+    {% endif %}
+  
+
+    <!--fontawesome cdn-->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- Slider Owl Carousel -->
+
+    <!-- Google Fonts -->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+        <!-- Font Title -->
+        <link href="http://fonts.cdnfonts.com/css/a-atmospheric" rel="stylesheet">
+        <!-- Font Text -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    {% else %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap" rel="stylesheet">
+    {% endif %}
+
+    <!-- responsive css -->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    {% else %}
+        <link rel="stylesheet" href="{% static 'css/responsive-rtl.css' %}">
+    {% endif %}
+    
+    <!--modernizr-->
+    <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script>
+
+    
+    <!-- CHat Live whatsapp -->
+{#    <script src="https://apps.elfsight.com/p/platform.js"></script>#}
+    <!-- <div class="elfsight-app-9ace16e1-53f6-4df3-ba08-d92f83a5e215" id="live-chat"></div> -->
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="se-pre-con"></div>
+
+    <!-- main nav start -->
+    <nav class="navbar navbar-expand-lg fixed-top center-brand static-nav">
+        <div class="container">
+            <a class="navbar-brand" href="ظ">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
+                <img src="{% static 'img/new-image/logo-nav.png' %}" alt="logo" class="logo-default">
+            {% else %}
+                <img src="{% static 'img/new-image/logo-nav-rtl.png' %}" alt="logo" class="logo-default">
+            {% endif %}    
+            </a>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xeronav">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="xeronav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link active" href="#homes">{% trans "Home" %}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services_id">{% trans "Services" %}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#digital_id">{% trans "Digital Marketing" %}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ecommerce_id">{% trans "E-Commerce" %}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#web_id">{% trans "Web development" %}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_id">{% trans "About us" %}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_id">{% trans "contact us" %}</a>
+                    </li>
+                    <li class="nav-item">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                            {% for language in languages %}
+                                {% if language.code != LANGUAGE_CODE %}
+                                    <button type="submit" name="language" value="{{ language.code }}" 
+                                    style="border: none;background: none;">
+                                        <p class="nav-link mt-xs-1 mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0">
+                                        {% if language.code == 'en' %}
+                                            <img src="https://img.icons8.com/color/40/000000/usa.png" style="margin-top: 4px;cursor: pointer;position: relative;"/>
+                                        {% else %}
+                                            <img src="https://img.icons8.com/color/40/000000/egypt.png" style="margin-top: 7px;cursor: pointer;position: relative;"/>
+                                        {% endif %}
+
+                                        </p>
+                                    </button>
+                                {% endif %}
+                            {% endfor %}
+                        </form>      
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!--hero-banner-->
+    <header class="hero-banner-sec text-xs-center" id="homes">
+        <div class="container">
+            <div class="row justify-content-xl-start justify-content-lg-center justify-content-md-center">
+                
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    <div class="banner-inside wow {% if LANGUAGE_CODE == 'en' %} slideInLeft {% else %} slideInRight {% endif %}" data-wow-duration="2s" data-wow-delay="1s">
+                        <h1>{% trans "Let us take your" %} <br> {% trans "business to new" %} <br> {% trans "heights" %}</h1>
+                        <p>{% trans "The main goal of us is connect with your audience to build" %} <br>
+                        {% trans "your brand awareness and increase sales." %}</p>
+                    </div><!--/.banner-inside-->
+                </div>
+            </div>
+        </div><!--/.container-->
+    </header>
+    <!--hero-banner-->
+
+    <!--Our services-->
+    <section class="about-product-sec" id="services_id">
+        <div class="container">
+            <div class="row wow zoomIn">
+                <div class="col-md-12 offset-md-3 m-auto">
+                    <div class="title text-center">
+                        <h6 class="title-color-font">{% trans "A Full-services company" %}</h6>
+                        <p>{% trans "Let’s go above and beyond" %}<br>
+                            {% trans "We offer a full range of marketing, advertising services and" %}
+                        {% trans "technology solutions." %}</p>
+                    </div><!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                {% for services in object_list %}
+                <div class="col-md-6 col-xl-3 col-lg-3 services-rtl">
+                    <div class="single-about">
+                        <div class="img">
+                            <img src="{{services.image.url}}">
+                        </div>
+                        <h4>{{services.name}}</h4>
+                        <p>{{services.description}}</p>
+                    </div><!--/.single-about-->
+                </div>
+                {% endfor %}
+                
+                
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!--Our services-->
+
+    <!-- Card Services Slider -->
+    <div class="services-slider">
+        <div class="container">
+            <div class="slider owl-carousel">
+                {% for services in object_list %}
+                <div class="card">
+                    <div class="img">
+                        <img src="{{services.image.url}}" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title card-font">{{services.name}}</div>
+                        <p class="card-font">{{services.description}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <!-- Card Services Slider -->
+
+    <!--where map-->
+    <section class="where-we-are-map">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 wow fadeInDownBig">
+                    <div class="title">
+                        <h2 class="title-color-font">{% trans "Results You Get With Marketia" %}</h2>
+                        <p>{% trans "Our goal is to build brand awareness, so your target audience thinks of you when" %}
+                        {% trans "it’s time to buy." %}
+                        </p>
+                         <p><i class="fa fa-spinner"></i> {% trans "Deep marketing analysis" %}<br>
+                            <i class="fa fa-spinner"></i> {% trans "Customized plan" %}<br>
+                            <i class="fa fa-spinner"></i> {% trans "Make an impact on your target audience." %}<br>
+                            <i class="fa fa-spinner"></i> {% trans "Save time, money, and still generate ROI." %}
+                        </p>
+                    </div>
+                </div>
+               <!-- <div class="col-md-6">
+                    <div class="every-map-in">
+                        <img src="{% static 'img/home/map.png' %}" alt=""/>
+                    </div>
+                </div>-->
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!--where map-->    
+
+    <!--Digital Markting-->
+    <section class="amazing-feature-sec"  id="digital_id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="title text-center">
+                        <h2>{% trans "Why use Digital Marketing?" %}</h2>
+                        <p>{% trans "It's measurable. It's versatile. It generates leads." %}</p>
+                    </div><!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12 single-feature wow bounceInDown amazing-rtl">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-image">
+                                <img src="{% static 'img/new-design/arabic/2.png' %}" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0">
+                            <div class="row h-100">
+                                <div class="col-md-12 align-self-center">
+                                    <div class="feature-txt-in">
+                                        <!-- <h6>{% trans "Fitness Tracking" %}</h6> -->
+                                        <h4>{% trans "Why Digital Marketing?" %}</h4>
+                                        <p>{% trans "An effective Digital Marketing plan should be a crucial" %}
+                                         {% trans "piece of any smart marketing strategy. Digital Marketing refers" %}
+                                         {% trans "to advertising delivered through digital channels, such as" %}
+                                          {% trans "search engines (Google, Bing, etc.), websites, social media," %} {% trans "email, and mobile apps." %}<br>
+                                        {% trans "As a full-service advertising company, we create eye-catching" %}
+                                        {% trans "ads that inspire action, while our digital strategists make sure" %}
+                                        {% trans "the ads are targeted to just the right target market to ensure" %}
+                                        {% trans "quality conversions." %}</p>
+                                    </div><!--/.feature-txt-in-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.single-feature-->
+                <div class="col-md-12 single-feature wow bounceInDown amazing-rtl">
+                    <div class="row">
+                        <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0">
+                            <div class="row h-100">
+                                <div class="col-md-12 align-self-center">
+                                    <div class="feature-txt-in">
+                                        <!-- <h6>Notification Alerts</h6> -->
+                                        <h4>{% trans "Receive more free profitable traffic with our" %}
+                                        {% trans "SEO marketing services" %}</h4>
+                                        <p>{% trans "Generate free organic traffic consistently from search engines" %}
+                                        {% trans "by investing in search engine optimization “SEO” marketing services" %}
+                                        {% trans "to reach your customers when they’re searching about what your business is offering." %}
+
+                                        <br>
+                                        {% trans "we possess extensive expertise and skills to optimize websites" %}
+                                        {% trans "and e-commerce online stores for search engines and search users" %}
+                                        {% trans "“potential customers” to rank in the first search results of targeted" %}
+                                        {% trans "chosen search keywords to be visible to your next customer." %}</p>
+                                    </div><!--/.feature-txt-in-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-xl-last order-lg-last order-first order-md-last">
+                            <div class="feature-image">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% if LANGUAGE_CODE == 'en' %}
+                                <img src="{% static 'img/new-design/english/2.png' %}" alt=""/>
+                            {% else %}  
+                                <img src="{% static 'img/new-design/arabic/1.png' %}" alt=""/>
+                            {% endif %}
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div><!--/.single-feature-->
+                <div class="col-md-12 single-feature wow bounceInDown amazing-rtl">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-image">
+                                <img src="{% static 'img/new-design/arabic/3.png' %}" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0">
+                            <div class="row h-100">
+                                <div class="col-md-12 align-self-center">
+                                    <div class="feature-txt-in">
+                                        <!-- <h6>{% trans "Water Resistant" %}</h6> -->
+                                        <h4>{% trans "When your PPC ads show up for the right people at the right time," %}<br> {% trans "you will:" %}</h4>
+                                        <ul class="list">
+                                            <li>{% trans "Drive more potential customers to your website" %}</li>
+                                            <li>{% trans "Continuously grow revenue" %}</li>
+                                            <li>{% trans "Reduce cpc and ad spend" %}</li>
+                                        </ul>
+                                    </div><!--/.feature-txt-in-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div><!--/.single-feature-->
+                <div class="col-md-12 single-feature wow bounceInDown amazing-rtl">
+                    <div class="row">
+                        
+                        <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0">
+                            <div class="row h-100">
+                                <div class="col-md-12 align-self-center">
+                                    <div class="feature-txt-in">
+                                        <h4>{% trans "Our Services and solutions are carried out by our innovative team ." %}</h4>
+                                        <p>{% trans "Our promise to each client is simple: you'll have our full attention," %}
+                                        {% trans "our best ideas, and our commitment to delivering effective and" %}
+                                        {% trans "measurable results." %}</p>
+                                    </div><!--/.feature-txt-in-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-xl-last order-lg-last order-md-last order-first">
+                            <div class="feature-image">
+                                <img src="{% static 'img/new-design/arabic/4.png' %}" alt=""/>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div><!--/.single-feature-->
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!--Digital Markting-->    
+
+    <!--Store building steps-->
+    <section class="easy-to-begin-sec" id="ecommerce_id">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 m-auto offset-md-2">
+                    <div class="title text-center">
+                        <h6 class="title-color-font">{% trans "How do we build your Website?" %}</h6>
+                        <p>{% trans "Grow your business online" %}</p>
+                        <p>{% trans "Build your store online in few steps to start selling products fast." %}<br>
+                            <span>{% trans "Create a website, take online orders for pickup and delivery." %}</span>
+                        </p>
+                    </div><!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12 easy-rtl">
+                    <div class="begin-inside-line">
+                        <div class="row">
+                            <div class="col-md-4 col-xl-3 col-lg-3">
+                                <div class="begin-one">
+                                    <div class="icon">
+                                        <!-- <i class="fas fa-clipboard-list"></i> -->
+                                        <img src="{% static 'img/icon/planing.png' %}"/>
+                                        <p>1</p>
+                                    </div>
+                                    <h5>{% trans "Planning" %}</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-3 col-lg-3">
+                                <div class="begin-two">
+                                    <div class="icon">
+                                        <!-- <i class="fas fa-image"></i> -->
+                                        <img src="{% static 'img/icon/design.png' %}"/>
+                                        <p>2</p>
+                                    </div>
+                                     <h5>{% trans "Design" %}</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-3 col-lg-3">
+                                <div class="begin-three">
+                                    <div class="icon">
+                                        <!-- <i class="fas fa-cogs mt-1"></i> -->
+                                        <img src="{% static 'img/icon/settings.png' %}"/>
+                                        <p>3</p>
+                                    </div>
+                                    <h5>{% trans "Customization" %}</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-3 col-lg-3">
+                                <div class="begin-four">
+                                    <div class="icon">
+                                        <!-- <i class="fas fa-rocket mt-2"></i> -->
+                                        <img src="{% static 'img/icon/launch.png' %}"/>
+                                        <p>4</p>
+                                    </div>
+                                    <h5>{% trans "Launch" %}</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-3 col-lg-3">
+                                <div class="begin-responsive">
+                                    {% get_current_language as LANGUAGE_CODE %}
+                                     {% if LANGUAGE_CODE == 'en' %}
+                                        <img class="line-shape" src="{% static 'img/new-design/english/steps-ecommerce-en.png' %}" alt="" />
+                                    {% else %}
+                                        <img class="line-shape" src="{% static 'img/new-design/arabic/steps-ecommerce-ar.png' %}" alt="" />
+                                    {% endif %}
+
+                                </div>
+                            </div>
+
+                        </div>
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% if LANGUAGE_CODE == 'en' %}
+                            <img class="line-shape" src="{% static 'img/icon/line.png' %}" alt="" />
+                        {% else %}
+                            <img class="line-shape" src="{% static 'img/icon/line-rtl.png' %}" alt="" />
+                        {% endif %}    
+                    </div><!--/.begin-inside-line-->
+
+                    <div class="begin-right-image mt-5">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% if LANGUAGE_CODE == 'en' %}
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 text">
+                                    <h1>The Advantages of Online Stores :</h1>
+                                    <ul class="list">
+                                      <li>Convenience of online shopping</li>
+                                      <li>No pressure shopping</li>
+                                      <li>Online shopping saves time</li>
+                                      <li>Comparisons of prices</li>
+                                      <li>Availability of online shop 24/7</li>
+                                      <li>Online tracking</li>
+                                      <li>Online shopping saves money</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 image">
+                                    <img src="{% static 'img//new-design/english/online-shopping.png' %}" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}    
+                       <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 text">
+                                    <h1>مزايا المتاجر الإلكترونية:</h1>
+                                    <ul class="list">
+                                      <li>توفير المال</li>
+                                      <li>توفير الوقت</li>
+                                      <li>تتبع الطلب عبر الانترنت</li>
+                                      <li>التخلص من ضغط التسويق</li>
+                                      <li>المقارنة بين أسعر المنافسين</li>
+                                      <li>متجر إلكتروني متواجد 7/24</li>
+                                      <li>الراحة في التسويق عبر الإنترنت</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 image">
+                                    <img src="{% static 'img//new-design/arabic/ecommerce-rtl.png' %}" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}    
+                    </div><!--/.begin-right-image-->
+
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!--Store building steps-->
+
+    <!-- Web Design -->
+    <section class="download-app-sec"  id="web_id">
+        <div class="container">
+             <h2>{% trans "If customers aren't finding your website," %}<br>
+                {% trans " chances are they’re finding a competitor’s." %}</h2>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="download-img-prm">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% if LANGUAGE_CODE == 'en' %}
+                            <img src="{% static 'img/new-design/english/website-en.png' %}" alt=""/>
+                        {% else %}
+                            <img src="{% static 'img/new-design/arabic/website-ar.png' %}" alt=""/>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="row h-100">
+                        <div class="col-md-12 align-self-center">
+                            <div class="inside-txt-dwnd title">
+                                <p>{% trans "Consumers are searching for businesses and services online using mobile" %}
+                                {% trans " devices more and more." %}</p><br>
+                                <p>{% trans "Your website needs to look great and be easily readable on any screen size." %}<br> <br>{% trans "This is why our creative team designs every website with a mobile" %}
+                                {% trans " first mentality." %}<br> {% trans "A responsive website ensures you reach a" %}
+                                {% trans " larger and diverse customer base that’s constantly on the move." %}</p>
+                               
+                            </div><!--/.inside-txt-dwnd-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!-- Web Design -->    
+
+    <!--Video about us-->
+    <section class="video-play-promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 inside-video-txt">
+                     <h2>{% trans "Our work isn’t just about cool campaigns and vanity metrics." %}</h2>
+                        <p>{% trans "It’s about solving problems. Being innovative. Embracing creativity." %}
+                            {% trans "Understanding what is really needed." %}
+                        </p>
+                </div>
+                <div class="col-md-6 w-100">
+                    <iframe src="https://player.vimeo.com/video/696534558?h=d08a1a8bee"
+                            width="640" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                    </iframe>
+                </div>
+<!--
+                <div class="col-md-8 offset-md-2 wow fadeInUp">
+                    <div class="inside-video-txt">
+                        <h2>{% trans "لا يقتصر عملنا على الحملات الإعلانية الناجحة" %}</h2>
+                        <p>{% trans "بل إن الأمر يتعلق بحل المشكلات, الابتكار، تبني الإبداع" %}  
+                            {% trans "وفهم ماهو مطلوب بكل دقة" %} </p>
+                        <a class="btn venobox vbox-item" data-vbtype="video" href="https://vimeo.com/696534558"> <i class="fas fa-play fa-2x"></i></a>
+                    </div>&lt;!&ndash;/.inside-video-txt&ndash;&gt;
+                </div>
+-->
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!--Video about us-->    
+
+    <!--About Us-->
+    <section class="small-device-sltn" id="about_id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 col-lg-6">
+                    <div class="small-dvc-inside mt-5">
+                        <h2>{% trans "We are the distinguished services you are looking for...!" %}</h2>
+                        <p>{% trans "From the first moment we set out, we put the element of" %}
+                        {% trans "creativity and excellence in mind, to make marketing in the field" %}
+                        {% trans "of information technology our specialty, which is full of long and" %}
+                        {% trans "qualified experiences." %}</p>
+                        <p>{% trans "The company's services vary to include all services strategic solutions" %}
+                        {% trans "and services to all your business needs, all of these services are provided by" %}
+                        {% trans "our innovative team and their expert leaders who employ all of their efforts to" %} {% trans "achieve the desired results and customer satisfaction." %}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-1 wow fadeInUp">
+                    <div class="small-dvc-img">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% if LANGUAGE_CODE == 'en' %}
+                        <img src="{% static 'img/new-design/english/custemer.png' %}" alt=""/>
+                    {% else %}    
+                        <img src="{% static 'img/new-design/arabic/custemer.png' %}" alt=""/>
+                    {% endif %}    
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!--About Us-->
+
+    <!--Our Features-->
+    <section class="hero-dwn-prmo" id="about_id">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-dwn-prm">
+                        <div class="icon">
+                            <i class="far fa-id-card"></i>
+                        </div>
+                        <div class="text">
+                            <h4 class="title-color-font">{% trans "Identify Customers" %}</h4>
+                            <p>{% trans "Identifying customers needs" %}</p>
+                        </div>
+                    </div><!--/.single-dwn-prm-->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-dwn-prm">
+                        <div class="icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                       <div class="text">
+                            <h4 class="title-color-font">{% trans "Satisfy Customers" %}</h4>
+                            <p>{% trans "Targeting the right people" %}</p>
+                       </div>
+                    </div><!--/.single-dwn-prm-->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-dwn-prm">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="text">
+                            <h4 class="title-color-font">{% trans "Retain Customers" %}</h4>
+                            <p>{% trans "Earning customers loyalty" %}</p>
+                        </div>
+                    </div><!--/.single-dwn-prm-->
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section>
+    <!--Our Features-->
+
+
+    <!--contact us-->
+    <section class="contactud-sec" id="contact_id">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-12">
+                     <div class="contact-inside-title title">
+                        <h6 class="title-color-font">{% trans "Let’s get the conversation started." %}</h6>
+                        <p>{% trans "Our strength is in bringing together creative skills, operational systems," %}
+                        {% trans " and processes. We secure technology to translate our clients’ ideas and strategies" %}
+                        {% trans " into marketing collateral, and a broad range of other media output." %}
+                        <br>
+                        {% trans "Get in touch with us and know how can digital marketing and creative work can help" %}
+                        {% trans " scale your business." %}
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-right-img text-center">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% if LANGUAGE_CODE == 'en' %}
+                        <img src="{% static 'img/new-design/english/contact-us.png' %}" alt=""/>
+                    {% else %}
+                        <img src="{% static 'img/new-design/arabic/contact-us.png' %}" alt=""/>
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+        </div><!--/.container-->
+        <div class="footer-copyright responsive">
+           <div class="container">
+                <div class="row">
+                <div class="col-md-4">
+                     <div class="contact-form-in">
+                        <p class="address"><i class="fa fa-map-marker"></i><a href="#">{% trans "696 El-Horeya Road, Loran, Alexandria, Egypt" %}</a> </p>
+                        <p class="phone"><i class="fa fa-phone"></i> <a href="tel:+20 103 227 0919">{% trans "+20 103 227 0919" %}</a> </p>
+                        <p class="email"><i class="fa fa-envelope"></i> <a href="mailto:contactus@marketiaegy.com" target="_blank"> contactus@marketiaegy.com</a> </p>
+                     </div>
+                </div>
+                <div class="col-md-4">
+                   <p class="all-right">{% trans "All Rights Reserved" %} &copy; {% trans "2022" %}</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="copyright">
+                         <ul class="social-footer">
+                            <li><a href="https://www.facebook.com/Marketia-for-Business-Solutions-111826808025402" target="_blank" class="btn"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/marketia-egypt" class="btn"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/marketiaegy/?hl=en" target="_blank" class="btn"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="mailto:contactus@marketiaegy.com" target="_blank" class="btn"><i class="fas fa-envelope"></i></a></li>
+                         </ul>
+                         <img src="{% static 'img/new-image/marketia-logo.png' %}" alt="logo" class="logo-default">
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div><!--/.footer-copyright-->
+    </section>
+    <!--contact us-->
+
+    <!-- Back To Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+    <!--jquery-->
+    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <!--bootstrap v4 js-->
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <!--popper js-->
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <!--video popup-->
+    <script src="{% static 'js/vendor/video.popup.js' %}"></script>
+
+    <script src="{% static 'js/venobox.min.js' %}"></script>    
+    <!--slick slider-->
+    <script defer src="{% static 'js/vendor/slick-min.js' %}"></script>
+    <!-- Wow js -->
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <!-- counter js -->
+    <script src="{% static 'js/vendor/counter.js' %}"></script>
+    <!--owl js-->
+    <script src="{% static 'js/vendor/owl-carousel.js' %}"></script>
+    <!--easing js-->
+    <script src="{% static 'js/vendor/easing.js' %}"></script>
+    <!--main script-->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'ar' %}
+        <script src="{% static 'js/main-rtl.js' %}"></script>
+    {% else %}    
+        <script src="{% static 'js/main.js' %}"></script>
+    {% endif %}    
+</body>
+</html>

@@ -1,0 +1,802 @@
+/*
+ * Title:  Toode - Product Landing Page
+ * Author: Abu sufian
+ */
+
+/* --------------------------------------------------------
+[Table of contents]
+1. Global styles
+2. Menu styles
+3.Banner
+4.Banner down row
+5.Small devices
+6.Video play
+7.About product
+8.Easy begin
+9.Anniversary sale
+10.Amazing feature
+11.Where we are map
+12.Our product
+13.Testimonials
+14.Help desk
+15.user gallery
+16.Download apps
+17.Contact and footer
+18.Responsive
+19.Home two
+
+
+[End table of contents]
+----------------------------------------------------------------------- */
+
+/* ------------------------------
+Global styles
+---------------------------- */
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed,
+
+figure, figcaption, footer, header, hgroup,
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+  cursor: pointer !important;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+  font-weight: 400;
+
+  color: #1e2c34;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+
+
+ul, li {
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none; }
+
+
+
+strong {
+
+  font-weight: 700; }
+
+p{
+	line-height: 2;
+}
+
+
+/* This only works with JavaScript,
+  if it's not present, don't show loader */
+
+.no-js #loader {
+ display: none;
+}
+p{
+ line-height: 2;
+}
+
+
+a,
+
+a:hover,
+
+a:focus {
+
+  cursor: pointer !important;
+
+  outline: none;
+
+  text-decoration: none; }
+
+.js #loader {
+ display: block;
+ position: absolute;
+ left: 100px;
+ top: 0;
+}
+
+.se-pre-con {
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999999;
+ background: url(../img/marketia-logo.gif) center no-repeat #fff;
+
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #0854b3;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 19px;
+/*  border-radius: 50%;*/
+  border-radius: 40% 0 40% 0;
+  right: 26px;
+  bottom: 100px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+/* --------------------------------
+
+menue style
+
+-------------------------------- */
+.navbar.navbar-expand-lg.active_sc{
+
+  padding-top: 20px !important;
+  z-index: 9999;
+  transition: 0.3s all;
+  /* background-color: rgba(37,76,233,0.3); */
+  background: linear-gradient(216deg, #ddd, #486ccd, #b8bed9, #929ebf);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+  padding-bottom: 13px;
+}
+
+.navbar.navbar-expand-lg.active_sc:hover{
+	background: linear-gradient(216deg, #ddd, #486ccd, #b8bed9, #929ebf);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.navbar.active_sc .navbar-brand{
+  padding-top: 0;
+}
+
+
+
+.navbar.navbar-expand-lg{
+  background: none;
+  transition: 0.3s all;
+  z-index: 999;
+  padding-top: 20px;
+}
+
+.navbar.navbar-expand-lg .nav-item a:hover{
+  color: #ffffff;
+}
+.navbar.home2.navbar-expand-lg .nav-item a:hover{
+  color: #1a56f0;
+}
+.navbar-light .navbar-brand{
+  padding-top: 10px;
+}
+.navbar .nav-item a{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .active>.nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show,
+.navbar .navbar-nav .show>.nav-link{
+  color: #ffffff;
+}
+
+.home2 .navbar-nav .active>.nav-link,
+.home2 .navbar-nav .nav-link.active,
+.home2 .navbar-nav .nav-link.show,
+.home2 .navbar-nav .show>.nav-link{
+  color: #1a56f0;
+}
+.navbar .nav-item .btn{
+  color: #ffffff;
+  padding: 11px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  background-color: #fa3613;
+  margin-left: 20px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=21, Direction=117, Color=#fa3613)";/*IE 8*/
+-moz-box-shadow: 6px 12px 21px -6px rgba(250,54,19,0.3);/*FF 3.5+*/
+-webkit-box-shadow: 6px 12px 21px -6px rgba(250,54,19,0.3);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 6px 12px 21px -6px rgba(250,54,19,0.3);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=21, Direction=135, Color=#fa3613); /*IE 5.5-7*/
+}
+
+
+
+/*sub menu*/
+.navbar-brand{
+  margin-top: 0%;
+  position: absolute;
+  width: 22%;
+  margin-left: 4%;
+}
+.navbar.center-brand .nav-item.drop_menu {
+  position: relative;
+float: left;
+ position: relative;
+ margin-right: 6px;
+ height: 50px;
+}
+.navbar.center-brand .nav-item.drop_menu ul li{
+  width: 100%;
+  float: left;
+  height: auto;
+  position: relative;
+}
+
+.navbar.center-brand .nav-item.drop_menu a i{
+  padding-left: 5px;
+}
+
+.navbar.center-brand .nav-item.drop_menu ul{
+  margin:30px 0 0 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  min-width: 150px;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  padding: 10px 0;
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #eee;
+  transition: all .2s ease-in-out;
+}
+
+.navbar.center-brand .nav-item.drop_menu ul li a{
+color:#616161;
+ float: left;
+ width: 100%;
+ text-align: left;
+ padding: 5px 15px;
+ font-size: 14px;
+}
+.navbar.center-brand .nav-item.drop_menu ul li a:hover{
+  color: #1a56f0;
+}
+.navbar.center-brand .nav-item.drop_menu:hover ul{
+  opacity: 1;
+  visibility: visible;
+  top: 20px;
+}
+
+
+/* --------------------------------
+
+close menue style
+
+-------------------------------- */
+
+
+
+
+/* --------------------------------
+
+Start Banner style
+
+-------------------------------- */
+.hero-banner-sec{
+ width: 100%;
+ position: relative;
+ z-index: 9;
+ overflow: hidden;
+ background-image: url(../img/background.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ padding-top: 530px;
+}
+.hero-banner-sec .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+.hero-banner-sec  h1{
+ font-weight: 600;
+ color: #fff;
+ font-size: 50px;
+ line-height: 1.3em;
+ z-index: 999;
+ margin: 0 auto;
+ margin-top: -30%;
+}
+
+@media only screen and (min-width : 1600px) {
+  .hero-image-right img{
+ max-width: 654px;
+  }
+  .hero-banner-sec{
+ background-position: right -185px top -150px;
+ position: relative;
+ background-image: url(../img/custom-bg-banner1.png);
+  }
+.hero-banner-sec:after{
+ content: '';
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ left: 0;
+ top: 0;
+ background-image: url(../img/home-2-bg-left.png);
+ background-size: unset;
+ background-repeat: no-repeat;
+ z-index: -9;
+}
+}
+
+
+  /* --------------------------------
+
+  Close Banner style
+
+  -------------------------------- */
+
+
+/* --------------------------------
+
+Start landing page Demo style
+
+-------------------------------- */
+
+.hero-dwn-prmo{
+  width: 100%;
+  padding-top: 80px;
+}
+
+.landing_page{
+
+}
+
+.hero-dwn-prmo .hero-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: #0060c6;
+}
+.hero-dwn-prmo .card{
+  border: 3px solid #ddd;
+}
+
+.hero-dwn-prmo .card{
+  overflow: hidden;
+  width:300px;
+  height:300px;
+}
+.hero-dwn-prmo .card .card-img-top{
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 70%;
+  transition: 8s all ease;
+}
+.hero-dwn-prmo .card .card-img-top:hover{
+  object-position: bottom;
+}
+.hero-dwn-prmo .card .card-body .btn-primary{
+  width: 100%;
+  font-size: 22px;
+}
+
+
+
+
+/* --------------------------------
+
+Close landing page Demo style
+
+-------------------------------- */
+
+
+
+
+/* --------------------------------
+
+Start Demo Website style
+
+-------------------------------- */
+
+.hero-dwn-prmo{
+  width: 100%;
+  padding-top: 80px;
+}
+
+.hero-dwn-prmo .hero-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: #0060c6;
+}
+.hero-dwn-prmo .card{
+  border: 3px solid #ddd;
+}
+
+.hero-dwn-prmo .card{
+  overflow: hidden;
+  width:300px;
+  height:300px;
+}
+.hero-dwn-prmo .card .card-img-top{
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 70%;
+  transition: 8s all ease;
+
+
+}
+.hero-dwn-prmo .card .card-img-top:hover{
+  object-position: bottom;
+}
+.hero-dwn-prmo .card .card-body .btn-primary{
+  width: 100%;
+  font-size: 22px;
+}
+
+
+
+
+/* --------------------------------
+
+Close Demo Website style
+
+-------------------------------- */
+
+
+
+
+
+/* --------------------------------
+
+Start Contact and footer style
+
+-------------------------------- */
+
+.contactud-sec{
+  width: 100%;
+  padding-top: 105px;
+  background-image: url(../img/footer-bg.png);
+  background-position: bottom -70px right -300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-copyright{
+  width: 100%;
+  padding-top: 105px;
+  padding-bottom: 26px;
+}
+
+.footer-copyright .copyright p{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.social-footer{
+  text-align: right;
+}
+.social-footer li{
+  display: inline-block;
+  padding-left: 10px;
+}
+.social-footer li .btn:hover{
+  background-color: #254ce9;
+  border-color: #254ce9;
+}
+.social-footer li .btn{
+  color: #ffffff;
+  border:1px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 9px;
+}
+
+
+/* --------------------------------
+
+Close Contact and footer style
+
+-------------------------------- */
+
+
+
+
+/* --------------------------------
+
+Start Demo Ecommerce style
+
+-------------------------------- */
+
+.anniversary-sale-sec{
+  width: 100%;
+  z-index: 9;
+  position: relative;
+  background-image: url(../img/gettyimages.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 105px 0;
+}
+.anniversary-sale-sec:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #242734d1;
+  opacity: 0.80;
+  z-index: -9;
+}
+
+.anni-title h3{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.single-anni-inside{
+  margin-top: 60px;
+  text-align: center;
+  padding: 14px 3px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  height: 380px;
+}
+.single-anni-inside .img{
+  border-radius: 14px;
+  z-index: -99;
+  margin-bottom: 15px;
+  margin-top: -14px;
+  padding: 0px;
+
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 86%;
+  transition: 8s all ease;
+}
+
+.single-anni-inside .img:hover{
+  object-position: bottom;
+}
+.single-anni-inside .btn{
+  text-transform: uppercase;
+  padding: 10px 10px;
+  background-color: #fa3613;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  font-weight: 600;
+  width: 90%;
+  font-size: 18px;
+  transition: 0.3s all ease;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=111, Color=#060A01)";/*IE 8*/
+  -moz-box-shadow: 3px 8px 10px 1px rgba(6,10,1,0.3);/*FF 3.5+*/
+  -webkit-box-shadow: 3px 8px 10px 1px rgba(6,10,1,0.3);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 3px 8px 10px 1px rgba(6,10,1,0.3);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#060A01); /*IE 5.5-7*/
+}
+
+.single-anni-inside .btn:hover{
+  color: #0068ce;
+}
+
+/* --------------------------------
+
+Close Demo Ecommerce style
+
+-------------------------------- */
+
+
+
+
+
+/* --------------------------------
+
+Start Contact and footer style
+
+-------------------------------- */
+
+.contactud-sec{
+  width: 100%;
+  padding-top: 105px;
+  background-image: url(../img/footer-bg.png);
+  background-position: bottom -70px right -300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-inside-title{
+  padding-bottom: 10px !important;
+}
+
+.contactud-sec .contact-form-in p{
+  font-size: 16px;
+}
+
+.contactud-sec .contact-form-in p a{
+  font-weight: bold;
+}
+.title h6{
+  font-weight: 600;
+  color: #1a56f0;
+  font-size: 18px;
+}
+.title h2{
+  font-weight: 600;
+  color: #000000;
+  font-size: 25px;
+  line-height: 1.3em;
+}
+.title p{
+  color: #42435d;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 14px;
+}
+.footer-copyright{
+  width: 100%;
+  padding-top: 105px;
+  padding-bottom: 26px;
+}
+
+.footer-copyright .copyright p{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.social-footer{
+  text-align: right;
+}
+.social-footer li{
+  display: inline-block;
+  padding-left: 10px;
+}
+.social-footer li .btn:hover{
+  background-color: #254ce9;
+  border-color: #254ce9;
+}
+.social-footer li .btn{
+  color: #ffffff;
+  border:1px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 9px;
+}
+
+
+/* -------------------------------- 
+
+Close Contact and footer style
+
+-------------------------------- */
+
