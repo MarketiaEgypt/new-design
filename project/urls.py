@@ -28,7 +28,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('', include('Marketia.urls', namespace='marketia')),
-    # prefix_default_language=False,
+    # prefix_default_language=True,
 )
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 {% load static %}
 {% load i18n %}
-{% get_current_language as LANGUAGE_CODE %}
-<html dir="{% if LANGUAGE_CODE == 'en' %}ltr{% else %}rtl{% endif %}">
+{% get_current_language_bidi as LANGUAGE_BIDI %} 
+<html dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
 
 <head>
     <meta charset="utf-8">
@@ -216,8 +216,14 @@
                         <div class="img">
                             <img src="{{services.image.url}}">
                         </div>
-                        <h4>{{services.name}}</h4>
-                        <p>{{services.description}}</p>
+                         {% get_current_language as LANGUAGE_CODE %}
+                         {% if LANGUAGE_CODE == 'en' %}
+                            <h4>{{services.name_en}}</h4>
+                            <p>{{services.description_en}}</p>
+                         {% else %}
+                            <h4>{{services.name_ar}}</h4>
+                            <p>{{services.description_ar}}</p>
+                         {% endif %}
                     </div><!--/.single-about-->
                 </div>
                 {% endfor %}
@@ -238,8 +244,14 @@
                         <img src="{{services.image.url}}" alt="">
                     </div>
                     <div class="content">
-                        <div class="title card-font">{{services.name}}</div>
-                        <p class="card-font">{{services.description}}</p>
+                         {% get_current_language as LANGUAGE_CODE %}
+                         {% if LANGUAGE_CODE == 'en' %}
+                            <div class="title card-font">{{services.name_en}}</div>
+                            <p class="card-font">{{services.description_en}}</p>
+                        {% else %}
+                             <div class="title card-font">{{services.name_ar}}</div>
+                            <p class="card-font">{{services.description_ar}}</p>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
@@ -291,7 +303,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="feature-image">
-                                <img src="{% static 'img/new-design/arabic/2.png' %}" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/2.webp' %}" alt=""/>
                             </div>
                         </div>
                         <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0">
@@ -340,9 +352,9 @@
                             <div class="feature-image">
                             {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/2.png' %}" alt=""/>
+                                <img src="{% static 'img/new-design/english/2.webp' %}" alt=""/>
                             {% else %}  
-                                <img src="{% static 'img/new-design/arabic/1.png' %}" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/1.webp' %}" alt=""/>
                             {% endif %}
                             </div>
                         </div>
@@ -353,7 +365,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="feature-image">
-                                <img src="{% static 'img/new-design/arabic/3.png' %}" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/3.webp' %}" alt=""/>
                             </div>
                         </div>
                         <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0">
@@ -392,7 +404,7 @@
                         </div>
                         <div class="col-md-6 order-xl-last order-lg-last order-md-last order-first">
                             <div class="feature-image">
-                                <img src="{% static 'img/new-design/arabic/4.png' %}" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/4.webp' %}" alt=""/>
                             </div>
                         </div>
                         
@@ -466,9 +478,9 @@
                                 <div class="begin-responsive">
                                     {% get_current_language as LANGUAGE_CODE %}
                                      {% if LANGUAGE_CODE == 'en' %}
-                                        <img class="line-shape" src="{% static 'img/new-design/english/steps-ecommerce-en.png' %}" alt="" />
+                                        <img class="line-shape" src="{% static 'img/new-design/english/steps-ecommerce-en.webp' %}" alt="" />
                                     {% else %}
-                                        <img class="line-shape" src="{% static 'img/new-design/arabic/steps-ecommerce-ar.png' %}" alt="" />
+                                        <img class="line-shape" src="{% static 'img/new-design/arabic/steps-ecommerce-ar.webp' %}" alt="" />
                                     {% endif %}
 
                                 </div>
@@ -501,7 +513,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6 image">
-                                    <img src="{% static 'img//new-design/english/online-shopping.png' %}" alt=""/>
+                                    <img src="{% static 'img//new-design/english/online-shopping.webp' %}" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +533,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6 image">
-                                    <img src="{% static 'img//new-design/arabic/ecommerce-rtl.png' %}" alt=""/>
+                                    <img src="{% static 'img//new-design/arabic/ecommerce-rtl.webp' %}" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -544,9 +556,9 @@
                     <div class="download-img-prm">
                         {% get_current_language as LANGUAGE_CODE %}
                         {% if LANGUAGE_CODE == 'en' %}
-                            <img src="{% static 'img/new-design/english/website-en.png' %}" alt=""/>
+                            <img src="{% static 'img/new-design/english/website-en.webp' %}" alt=""/>
                         {% else %}
-                            <img src="{% static 'img/new-design/arabic/website-ar.png' %}" alt=""/>
+                            <img src="{% static 'img/new-design/arabic/website-ar.webp' %}" alt=""/>
                         {% endif %}
                     </div>
                 </div>
@@ -619,9 +631,9 @@
                     <div class="small-dvc-img">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% if LANGUAGE_CODE == 'en' %}
-                        <img src="{% static 'img/new-design/english/custemer.png' %}" alt=""/>
+                        <img src="{% static 'img/new-design/english/custemer-responsive.webp' %}" alt=""/>
                     {% else %}    
-                        <img src="{% static 'img/new-design/arabic/custemer.png' %}" alt=""/>
+                        <img src="{% static 'img/new-design/arabic/custemer.webp' %}" alt=""/>
                     {% endif %}    
                     </div>
                 </div>
@@ -694,9 +706,9 @@
                     <div class="contact-right-img text-center">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% if LANGUAGE_CODE == 'en' %}
-                        <img src="{% static 'img/new-design/english/contact-us.png' %}" alt=""/>
+                        <img src="{% static 'img/new-design/english/contact-us.webp' %}" alt=""/>
                     {% else %}
-                        <img src="{% static 'img/new-design/arabic/contact-us.png' %}" alt=""/>
+                        <img src="{% static 'img/new-design/arabic/contact-us.webp' %}" alt=""/>
                     {% endif %}
                     </div>
                 </div>

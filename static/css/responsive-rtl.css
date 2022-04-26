@@ -1,7 +1,7 @@
 /* in general */
 @media only screen and (max-width: 1000px) {
 	.navbar-brand {
-		width: 25% !important;
+		width: 36% !important;
 		margin-left: 0% !important;
 	}
 }
@@ -92,8 +92,8 @@
 	}
 	.navbar .navbar-toggler {
 	    font-size: 16px;
-	    border: 1px solid #1a56f0;
-	    color: #1a56f0;
+	    border: 1px solid #fff;
+	    color: #fff;
 	    border-radius: 5px;
 	    height: 50px;
 	    width: 50px;
@@ -256,8 +256,8 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	/* hero */
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 28px;
-		margin-top: -20%;
+        font-size: 43px;
+        margin-top: 0%;
 	}
 	.hero-banner-sec .banner-inside h1 br {
 		display: none;
@@ -273,6 +273,7 @@
 	}
 	.hero-banner-sec {
 		/*background: none;*/
+		margin-top: 12%;
 	}
 
 	/* nav */
@@ -304,8 +305,8 @@
 	}
 	.navbar .navbar-toggler {
 	    font-size: 16px;
-	    border: 1px solid #1a56f0;
-	    color: #1a56f0;
+	    border: 1px solid #fff;
+	    color: #fff;
 	    border-radius: 5px;
 	    height: 50px;
 	    width: 50px;
@@ -540,6 +541,8 @@
 	.navbar a.navbar-brand {
 		display: inherit;
 		padding: 0;
+        width: 32% !important;
+        margin-right: 0% !important;
 		/*width: 41%;
 		right: 60%;*/
 	}
@@ -656,7 +659,7 @@
         margin-bottom: -14%;
 	}
 	.small-device-sltn .small-dvc-img img{
-	    left: 11% !important;
+	    /*left: 11% !important;*/
 	}
 	.contactud-sec{
 	    padding-top: 0px !important;
@@ -769,8 +772,9 @@
 		min-width: auto !important;
 	}
 	.hero-banner-sec {
-		background: none;
-		padding-top: 24% !important;
+		background: block;
+        padding-top: 7% !important;
+        margin-top: 21%;
 	}
 	.hero-banner-sec .banner-inside .btn {
 		width: 100%;
@@ -813,12 +817,12 @@
 		margin-right: 0;
 	}
 	.navbar .navbar-toggler {
-	    font-size: 20px;
-	    border: 1px solid #1a56f0;
-	    color: #1a56f0;
+	    font-size: 16px;
+	    border: 1px solid #fff;
+	    color: #fff;
 	    border-radius: 5px;
-	    height: 60px;
-	    width: 60px;
+	    height: 50px;
+	    width: 50px;
 	    padding: 0;
 	    outline: none;
 	}
@@ -836,7 +840,7 @@
 	    right: 60%;
 	}
 	.navbar-brand .logo-default{
-	    position: absolute;
+	   /* position: absolute;*/
 	    /* right: 4%; */
 	    /* width: 30%; */
 	    margin-top: 0% !important;
@@ -991,8 +995,9 @@
 	} 
 
 	.single-about{
-	    margin-right: 3%;
-    	margin-left: 3%;	
+/*	    margin-right: 3%;
+    	margin-left: 3%;*/
+    	display: none !important;
 	}
 
 	/* user fun */

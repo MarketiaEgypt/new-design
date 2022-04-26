@@ -217,7 +217,7 @@ $(".slider").owlCarousel({
             nav:true
         },
         600:{
-            items:3,
+            items:1,
             nav:false
         },
         1000:{

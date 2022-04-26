@@ -359,7 +359,7 @@ Start Banner style
   position: relative;
   /* z-index: 9; */
   overflow: hidden;
-  background-image: url(../img/new-design/english/banner1.png);
+  background-image: url(../img/new-design/english/banner1.webp);
   background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -1584,7 +1584,7 @@ Start Where we are map style
   padding-top: 105px;
   padding-bottom: 105px;
   /*background-color: #a76ea3;*/
-  background-image: url(../img/new-design/english/banner2.png);
+  background-image: url(../img/new-design/english/banner2.webp);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
