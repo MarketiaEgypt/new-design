@@ -2888,7 +2888,7 @@ Close Home two style
 
 
 /* Loader Shape */
-.owl-carousel .owl-loaded {
+.owl-carousel {
     display: none !important;
     margin: 0 auto !important;
 }

@@ -990,6 +990,9 @@
 		padding-top: 30% !important;
 		padding-bottom: 10% !important;
 	}
+	.services-slider , .owl-carousel{
+	    display: block !important;
+	}
 	.single-fact {
 		display: none;
 	} 
