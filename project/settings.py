@@ -110,13 +110,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-
-gettext = lambda s: s
-LANGUAGES = (
-    ('ar', gettext('Arabic')),
-    ('en', gettext('English')),
-)
 LANGUAGE_CODE = 'ar'
+LANGUAGES = (
+    ('ar', 'Arabic'),
+    ('en', 'English'),
+)
+
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
@@ -124,7 +123,7 @@ LOCALE_PATHS = (
 TIME_ZONE = 'UTC'
 USE_L10N = True
 USE_TZ = True
-USE_I18N = True
+# USE_I18N = True
 
 
 

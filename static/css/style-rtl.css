@@ -116,6 +116,7 @@ table {
 body {
   overflow-x: hidden;
   direction: rtl;
+  font-family: 'Cairo', sans-serif !important;
 }
 
 /* This only works with JavaScript,
@@ -250,7 +251,6 @@ menue style
   font-weight: 700;
   text-transform: capitalize;
   line-height: 3;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 .navbar .navbar-nav{
@@ -274,7 +274,6 @@ menue style
   background-color: #fff; */
   border-radius: 10px;
   border: 2px solid;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 .home2 .navbar-nav .active>.nav-link, 
@@ -403,13 +402,12 @@ Start Banner style
 .hero-banner-sec .banner-inside h1{
   font-weight: 800;
   /*color: #fff;*/
-  color: #4e3a7c;
+  color: #5a50a6;
+  text-shadow: 0px 0px 5px #dcbdf3;
   font-size: 68px;
   line-height: 2em;
   text-align: right;
   margin-top: 0%;
-  text-shadow: 0px 0px 3px #ddd;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .hero-banner-sec .banner-inside p{
   padding-top: 70px;
@@ -418,7 +416,6 @@ Start Banner style
   font-size: 26px;
   line-height: 1.7em;
   text-align: right;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .hero-banner-sec .banner-inside .btn{
   margin-top: 36px;
@@ -579,18 +576,16 @@ Start Banner down row style
   text-align: right;
 }
 .single-dwn-prm .text h4{
-  font-weight: bold;
-  color: #fff;
-  font-size: 20px;
-  text-align: right;
-  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
-}
-.single-dwn-prm .text p{
   font-weight: 600;
   color: #fff;
-  font-size: 18px;
+  font-size: 19px;
   text-align: right;
-  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+.single-dwn-prm .text p{
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
 }
 
 
@@ -628,16 +623,18 @@ Start small devices style
   padding-bottom: 16px;
   line-height: 1.3em;
   text-align: right;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .small-dvc-inside p{
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 16px;
   color: #000000a6;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  line-height: 2.3;
 }
+.small-dvc-inside p br{
+  display: none;
+} 
 .small-device-sltn .small-dvc-img img{
    /* margin-top: 13%;*/
     margin-top: 8%;
@@ -697,15 +694,13 @@ Start video play style
   font-weight: 500;
   font-size: 30px;
   line-height: 1.6em;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .inside-video-txt p{
     color: #ffffff;
-    font-weight: 600;
-    font-size: 17px;
-    padding-top: 60px;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 40px;
     line-height: 1.9em;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
     text-align: justify;
 }
 
@@ -919,7 +914,9 @@ Start About product style
 .about-product-sec .title{
   padding-bottom: 0;
 }
-
+.about-product-sec .title h6{
+  margin-bottom: 2%;
+}
 /*title*/
 .contact-inside-title{
   padding-bottom: 10px !important;
@@ -927,20 +924,17 @@ Start About product style
   margin-top: 13%;
 }
 .contactud-sec .contact-inside-title p{
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
   text-align: justify;
-  margin-top: 15%;
+  margin-top: 13%;
+  font-size: 16px;
 }
 .contactud-sec .contact-right-img img{
-    width: 80%;
+    width: 70%;
 }
 .contactud-sec .contact-form-in{
-  /*margin-bottom: 60%;*/
-  line-height: 1.2;
   color: #fff;
-  margin-top: 17%;
-  /*margin-right: 22%;*/
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  text-align: right;
+  margin: 6% 0% 0% 0%;
 }
 .contactud-sec .contact-form-in p{
   font-size: 16px;
@@ -948,11 +942,7 @@ Start About product style
   line-height: 2.3;
   font-weight: 600;
 }
-.contactud-sec .contact-form-in p a {
-  font-weight: bold;
-  color: #d9b8f1;
 
-}
 .contactud-sec .contact-form-in .address a{
 
 }
@@ -969,7 +959,6 @@ Start About product style
     font-weight: bolder;
     color: #9161c3;
     font-size: 30px;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .title h2{
   font-weight: 600;
@@ -977,16 +966,13 @@ Start About product style
   font-size: 30px;
   line-height: 1.3em;
   margin-top: 2%;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .title p{
   color: #42435d;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 400;
   padding-top: 0px;
   text-align: center;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
-
 }
 
 
@@ -995,7 +981,7 @@ Start About product style
   text-align: center;
   position: relative;
   z-index: 5;
-  padding: 26px 28px;
+  padding: 26px 23px;
   cursor: pointer;
   margin-top: 50px;
   border-radius: 10px;
@@ -1055,14 +1041,12 @@ Start About product style
   font-size: 24px;
   padding-top: 30px;
   padding-bottom: 20px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .single-about p{
-  font-weight: 600;
+  font-weight: 400;
   color: #42435d;
-  font-size: 15px;
-  text-align: justify;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 14px;
+  text-align: center;
 }
 .single-about .img img{
   width: 64px;
@@ -1071,10 +1055,10 @@ Start About product style
  /* padding-top: 12px;*/
   text-align: center;
  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color=#234fec)";
-  -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
+  /* -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
   -webkit-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
   box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
-  -webkit-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease; */
   -moz-transition: 0.3s all ease;
   transition: 0.3s all ease;
   font-size: 26px;
@@ -1320,7 +1304,6 @@ Start Easy to begin style
   color: #000000;
   font-size: 24px;
   padding-top: 25px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 .begin-inside-line .begin-one .icon p,
@@ -1385,11 +1368,9 @@ Start Easy to begin style
     font-size: 29px;
 }
 .begin-right-image .text h1{
-    font-family: none;
     color: #5e4084;
     font-weight: bolder;
     font-size: 38px;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
     margin-right: -9%;
 }
 .begin-right-image .text .list{
@@ -1397,14 +1378,12 @@ Start Easy to begin style
 }
 .begin-right-image .text .list li{
     list-style-type: square;
-    font-family: auto;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 20px;
     text-align: justify;
     margin-right: 4%;
     line-height: 1.8;
     color: #5e4084;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .begin-right-image .image{
 }
@@ -1578,7 +1557,9 @@ Start Amazing feature style
   padding-bottom: 8%;
   margin-top: -90px;
 }
-
+.amazing-feature-sec .title h2{
+  margin-bottom: 2%;
+}
 .feature-txt-in h6{
   color: #234fec;
   padding-bottom: 8px;
@@ -1588,18 +1569,17 @@ Start Amazing feature style
 .feature-txt-in h4{
   font-weight: 600;
   color: #9161c3;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.3em;
   padding-bottom: 24px;
-  text-align: justify !important;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  text-align: right !important;
 }
 .feature-txt-in p, .list li{
-  font-weight: 600;
+  font-weight: 400;
   color: #42435d;
   font-size: 16px;
   text-align: justify !important;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  line-height: 2;
 }
 
 
@@ -1656,13 +1636,12 @@ Start Where we are map style
 /*  width: 609px;*/
 }
 .where-we-are-map .title h2{
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+
 }
 .where-we-are-map .title p{
   padding-top: 18px;
   text-align: right;
   font-size: 18px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .where-we-are-map .title p a{
   color: #ffffff;
@@ -2196,7 +2175,6 @@ Start Download apps style
 }
 .download-app-sec h2{
   padding-bottom: 0px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
   color: #4e3a7c !important;
   text-align: right;
   font-size: 40px;
@@ -2208,8 +2186,8 @@ Start Download apps style
 }
 .inside-txt-dwnd.title p{
   text-align: justify;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
+
 .inside-txt-dwnd .group-btn {
   width: 100%;
   padding-top: 20px;
@@ -2277,11 +2255,7 @@ Start Contact and footer style
 
 .contactud-sec{
   width: 100%;
-  padding-top: 105px;
-  background-image: url(../img/new-design/arabic/footer-bg-ar.png);
-  background-position: bottom -70px right -300px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 2% 0% 0% 0% !important;
 }
 /*.contactud-sec .contact-form-in .logo-footer{
   width: 60%;
@@ -2297,40 +2271,52 @@ Start Contact and footer style
 }
 .contactud-sec .contact-right-img{
   /*margin-top: -10%;*/
+  margin: 0% 0% 2% 0%;
 }
 .footer-copyright img{
    margin-top: 5px;
   text-align: right;
 }
 .footer-copyright .copyright{
-    margin-top: 25%;
     text-align: left;
-    margin-right: -23px;
+    margin: 7% 0% 0% 0%;
 }
 .footer-copyright .copyright p{
   color: #ffffff !important;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
+  margin-left: -4%;
 }
 .footer-copyright .all-right{
-    color: #d9b8f1 !important;
-    text-align: center;
-    margin-top: 38%;
-    margin-right: 17%;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  color: #fff !important;
+  text-align: left;
+  /* margin: 22% 0% 0% 0%; */
+  font-size: 17px;
 }
 
-.footer-copyright .contact-form-in p i{
+.footer-copyright .contact-form-in p {
+  font-size: 16px;
+  color: #fff !important;
+  font-weight: bold;
+  line-height: 2.4;
+}
+.footer-copyright .contact-form-in p a{
+  font-weight: bold;
+  color: #fff !important;
+}
+.footer-copyright .contact-form-in p i {
   margin-left: 2%;
 }
 .services-slider{
     display: none !important;
 }
 .responsive{
-    background: none !important;
-     padding-top: 1% !important;
+  margin: 0 auto;
+  background-image: url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 20px 15px 20px;
 }
 
 /* Icons */
@@ -2910,18 +2896,17 @@ Close Home two style
 .slider .card .img img{
 
   /*object-fit: cover;*/
-  -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
+  /* -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
   -webkit-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
-   box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
+   box-shadow: 0 0 3px 2px rgba(35,79,236,0.4); */
    border: 2px solid #523d80;
    padding: 4px 4px;
 }
 .slider .card .content{
   padding: 10px 20px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .card-font{
-  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+
 }
 .card .content .title{
     font-size: 26px;
@@ -2929,13 +2914,11 @@ Close Home two style
     font-weight: 600;
     text-align: center;
     padding-bottom: 9px;
-    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
 }
 
 .card .content p{
   text-align: center;
   margin: 10px 0;
-  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
   font-size: 20px;
 }
 

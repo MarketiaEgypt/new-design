@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 {% load i18n %}
-{% get_current_language_bidi as LANGUAGE_BIDI %}
-<html dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -74,19 +73,11 @@
     <!-- Slider Owl Carousel -->
 
     <!-- Google Fonts -->
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-        <!-- Font Title -->
-        <link href="http://fonts.cdnfonts.com/css/a-atmospheric" rel="stylesheet">
-        <!-- Font Text -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
-    {% else %}
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap" rel="stylesheet">
-    {% endif %}
+    <!-- Font Title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo" rel="stylesheet">
+
 
     <!-- responsive css -->
     {% get_current_language as LANGUAGE_CODE %}
@@ -110,12 +101,12 @@
     <!-- main nav start -->
     <nav class="navbar navbar-expand-lg fixed-top center-brand static-nav">
         <div class="container">
-            <a class="navbar-brand" href="ظ">
+            <a class="navbar-brand" href="/">
             {% get_current_language as LANGUAGE_CODE %}
             {% if LANGUAGE_CODE == 'en' %}
-                <img src="{% static 'img/new-image/logo-nav.png' %}" alt="logo" class="logo-default">
+                <img src="{% static 'img/new-image/LOGO-ltr.png' %}" alt="logo" class="logo-default">
             {% else %}
-                <img src="{% static 'img/new-image/logo-nav-rtl.png' %}" alt="logo" class="logo-default">
+                <img src="{% static 'img/new-image/LOGO-rtl.png' %}" alt="logo" class="logo-default">
             {% endif %}    
             </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xeronav">
@@ -188,8 +179,8 @@
                     {% get_current_language as LANGUAGE_CODE %}
                     <div class="banner-inside wow {% if LANGUAGE_CODE == 'en' %} slideInLeft {% else %} slideInRight {% endif %}" data-wow-duration="2s" data-wow-delay="1s">
                         <h1>{% trans "Let us take your" %} <br> {% trans "business to new" %} <br> {% trans "heights" %}</h1>
-                        <p>{% trans "The main goal of us is connect with your audience to build" %} <br>
-                        {% trans "your brand awareness and increase sales." %}</p>
+                        <p>{% trans "The main goal of us is connected with your audience" %} <br>
+                           {% trans "to build your brand awareness and increase sales." %} </p>
                     </div><!--/.banner-inside-->
                 </div>
             </div>
@@ -424,8 +415,8 @@
                 <div class="col-md-12 m-auto offset-md-2">
                     <div class="title text-center">
                         <h6 class="title-color-font">{% trans "How do we build your Website?" %}</h6>
-                        <p>{% trans "Grow your business online" %}</p>
-                        <p>{% trans "Build your store online in few steps to start selling products fast." %}<br>
+                        <p>{% trans "Grow your business online" %}<br>
+                        {% trans "Build your store online in few steps to start selling products fast." %}<br>
                             <span>{% trans "Create a website, take online orders for pickup and delivery." %}</span>
                         </p>
                     </div><!--/.title-->
@@ -527,7 +518,7 @@
                                       <li>توفير الوقت</li>
                                       <li>تتبع الطلب عبر الانترنت</li>
                                       <li>التخلص من ضغط التسويق</li>
-                                      <li>المقارنة بين أسعر المنافسين</li>
+                                      <li>المقارنة بين أسعار المنافسين</li>
                                       <li>متجر إلكتروني متواجد 7/24</li>
                                       <li>الراحة في التسويق عبر الإنترنت</li>
                                     </ul>
@@ -567,9 +558,10 @@
                         <div class="col-md-12 align-self-center">
                             <div class="inside-txt-dwnd title">
                                 <p>{% trans "Consumers are searching for businesses and services online using mobile" %}
-                                {% trans " devices more and more." %}</p><br>
-                                <p>{% trans "Your website needs to look great and be easily readable on any screen size." %}<br> <br>{% trans "This is why our creative team designs every website with a mobile" %}
-                                {% trans " first mentality." %}<br> {% trans "A responsive website ensures you reach a" %}
+                                {% trans " devices more and more." %}</p>
+                                <p>{% trans "Your website needs to look great and be easily readable on any screen size." %}<br style="display: none;">
+                                {% trans "This is why our creative team designs every website with a mobile first mentality." %}<br style="display: none;">
+                                {% trans "A responsive website ensures you reach a" %}<br style="display: none;">
                                 {% trans " larger and diverse customer base that’s constantly on the move." %}</p>
                                
                             </div><!--/.inside-txt-dwnd-->
@@ -615,23 +607,24 @@
     <section class="small-device-sltn" id="about_id">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-xl-6 col-lg-6">
+                <div class="col-md-6">
                     <div class="small-dvc-inside mt-5">
                         <h2>{% trans "We are the distinguished services you are looking for...!" %}</h2>
                         <p>{% trans "From the first moment we set out, we put the element of" %}
                         {% trans "creativity and excellence in mind, to make marketing in the field" %}
                         {% trans "of information technology our specialty, which is full of long and" %}
-                        {% trans "qualified experiences." %}</p>
-                        <p>{% trans "The company's services vary to include all services strategic solutions" %}
+                        {% trans "qualified experiences." %}<br>
+                        {% trans "The company's services vary to include all services strategic solutions" %}
                         {% trans "and services to all your business needs, all of these services are provided by" %}
-                        {% trans "our innovative team and their expert leaders who employ all of their efforts to" %} {% trans "achieve the desired results and customer satisfaction." %}</p>
+                        {% trans "our innovative team and their expert leaders who employ all of their efforts to" %} {% trans "achieve the desired results and customer satisfaction." %}
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4 offset-md-1 wow fadeInUp">
+                <div class="col-md-6 wow fadeInUp">
                     <div class="small-dvc-img">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% if LANGUAGE_CODE == 'en' %}
-                        <img src="{% static 'img/new-design/english/custemer-responsive.webp' %}" alt=""/>
+                        <img src="{% static 'img/new-design/english/custemer.webp' %}" alt=""/>
                     {% else %}    
                         <img src="{% static 'img/new-design/arabic/custemer.webp' %}" alt=""/>
                     {% endif %}    
@@ -718,17 +711,14 @@
         <div class="footer-copyright responsive">
            <div class="container">
                 <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                      <div class="contact-form-in">
                         <p class="address"><i class="fa fa-map-marker"></i><a href="#">{% trans "696 El-Horeya Road, Loran, Alexandria, Egypt" %}</a> </p>
                         <p class="phone"><i class="fa fa-phone"></i> <a href="tel:+20 103 227 0919">{% trans "+20 103 227 0919" %}</a> </p>
                         <p class="email"><i class="fa fa-envelope"></i> <a href="mailto:contactus@marketiaegy.com" target="_blank"> contactus@marketiaegy.com</a> </p>
                      </div>
                 </div>
-                <div class="col-md-4">
-                   <p class="all-right">{% trans "All Rights Reserved" %} &copy; {% trans "2022" %}</p>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="copyright">
                          <ul class="social-footer">
                             <li><a href="https://www.facebook.com/Marketia-for-Business-Solutions-111826808025402" target="_blank" class="btn"><i class="fab fa-facebook-f"></i></a></li>
@@ -737,6 +727,7 @@
                             <li><a href="mailto:contactus@marketiaegy.com" target="_blank" class="btn"><i class="fas fa-envelope"></i></a></li>
                          </ul>
                          <img src="{% static 'img/new-image/marketia-logo.png' %}" alt="logo" class="logo-default">
+                         <p class="all-right">{% trans "All Rights Reserved" %} &copy;{% trans "2022" %}</p>
                     </div>
                 </div>
             </div>

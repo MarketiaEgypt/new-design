@@ -32,13 +32,7 @@
 /* ------------------------------
    Global styles
 ---------------------------- */
-/*@font-face {
-  font-family: 'GE Dinar Two Medium';
-  src: url("../fonts/Atmospheric-rg4aL.ttf");
-  font-weight:normal;
-  font-style:normal;
-}*/
-@import url('http://fonts.cdnfonts.com/css/a-atmospheric');
+
 /* in general */
 section {
   padding-top: 80px !important;
@@ -112,6 +106,7 @@ table {
 
 body{
   overflow-x: hidden;
+  font-family: 'Cairo', sans-serif !important;
 }
 /* Back to top button */
 .back-to-top {
@@ -213,7 +208,6 @@ menue style
   font-size: 16px;
   font-weight: 700;
   text-transform: capitalize;
-  font-family: 'Montserrat Alternates', sans-serif !important;
 }
 
 .navbar .navbar-nav{
@@ -364,31 +358,26 @@ Start Banner style
   background-position: top;
   background-repeat: no-repeat;
   /*padding-top: 150px;*/
-  padding-top: 15%;
-  padding-bottom: 7%;
+  padding-top: 10%;
+  padding-bottom: 8%;
   margin-top: 5%;
 }
 
 .hero-banner-sec .banner-inside h1{
-    /*font-weight: 600;*/
-    /*color: #fff;*/
-    color: #4e3a7c;
-    /*text-shadow: 1px 1px #fff;*/
-    text-shadow: 1px 1px 1px #4e3a7c;
-    font-size: 50px;
+    font-weight: 600 !important;
+    color: #5a50a6;
+    text-shadow: 0px 0px 5px #dcbdf3;
+    font-size: 60px;
     line-height: 1.3em;
     text-align: left;
-    font-family: 'a Atmospheric', sans-serif !important;
     text-transform: uppercase;
 }
 .hero-banner-sec .banner-inside p{
   padding-top: 70px;
-  font-weight: 600;
   color: #fff !important;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.7em;
   text-align: left;
-  font-family: 'Montserrat Alternates', sans-serif !important;
 }
 .hero-banner-sec .banner-inside .btn{
   margin-top: 36px;
@@ -550,16 +539,17 @@ Start Banner down row style
   text-align: left;
 }
 .single-dwn-prm .text h4{
-  color: #fff;
-  font-size: 17px !important;
-  text-align: left;
+    color: #fff;
+    font-size: 25px !important;
+    text-align: left;
+    font-weight: 900;
+    margin-bottom: 5%;
 }
 .single-dwn-prm .text p{
-  font-weight: 600;
+  font-weight: 400;
   color: #fff !important;
   font-size: 18px;
   text-align: left;
-  font-family: 'Montserrat Alternates', sans-serif !important;
 }
 
 
@@ -591,22 +581,22 @@ Start small devices style
 }
 
 .small-dvc-inside h2{
-    font-size: 27px;
+    font-size: 30px;
     padding-bottom: 16px;
-    line-height: 1.9em;
-    font-family: 'a Atmospheric', sans-serif !important;
+    line-height: 1.6em;
     color: #4e3a7c !important;
-    /*width: 700px;*/
+    font-weight: 900;
 }
 .small-dvc-inside p{
-  font-weight: bold;
+  font-weight: 400;
   padding-bottom: 16px;
   color: #4e3a7c;
   font-size: 16px;
-  font-family: 'Montserrat Alternates', sans-serif !important;
   text-align: justify !important;
 }
-
+.small-device-sltn .small-dvc-img{
+    margin-top: 16%;
+}
 .small-device-sltn .small-dvc-img img{
     width: 100%;
    /* min-width: 614px;*/
@@ -662,20 +652,18 @@ Start video play style
 }
 .inside-video-txt h2{
   color: #ffffff;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 900;
+  font-size: 30px;
   line-height: 1.9em;
-  font-family: 'a Atmospheric', sans-serif !important;
   margin-top: 20%;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 .inside-video-txt p{
   color: #ffffff !important;
   font-weight: 400;
   font-size: 18px;
-  padding-top: 30px;
-  font-family: 'Montserrat Alternates', sans-serif !important;
-  line-height: 2.8em;
+  padding-top: 31px;
+  line-height: 2.4em;
 }
 
 .inside-video-txt .btn{
@@ -889,12 +877,13 @@ Start About product style
 /*title*/
 .contact-inside-title{
   /*padding-bottom: 10px !important;*/
-  padding-top: 0%;
+  padding-top: 20%;
 }
 .footer-copyright .contact-form-in{
     text-align: left;
-    margin-top: 14%;
-    margin-left: -8%;
+    margin: 6% 0% 0% 0%;
+   /* margin-top: 14%;*/
+    /*margin-left: -8%;*/
 }
 .footer-copyright .contact-form-in p{
   font-size: 16px;
@@ -926,19 +915,18 @@ Start About product style
   padding-bottom: 50px;
 }
 .title-color-font{
- font-family: 'a Atmospheric', sans-serif !important;
 /* color: #4e3a7c !important;*/
 }
 .title h6{
-  font-weight: 600;
+  font-weight: 900;
   color: #4e3a7c;
-  font-size: 18px;
+  font-size: 30px;
 
 }
 .title h2{
-  font-weight: 600;
+  font-weight: 900;
   color: #000000;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.3em;
 }
 .title p{
@@ -946,13 +934,11 @@ Start About product style
   font-size: 16px;
   font-weight: 400;
   padding-top: 14px;
-  font-family: 'Montserrat Alternates', sans-serif !important;
 }
 
 .contact-inside-title.title h2, p{
     color: #4e3a7c !important;
     font-size: 17px;
-    font-family: 'Montserrat Alternates', sans-serif !important;
 }
 .single-feature  p{
     text-align: justify !important;
@@ -1023,14 +1009,12 @@ Start About product style
     padding-top: 30px;
     padding-bottom: 20px;
     text-transform: capitalize;
-    font-family: 'Montserrat Alternates', sans-serif !important;
 }
 .single-about p{
   font-weight: 400;
   color: #42435d;
   font-size: 15px;
-  text-align: justify;
-  font-family: 'Montserrat Alternates', sans-serif !important;
+  text-align: center;
 }
 .single-about .img{
 }
@@ -1041,16 +1025,16 @@ Start About product style
  /* padding-top: 12px;*/
   text-align: center;
  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color=#234fec)";
-  -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
+  /* -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
   -webkit-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
-  box-shadow: 0 0 3px 2px rgba(35,79,236,0.4); 
+  box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);  */
   -webkit-transition: 0.3s all ease;
   -moz-transition: 0.3s all ease;
   transition: 0.3s all ease;
   font-size: 26px;
   line-height: 1.5;
   border: 2px solid #523d80;
-  padding: 4px 4px;
+  padding: 7px 9px;
 }
 
 .single-about:hover .icon img{
@@ -1112,12 +1096,11 @@ Start Easy to begin style
 }
 
 .easy-to-begin-sec .title h6{
-  font-size: 27px !important;
+  font-size: 30px !important;
   margin-bottom: 2%;
 }
 
 .easy-to-begin-sec .title h2, .title p{
-  font-family: 'Montserrat Alternates', sans-serif !important;
   color: #4e3a7c !important;
 }
 .begin-inside-line{
@@ -1284,7 +1267,6 @@ Start Easy to begin style
   color: #4e3a7c;
   font-size: 19px;
   padding-top: 25px;
-  font-family: 'a Atmospheric', sans-serif !important;
 }
 
 .begin-inside-line .begin-one .icon p,
@@ -1348,25 +1330,23 @@ Start Easy to begin style
     font-size: 29px;
 }
 .begin-right-image .text h1{
-    font-family: 'a Atmospheric', sans-serif !important;
     color: #4e3a7c !important;
-    font-size: 27px;
+    font-size: 30px;
     width: 800px;
-    margin-left: -12%;
+    margin-left: -14%;
+    font-weight: 900;
 }
 .begin-right-image .text .list{
     margin-top: 30px;
 }
 .begin-right-image .text .list li{
     list-style-type: square;
-    font-family: auto;
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     text-align: left;
     margin-right: 3%;
-    line-height: 2.4;
+    line-height: 2.8;
     color: #5e4084;
-    font-family: 'Montserrat Alternates', sans-serif !important;
 }
 .begin-right-image .image{
     margin-top: 6%;
@@ -1551,13 +1531,11 @@ Start Amazing feature style
   font-size: 24px;
   line-height: 1.7em;
   padding-bottom: 24px;
-  font-family: 'Montserrat Alternates', sans-serif !important;
 }
 .feature-txt-in .list li{
-  font-weight: bold;
+  font-weight: 400;
   color: #4e3a7c !important;
   font-size: 16px;
-  font-family: 'Montserrat Alternates', sans-serif !important;
   text-align: justify;
   list-style-type: square;
   line-height: 2.2em;
@@ -1832,7 +1810,6 @@ Start Where we are map style
   padding-top: 18px;
   color: #fff !important;
   line-height: 3.2;
-  font-family: 'Montserrat Alternates', sans-serif !important;
 }
 .where-we-are-map .title p a{
   color: #ffffff;
@@ -2361,22 +2338,22 @@ Start Download apps style
 
 .inside-txt-dwnd.title{
   padding-bottom: 0;
-  /*padding-top: 22%;*/
-  padding-left: 10%;
+  padding-top: 24%;
+  padding-left: 0%;
 }
 .download-app-sec h2{
-  padding-bottom: 0px;
-  font-family: 'a Atmospheric', sans-serif !important;
-  color: #4e3a7c !important;
-  text-align: right;
-  font-size: 27px;
-  line-height: 1.5em;
+    padding-bottom: 0px;
+    color: #4e3a7c !important;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5em;
+    font-weight: 900;
 }
 .inside-txt-dwnd.title p{
     color: #4e3a7c !important;
     font-size: 20px;
-    font-weight: bolder;
-    line-height: 1.3;
+    font-weight: 400;
+    line-height: 1.7em;
     position: relative;
    /* right: 70px;
     top: -40px;
@@ -2460,7 +2437,7 @@ Start Contact and footer style
 .contactud-sec{
   width: 100%;
   padding-top: 105px;
-  background-image: url(../img/new-design/english/footer-bg-en.png);
+/*  background-image: url(../img/new-design/english/footer-bg-en.png);*/
   background-position: bottom -70px left -200px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2484,20 +2461,19 @@ Start Contact and footer style
   text-align: right;
 }
 .footer-copyright .copyright{
-    margin-top: 34%;
+   /* margin-top: 34%;*/
     text-align: right;
-    margin-right: -23px;
+    /*margin-right: -23px;*/
+    margin: 6% 0% 0% 0%;
 }
 .footer-copyright .copyright p{
   color: #ffffff !important;
   font-weight: 400;
   font-size: 15px;
 }
-.footer-copyright .all-right{
-    color: #d9b8f1 !important;
-    text-align: center;
-    margin-top: 48%;
-    margin-left: 30%;
+.footer-copyright .copyright .all-right{
+  color: #fff !important;
+  font-size: 12px;
 }
 .social-footer{
   text-align: right;
@@ -2525,8 +2501,12 @@ Start Contact and footer style
     display: none !important;
 }
 .responsive{
-    background: none !important;
-     padding-top: 1% !important;
+  margin: 0 auto;
+  background-image: url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 20px 15px 20px;
 }
 
 .amazing-feature-sec .title{
@@ -2534,12 +2514,11 @@ Start Contact and footer style
 }
 
 .amazing-feature-sec .title h2{
-    font-size: 27px;
-    font-family: 'a Atmospheric', sans-serif !important;
+    font-size: 30px;
     color: #4e3a7c;
 }
 .amazing-feature-sec .title p{
-    font-family: 'Montserrat Alternates', sans-serif !important;
+
 }
 
 /* -------------------------------- 
@@ -2999,11 +2978,11 @@ Close Home two style
 .slider .card .img img{
 
   /*object-fit: cover;*/
-  -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
+  /* -moz-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
   -webkit-box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
-   box-shadow: 0 0 3px 2px rgba(35,79,236,0.4);
+   box-shadow: 0 0 3px 2px rgba(35,79,236,0.4); */
    border: 2px solid #523d80;
-   padding: 4px 4px;
+   padding: 7px 9px;
 }
 .slider .card .content{
   padding: 10px 20px;
@@ -3014,13 +2993,11 @@ Close Home two style
     font-weight: 600;
     text-align: center;
     padding-bottom: 9px;
-    font-family: 'Montserrat Alternates', sans-serif !important;
 }
 
 .card .content p{
-  text-align: justify;
+  text-align: center;
   margin: 10px 0;
-  font-family: 'Montserrat Alternates', sans-serif !important;
 }
 
 
