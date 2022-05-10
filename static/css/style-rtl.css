@@ -254,9 +254,10 @@ menue style
 }
 
 .navbar .navbar-nav{
-   margin-right: 10%!important;
-  line-height: 4.3em;
-  margin-bottom: -18px;
+  /* margin-right: auto!important; */
+  margin: 0% 7% -1% 0% !important;
+  line-height: 3.3;
+  margin-bottom: -9px;
 }
 
 .navbar .navbar-nav .active>.nav-link,
@@ -303,9 +304,10 @@ menue style
 
 /*sub menu*/
 .navbar-brand{
-  display: block;
-   margin-right: 0% !important;
+  /* display: block;
+   margin-right: 0% !important; */
   /* width: 12% !important; */
+  line-height: 0;
 }
 .navbar-brand .logo-default{
     /* position: inherit !important;
@@ -390,7 +392,7 @@ Start Banner style
   position: relative;
   /* z-index: 9; */
   overflow: hidden;
-  background-image: url(../img/new-design/arabic/banner-1-rtl.webp);
+  background-image: url(../img/new-design/arabic/rocket-right.gif);
   background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -404,7 +406,7 @@ Start Banner style
   /*color: #fff;*/
   color: #5a50a6;
   text-shadow: 0px 0px 5px #dcbdf3;
-  font-size: 68px;
+  font-size: 50px;
   line-height: 2em;
   text-align: right;
   margin-top: 0%;
@@ -413,7 +415,7 @@ Start Banner style
   padding-top: 70px;
   font-weight: 600;
   color: #fff;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.7em;
   text-align: right;
 }
@@ -619,7 +621,7 @@ Start small devices style
 .small-dvc-inside h2{
   font-weight: 600;
   color: #9161c3 !important;
-  font-size: 34px;
+  font-size: 24px;
   padding-bottom: 16px;
   line-height: 1.3em;
   text-align: right;
@@ -667,8 +669,8 @@ Start video play style
   background-color: #3f2c5f;
   background-size: cover;
   background-position: center;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
+  /* padding-bottom: 0px !important; */
+  padding: 3% 0% 3% 0% !important;
 }
 .video-play-promo:after{
   content: '';
@@ -683,16 +685,17 @@ Start video play style
 }
 .video-play-promo iframe {
     width: 100% !important;
+    height: 20rem;
 }
 .inside-video-txt{
   width: 100%;
   text-align: right;
-  padding-top: 9%;
+  padding: 3% 0% 0% 0%;
 }
 .inside-video-txt h2{
   color: #ffffff;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.6em;
 }
 .inside-video-txt p{
@@ -700,7 +703,7 @@ Start video play style
     font-weight: 400;
     font-size: 15px;
     padding-top: 40px;
-    line-height: 1.9em;
+    line-height: 2.9em;
     text-align: justify;
 }
 
@@ -958,18 +961,18 @@ Start About product style
 .title h6{
     font-weight: bolder;
     color: #9161c3;
-    font-size: 30px;
+    font-size: 24px;
 }
 .title h2{
   font-weight: 600;
   color: #9161c3;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.3em;
   margin-top: 2%;
 }
 .title p{
   color: #42435d;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
   padding-top: 0px;
   text-align: center;
@@ -1045,12 +1048,12 @@ Start About product style
 .single-about p{
   font-weight: 400;
   color: #42435d;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
 }
 .single-about .img img{
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
  /* padding-top: 12px;*/
   text-align: center;
@@ -1370,7 +1373,7 @@ Start Easy to begin style
 .begin-right-image .text h1{
     color: #5e4084;
     font-weight: bolder;
-    font-size: 38px;
+    font-size: 24px;
     margin-right: -9%;
 }
 .begin-right-image .text .list{
@@ -1379,7 +1382,7 @@ Start Easy to begin style
 .begin-right-image .text .list li{
     list-style-type: square;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
     margin-right: 4%;
     line-height: 1.8;
@@ -1569,7 +1572,7 @@ Start Amazing feature style
 .feature-txt-in h4{
   font-weight: 600;
   color: #9161c3;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1.3em;
   padding-bottom: 24px;
   text-align: right !important;
@@ -1581,6 +1584,9 @@ Start Amazing feature style
   text-align: justify !important;
   line-height: 2;
 }
+/* .feature-txt-in p br{
+  display: none;
+} */
 
 
 /* -------------------------------- 
@@ -1641,7 +1647,7 @@ Start Where we are map style
 .where-we-are-map .title p{
   padding-top: 18px;
   text-align: right;
-  font-size: 18px;
+  font-size: 16px;
 }
 .where-we-are-map .title p a{
   color: #ffffff;
@@ -2175,10 +2181,14 @@ Start Download apps style
 }
 .download-app-sec h2{
   padding-bottom: 0px;
-  color: #4e3a7c !important;
-  text-align: right;
-  font-size: 40px;
+  color: #9161c3 !important;
+  text-align: center;
+  font-size: 30px;
   line-height: 1.5em;
+  margin: 0% -4% -11% -5%;
+}
+.download-app-sec h2 br{
+  display: none;
 }
 .inside-txt-dwnd.title h2{
   padding-bottom: 10px;
@@ -2186,6 +2196,8 @@ Start Download apps style
 }
 .inside-txt-dwnd.title p{
   text-align: justify;
+  line-height: 2.4;
+  /* margin: 10% 0% 0% 0%; */
 }
 
 .inside-txt-dwnd .group-btn {
@@ -2430,7 +2442,7 @@ content:'\f1cb';
   -moz-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  padding: 5px 0 0 0;
+  padding: 3px 0 0 0;
   background-color: #463067;
 }
 

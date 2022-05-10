@@ -54,6 +54,7 @@
 	}
 	.hero-banner-sec .banner-inside p {
 		font-size: 16px;
+		display: none;
 	}
 	.hero-image-right {
 		display: nano;
@@ -192,7 +193,34 @@
 		line-height: 42px;
 	}
 	.begin-right-image {
-		display: none;
+		display: block;
+	}
+	.begin-right-image .text{
+		text-align: center;
+		padding: 0% 0% 0% 0%;
+		margin: 13% 0% 0% 0%;
+	}
+	.begin-right-image .text h1{
+		font-weight: 600;
+		font-size: 30px;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		text-align: center;
+		line-height: 1.3;
+	}
+	.begin-right-image .text .list{
+		margin-top: 22px;
+	}
+	.begin-right-image .text .list li{
+		list-style-type: square;
+		font-weight: 400;
+		font-size: 17px;
+		margin-right: 0%;
+		line-height: 1.9;
+		color: #42435d;
+	}
+	.begin-right-image .image{
+
 	}
 	.easy-to-begin-sec {
 		padding-bottom: 80px;
@@ -251,7 +279,7 @@
 
 	/* contact */
 	.contact-right-img {
-		display: none;
+		display: block;
 	}
 	.footer-copyright{
 
@@ -279,6 +307,7 @@
 	.hero-banner-sec .banner-inside p {
 		font-size: 16px;
 		text-shadow: 1px 1px 9px #4e3a7c;
+		display: none;
 	}
 	.hero-image-right {
 		display: block;
@@ -447,7 +476,34 @@
 		line-height: 42px;
 	}
 	.begin-right-image {
-		display: none;
+		display: block;
+	}
+	.begin-right-image .text{
+		text-align: center;
+		padding: 0% 0% 0% 0%;
+		margin: 13% 0% 0% 0%;
+	}
+	.begin-right-image .text h1{
+		font-weight: 600;
+		font-size: 30px;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		text-align: center;
+		line-height: 1.3;
+	}
+	.begin-right-image .text .list{
+		margin-top: 22px;
+	}
+	.begin-right-image .text .list li{
+		list-style-type: square;
+		font-weight: 400;
+		font-size: 17px;
+		margin-right: 0%;
+		line-height: 1.9;
+		color: #42435d;
+	}
+	.begin-right-image .image{
+
 	}
 	.easy-to-begin-sec {
 		padding-bottom: 80px;
@@ -532,7 +588,7 @@
 		padding-bottom: 9px !important;
 	}
 	.contact-right-img {
-		display: none;
+		display: block;
 	}
 	.copyright {
 		margin-bottom: 21px;
@@ -565,6 +621,7 @@
         font-size: 14px;
         text-shadow: 0px 0px 5px #000;
         padding-top: 38px !important;
+		display: none;
 	}
 	.hero-image-right {
 		display: block;
@@ -773,7 +830,34 @@
 		line-height: 42px;
 	}
 	.begin-right-image {
-		display: none;
+		display: block;
+	}
+	.begin-right-image .text{
+		text-align: center;
+		padding: 0% 0% 0% 0%;
+		margin: 13% 0% 0% 0%;
+	}
+	.begin-right-image .text h1{
+		font-weight: 600;
+		font-size: 30px;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		text-align: center;
+		line-height: 1.3;
+	}
+	.begin-right-image .text .list{
+		margin-top: 22px;
+	}
+	.begin-right-image .text .list li{
+		list-style-type: square;
+		font-weight: 400;
+		font-size: 17px;
+		margin-right: 0%;
+		line-height: 1.9;
+		color: #42435d;
+	}
+	.begin-right-image .image{
+
 	}
 	.begin-inside-line{
         margin-bottom: 3% !important;
@@ -856,7 +940,7 @@
 
 	/* contact */
 	.contact-right-img {
-		display: none;
+		display: block;
 	}
 	.copyright {
 		margin-bottom: 30px;
@@ -906,14 +990,17 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	/* hero */
 	.hero-banner-sec{
-        background-size: 130% 100%;
-        background-position: center;
+        background-size: cover;
+        background-position: 90% 50%;
 	}
 	.hero-banner-sec .banner-inside h1 {
-		 font-size: 32px;
-		 text-align: left;
-		 text-shadow: 0px 0px 5px #dcbdf3;
-		 margin: 0% 0% 8% 0%;
+		font-size: 25px;
+		text-align: left;
+		text-shadow: 0px 0px 5px #a56bd5;
+		margin: 0% 0% 21% 0%;
+		color: #f2ecf4;
+		width: 18rem;
+		word-wrap: break-word;
 	}
 	.hero-banner-sec .banner-inside h1 br {
 		display: none;
@@ -924,6 +1011,7 @@
 		margin-bottom: 30px;
 		padding-top: 0px;
 		text-shadow: 0px 0px 6px #563a79;
+		display: none;
 	}
 	.hero-image-right {
 		display: block;
@@ -936,7 +1024,7 @@
 	}
 	.hero-banner-sec {
         /* background: none; */
-        padding-top: 10% !important;
+        padding-top: 14% !important;
         padding-bottom: 0% !important;
         margin-top: 15%;
 	}
@@ -1024,7 +1112,7 @@
         padding-top: 9% !important;
     }
     .about-product-sec .title h6{
-        font-size: 30px;
+        font-size: 20px;
     }
     .amazing-feature-sec{
        padding-top: 60px !important;
@@ -1044,6 +1132,10 @@
 	}
 	.contactud-sec{
 	    padding: 0px 0px 0px 0px !important;
+	}
+	.footer-copyright {
+		/* padding-top: 50px !important; */
+		padding: 3% 0% 6% 0% !important;
 	}
 	.contact-inside-title{
 	    padding-top: 5%;
@@ -1126,7 +1218,34 @@
 	    display: none;
 	}
 	.begin-right-image {
-		display: none;
+		display: block;
+	}
+	.begin-right-image .text{
+		text-align: center;
+		padding: 0% 0% 0% 0%;
+		margin: 13% 0% 0% 0%;
+	}
+	.begin-right-image .text h1{
+		font-weight: 600;
+		font-size: 29px;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		text-align: center;
+		line-height: 1.3;
+	}
+	.begin-right-image .text .list{
+		margin-top: 22px;
+	}
+	.begin-right-image .text .list li{
+		list-style-type: square;
+		font-weight: 400;
+		font-size: 17px;
+		margin: 0% 0% 0% 10%;
+		line-height: 1.9;
+		color: #42435d;
+	}
+	.begin-right-image .image{
+
 	}
 	.easy-to-begin-sec {
 		/* padding-bottom: 80px; */
@@ -1142,8 +1261,8 @@
         display: block !important;
     }
 	.download-app-sec{
-        margin-top: 20% !important;
-        padding-top: 9% !important;
+        margin-top: 9% !important;
+        padding-top: 0% !important;
 	}
 	.download-app-sec h2{
 	    font-size: 29px;
@@ -1175,7 +1294,8 @@
 		margin-top: -5%;
 	}
 	.feature-txt-in h4{
-	    font-size: 23px !important;
+		font-size: 30px;
+		text-align: center !important;
 	}
 	.single-feature p {
 		text-align: left !important;
@@ -1208,6 +1328,15 @@
 	.single-fact {
 		display: none;
 	} 
+	.where-we-are-map{
+		padding: 6% 0% 6% 0% !important;
+	}
+    .where-we-are-map .title h2{
+        font-size: 30px !important;
+    }
+    .where-we-are-map .title p{
+        line-height: 2.4;
+    }
 
 	.single-about{
         display: none;
@@ -1215,6 +1344,29 @@
 
 	.services-slider , .owl-carousel{
 	    display: block !important;
+	}
+	.slider .card {
+		height: auto;
+	}
+	.slider .card .img{
+	    margin: 20% auto 5%;
+	}
+	.single-fact {
+		display: none;
+	} 
+	.where-we-are-map{
+		padding: 6% 0% 6% 0% !important;
+	}
+    .where-we-are-map .title h2{
+        font-size: 30px !important;
+    }
+    .where-we-are-map .title p{
+        line-height: 2.4;
+    }
+	.single-about{
+/*	    margin-right: 3%;
+    	margin-left: 3%;*/
+    	display: none !important;
 	}
 
 	/* user fun */
@@ -1255,7 +1407,7 @@
 		float: none !important;
 	}
 	.contact-right-img {
-		display: none;
+		display: block;
 	}
 	.footer-copyright .copyright{
 		margin: 0% 0% 0% 0%;

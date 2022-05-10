@@ -329,10 +329,9 @@
                                         <p>{% trans "Generate free organic traffic consistently from search engines" %}
                                         {% trans "by investing in search engine optimization “SEO” marketing services" %}
                                         {% trans "to reach your customers when they’re searching about what your business is offering." %}
-
-                                        <br>
+                                        <br style="display: none;">
                                         {% trans "we possess extensive expertise and skills to optimize websites" %}
-                                        {% trans "and e-commerce online stores for search engines and search users" %}
+                                        {% trans "and e-commerce online stores for search engines and search users" %}<br>
                                         {% trans "“potential customers” to rank in the first search results of targeted" %}
                                         {% trans "chosen search keywords to be visible to your next customer." %}</p>
                                     </div><!--/.feature-txt-in-->
@@ -411,7 +410,6 @@
     <section class="easy-to-begin-sec" id="ecommerce_id">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-12 m-auto offset-md-2">
                     <div class="title text-center">
                         <h6 class="title-color-font">{% trans "How do we build your Website?" %}</h6>
@@ -540,8 +538,6 @@
     <!-- Web Design -->
     <section class="download-app-sec"  id="web_id">
         <div class="container">
-             <h2>{% trans "If customers aren't finding your website," %}<br>
-                {% trans " chances are they’re finding a competitor’s." %}</h2>
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12">
                     <div class="download-img-prm">
@@ -556,12 +552,14 @@
                 <div class="col-xl-6 col-lg-6 col-md-12">
                     <div class="row h-100">
                         <div class="col-md-12 align-self-center">
+                             <h2>{% trans "If customers aren't finding your website," %}<br>
+                                    {% trans " chances are they’re finding a competitor’s." %}</h2>
                             <div class="inside-txt-dwnd title">
                                 <p>{% trans "Consumers are searching for businesses and services online using mobile" %}
                                 {% trans " devices more and more." %}</p>
                                 <p>{% trans "Your website needs to look great and be easily readable on any screen size." %}<br style="display: none;">
-                                {% trans "This is why our creative team designs every website with a mobile first mentality." %}<br style="display: none;">
-                                {% trans "A responsive website ensures you reach a" %}<br style="display: none;">
+                                {% trans "This is why our creative team designs every website with a mobile first mentality." %}<br>
+                                {% trans "A responsive website ensures you reach a" %}
                                 {% trans " larger and diverse customer base that’s constantly on the move." %}</p>
                                
                             </div><!--/.inside-txt-dwnd-->
@@ -578,9 +576,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 inside-video-txt">
-                     <h2>{% trans "Our work isn’t just about cool campaigns and vanity metrics." %}</h2>
-                        <p>{% trans "It’s about solving problems. Being innovative. Embracing creativity." %}
+                     <h2>{% trans "Our work isn’t just about cool campaigns and vanity metrics." %}<br>
+                        {% trans "It’s about solving problems. Being innovative. Embracing creativity." %}
                             {% trans "Understanding what is really needed." %}
+                        </h2>
+                        <p>{% trans "Video marketing is an important part of the E-marketing strategy," %}
+                            {% trans "as these videos attract the attention of the customer quickly," %}
+                            {% trans "so the Marketia team has the necessary experience to create your video in a way that" %}
+                            {% trans "aligns with your marketing goals to leave a positive impression of your business on everyone who watches it." %}
                         </p>
                 </div>
                 <div class="col-md-6 w-100">

@@ -353,7 +353,7 @@ Start Banner style
   position: relative;
   /* z-index: 9; */
   overflow: hidden;
-  background-image: url(../img/new-design/english/banner1.webp);
+  background-image: url(../img/new-design/english/rocket-left.gif);
   background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -367,7 +367,7 @@ Start Banner style
     font-weight: 600 !important;
     color: #5a50a6;
     text-shadow: 0px 0px 5px #dcbdf3;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1.3em;
     text-align: left;
     text-transform: uppercase;
@@ -375,7 +375,7 @@ Start Banner style
 .hero-banner-sec .banner-inside p{
   padding-top: 70px;
   color: #fff !important;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.7em;
   text-align: left;
 }
@@ -540,15 +540,15 @@ Start Banner down row style
 }
 .single-dwn-prm .text h4{
     color: #fff;
-    font-size: 25px !important;
+    font-size: 24px !important;
     text-align: left;
     font-weight: 900;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 .single-dwn-prm .text p{
   font-weight: 400;
   color: #fff !important;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -581,16 +581,16 @@ Start small devices style
 }
 
 .small-dvc-inside h2{
-    font-size: 30px;
+    font-size: 24px;
     padding-bottom: 16px;
     line-height: 1.6em;
-    color: #4e3a7c !important;
+    color: #9161c3 !important;
     font-weight: 900;
 }
 .small-dvc-inside p{
   font-weight: 400;
   padding-bottom: 16px;
-  color: #4e3a7c;
+  color: #000000a6;
   font-size: 16px;
   text-align: justify !important;
 }
@@ -627,8 +627,7 @@ Start video play style
   background-color: #3f2c5f;
   background-size: cover;
   background-position: center;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
+  padding: 3% 0% 3% 0% !important;
 }
 .video-play-promo:after{
   content: '';
@@ -644,26 +643,28 @@ Start video play style
 }
 .video-play-promo iframe{
     width: 100%;
+    height: 20rem;
 }
 .inside-video-txt{
   width: 100%;
   text-align: left;
-  /*padding-top: 12%;*/
+  padding: 0% 0% 0% 0%;
 }
 .inside-video-txt h2{
   color: #ffffff;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 23px;
   line-height: 1.9em;
-  margin-top: 20%;
-  margin-bottom: 5%;
+  /* margin-top: 20%;
+  margin-bottom: 5%; */
 }
 .inside-video-txt p{
-  color: #ffffff !important;
+  color: #ffffff;
   font-weight: 400;
-  font-size: 18px;
-  padding-top: 31px;
-  line-height: 2.4em;
+  font-size: 15px;
+  padding-top: 15px;
+  line-height: 2.9em;
+  text-align: justify;
 }
 
 .inside-video-txt .btn{
@@ -919,14 +920,14 @@ Start About product style
 }
 .title h6{
   font-weight: 900;
-  color: #4e3a7c;
-  font-size: 30px;
+  color: #9161c3;
+  font-size: 24px;
 
 }
 .title h2{
   font-weight: 900;
-  color: #000000;
-  font-size: 30px;
+  color: #9161c3;
+  font-size: 24px;
   line-height: 1.3em;
 }
 .title p{
@@ -937,7 +938,7 @@ Start About product style
 }
 
 .contact-inside-title.title h2, p{
-    color: #4e3a7c !important;
+    /* color: #4e3a7c !important; */
     font-size: 17px;
 }
 .single-feature  p{
@@ -1004,8 +1005,8 @@ Start About product style
 
 .single-about h4{
     font-weight: 600;
-    color: #4e3a7c;
-    font-size: 21px;
+    color: #9161c3;
+    font-size: 24px;
     padding-top: 30px;
     padding-bottom: 20px;
     text-transform: capitalize;
@@ -1019,8 +1020,8 @@ Start About product style
 .single-about .img{
 }
 .single-about .img img{
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
  /* padding-top: 12px;*/
   text-align: center;
@@ -1096,7 +1097,7 @@ Start Easy to begin style
 }
 
 .easy-to-begin-sec .title h6{
-  font-size: 30px !important;
+  font-size: 24px !important;
   margin-bottom: 2%;
 }
 
@@ -1330,8 +1331,8 @@ Start Easy to begin style
     font-size: 29px;
 }
 .begin-right-image .text h1{
-    color: #4e3a7c !important;
-    font-size: 30px;
+    color: #5e4084 !important;
+    font-size: 24px;
     width: 800px;
     margin-left: -14%;
     font-weight: 900;
@@ -1342,7 +1343,7 @@ Start Easy to begin style
 .begin-right-image .text .list li{
     list-style-type: square;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     margin-right: 3%;
     line-height: 2.8;
@@ -1527,18 +1528,19 @@ Start Amazing feature style
 }
 .feature-txt-in h4{
   font-weight: bold;
-  color: #4e3a7c;
+  color: #9161c3;
   font-size: 24px;
   line-height: 1.7em;
   padding-bottom: 24px;
 }
 .feature-txt-in .list li{
   font-weight: 400;
-  color: #4e3a7c !important;
+  color: #42435d !important;
   font-size: 16px;
   text-align: justify;
   list-style-type: square;
   line-height: 2.2em;
+  margin-left: 6%;
 }
 
 
@@ -2343,7 +2345,7 @@ Start Download apps style
 }
 .download-app-sec h2{
     padding-bottom: 0px;
-    color: #4e3a7c !important;
+    color: #9161c3 !important;
     text-align: center;
     font-size: 30px;
     line-height: 1.5em;
@@ -2355,6 +2357,7 @@ Start Download apps style
     font-weight: 400;
     line-height: 1.7em;
     position: relative;
+    line-height: 2.4;
    /* right: 70px;
     top: -40px;
     width: 600px;*/
@@ -2436,11 +2439,8 @@ Start Contact and footer style
 
 .contactud-sec{
   width: 100%;
-  padding-top: 105px;
+  padding: 2% 0% 0% 0% !important;
 /*  background-image: url(../img/new-design/english/footer-bg-en.png);*/
-  background-position: bottom -70px left -200px;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 /*.contactud-sec .contact-form-in .logo-footer{
   width: 60%;
@@ -2454,7 +2454,10 @@ Start Contact and footer style
   padding-bottom: 6px;
 }
 .contactud-sec .contact-right-img{
-  margin-top: -7%;
+  /* margin-top: -7%; */
+}
+.contactud-sec .contact-right-img img{
+  width: 70%;
 }
 .footer-copyright img{
    margin-top: 10px;
@@ -2495,7 +2498,7 @@ Start Contact and footer style
   -moz-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  padding: 5px 0 0 0;
+  padding: 3px 0 0 0;
 }
 .services-slider{
     display: none !important;
@@ -2514,8 +2517,8 @@ Start Contact and footer style
 }
 
 .amazing-feature-sec .title h2{
-    font-size: 30px;
-    color: #4e3a7c;
+    font-size: 24px;
+    /* color: #4e3a7c; */
 }
 .amazing-feature-sec .title p{
 

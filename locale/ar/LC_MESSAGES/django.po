@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 16:04+0200\n"
+"POT-Creation-Date: 2022-05-10 16:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1393,7 +1393,7 @@ msgstr ""
 
 #: templates/index.html:305
 msgid "Why Digital Marketing?"
-msgstr "التسويق الإلكتروني مهم جدا لنشاطك التجاري"
+msgstr "لماذا التسويق الإلكتروني مهم لنشاطك التجاري؟"
 
 #: templates/index.html:306
 msgid "An effective Digital Marketing plan should be a crucial"
@@ -1451,316 +1451,341 @@ msgstr "من خلال السيو (SEO)"
 
 #: templates/index.html:329
 msgid "Generate free organic traffic consistently from search engines"
-msgstr "يعد تحسين محرك البحث لموقعك الإلكتروني  مهما جدا للنجاح عبر الإنترنت،"
+msgstr ""
+"يعد تحسين محرك البحث لموقعك الإلكتروني  مهما جدا للنجاح عبر الإنترنت، حيث "
+"يساهم في زيادة عدد الزوار لموقعك الإلكتروني"
 
 #: templates/index.html:330
 msgid "by investing in search engine optimization “SEO” marketing services"
 msgstr ""
-"حيث يساهم في زيادة عدد الزوار لموقعك الإلكتروني بهدف  زيادة الوعي بعلامتك "
-"التجارية"
+"بهدف  زيادة الوعي بعلامتك التجارية وتشجيع المزيد من العملاء المحتملين على "
+"شراء منتجاتك أو خدماتك."
 
 #: templates/index.html:331
 msgid ""
 "to reach your customers when they’re searching about what your business is "
 "offering."
-msgstr "وتشجيع المزيد من العملاء المحتملين على شراء منتجاتك أو خدماتك."
+msgstr ""
+"ولهذا لن  يحتل أي موقع إلكتروني مرتبة عالية في محركات البحث إذا لم 'يتحدث "
+"نفس اللغة' التي تفهمها محركات البحث."
+
+#: templates/index.html:333
+msgid "we possess extensive expertise and skills to optimize websites"
+msgstr "لأن روبوتات محرك البحث لن تستطيع أخذ فكرة سريعة على موقعك فتمنحه مناصب"
 
 #: templates/index.html:334
-msgid "we possess extensive expertise and skills to optimize websites"
-msgstr ""
-"لهذا، يبحث فريقنا في تحسين محركات البحث، عن الكلمات المناسبة لاستهدافها "
-
-#: templates/index.html:335
 msgid "and e-commerce online stores for search engines and search users"
 msgstr ""
-"في البحث والإعلانات وقنوات التواصل الاجتماعي وغيرها...لمعرفة ما يبحث عنه "
-"عملائك واستخدامه في استراتيجية تحسين محركات البحث لتكون في مرتبة أعلى من "
-"منافسيك."
+"عالية في البحث لأنه فقط 'يبدو جميلا' بل عليها فك الرموز والعبارات الأساسية "
+"لكي يتم ظهور موقعك في صدارة البحث."
 
-#: templates/index.html:336
+#: templates/index.html:335
 msgid "“potential customers” to rank in the first search results of targeted"
 msgstr ""
-" المناسبة لاستهدافها في البحث والإعلانات وقنوات التواصل الاجتماعي وغيرها..."
+" لهذا، يبحث فريقنا في تحسين محركات البحث، عن الكلمات المناسبة لاستهدافها في "
+"البحث والإعلانات وقنوات التواصل الاجتماعي وغيرها لمعرفة ما يبحث عنه عملائك واستخدامه في استراتيجية تحسين محركات البحث لتكون ... "
 
-#: templates/index.html:337
+#: templates/index.html:336
 msgid "chosen search keywords to be visible to your next customer."
-msgstr " لمعرفة ما يبحث عنه عملائك واستخدامه في استراتيجية تحسين محركات البحث"
+msgstr "في مرتبة أعلى من منافسيك ."
+
+#: templates/index.html:365
+msgid "Water Resistant"
+msgstr " "
 
 #: templates/index.html:366
-msgid "Water Resistant"
-msgstr " لتكون في مرتبة أعلى من منافسيك "
-
-#: templates/index.html:367
 msgid "When your PPC ads show up for the right people at the right time,"
 msgstr "نقوم بإعداد استراتيجية وخطة تنفيذ الحملات "
 
-#: templates/index.html:367
+#: templates/index.html:366
 msgid "you will:"
 msgstr " الإعلانية المدفوعة"
 
-#: templates/index.html:369
+#: templates/index.html:368
 msgid "Drive more potential customers to your website"
 msgstr ""
 "الإعلانات المدفوعة هي أحد أسرع أنواع التسويق الإلكتروني حيث يتم تصميمها "
 "لتظهر في محركات البحث وعلى شبكات التواصل الاجتماعي لتحفيز الجمهور المستهدف "
 "لشراء منتجاتك أو خدماتك، "
 
-#: templates/index.html:370
+#: templates/index.html:369
 msgid "Continuously grow revenue"
 msgstr ""
 "ويتم فيها تحديد خصائص الجمهور المستهدف بدقة من خلال مجموعة من المعايير بدءا "
 "من الفئة العمرية والخصائص الديموجرافية وحتى نصل إلى الموقع الجغرافي "
 "والاهتمامات والهوايات لتظهر إعلاناتك للأشخاص المناسبين في الوقت المناسب"
 
-#: templates/index.html:371
+#: templates/index.html:370
 msgid "Reduce cpc and ad spend"
 msgstr ""
 "فريق ماركيتيا، متخصص في إدارة الحملات الإعلانية على جميع المنصات الإلكترونية "
 "مع ضمان صرف الأموال بأعلى عائد وبناء هوية حقيقية تحظى بولاء عملائها."
 
-#: templates/index.html:388
+#: templates/index.html:387
 msgid "Our Services and solutions are carried out by our innovative team ."
 msgstr "يقوم فريقنا المبتكر بتنفيذ خدماتنا وحلولنا."
 
-#: templates/index.html:389
+#: templates/index.html:388
 msgid "Our promise to each client is simple: you'll have our full attention,"
 msgstr ""
 "نسعى إلى تقديم خدمات التسويق الإلكتروني بأعلى مستوى من الجودة والإتقان "
 "والتفاني في العمل وبأنسب الأسعار، لأن هدفنا الأول والأخير هو إرضائك وتطوير "
 "عملك للقدرة على التنافس باحترافية "
 
-#: templates/index.html:390
+#: templates/index.html:389
 msgid "our best ideas, and our commitment to delivering effective and"
 msgstr ""
 "مع منافسيك في السوق وخلق علاقة طويلة الأمد مع عملائك أساسها المصداقية "
 "والإحترافية."
 
-#: templates/index.html:391
+#: templates/index.html:390
 msgid "measurable results."
 msgstr ""
 "وعدنا بسيط لكل عميل، أنه سيحظى باهتمامنا الكامل من خلال أفكار إبداعية "
 "ومبتكرة، مع التزامنا بتقديم نتائج فعالة وقابلة للقياس."
 
-#: templates/index.html:417
+#: templates/index.html:415
 msgid "How do we build your Website?"
 msgstr "كيف نصمم موقعك الإلكتروني؟"
 
-#: templates/index.html:418
+#: templates/index.html:416
 msgid "Grow your business online"
 msgstr ""
 "نقدم خدمة تصميم المواقع والمتاجر الإلكترونية بأحدث التقنيات والأساليب الفنية "
 
-#: templates/index.html:419
+#: templates/index.html:417
 msgid "Build your store online in few steps to start selling products fast."
 msgstr ""
 "التي تتناسب مع محركات البحث جوجل وجميع متصفحات الإنترنت والأجهزة للترويج "
 "وبيع خدماتك ومنتجاتك, بأقل تكلفة."
 
-#: templates/index.html:420
+#: templates/index.html:418
 msgid "Create a website, take online orders for pickup and delivery."
 msgstr ""
 "لدينا فريق من المتخصصين في التصميم وبرمجة مواقع الإنترنت بكل إحترافية "
 "وبخطوات دقيقة وبسيطة:"
 
-#: templates/index.html:435
+#: templates/index.html:433
 msgid "Planning"
 msgstr "التخطيط"
 
-#: templates/index.html:445
+#: templates/index.html:443
 msgid "Design"
 msgstr "التصميم"
 
-#: templates/index.html:455
+#: templates/index.html:453
 msgid "Customization"
 msgstr "التخصيص"
 
-#: templates/index.html:465
+#: templates/index.html:463
 msgid "Launch"
 msgstr "الانطلاق"
 
-#: templates/index.html:543
+#: templates/index.html:555
 msgid "If customers aren't finding your website,"
 msgstr "إذا لم يعثر العملاء على موقع الويب الخاص بك فمن المحتمل،"
 
-#: templates/index.html:544
+#: templates/index.html:556
 msgid " chances are they’re finding a competitor’s."
 msgstr "أنهم يجدون موقعًا منافسًا لك"
 
-#: templates/index.html:560
+#: templates/index.html:558
 msgid "Consumers are searching for businesses and services online using mobile"
 msgstr ""
 "تصميم موقع إلكتروني خاص بنشاطك التجاري يوفر لعملائك معلومات عن شركتك وخدماتك،"
 
-#: templates/index.html:561
+#: templates/index.html:559
 msgid " devices more and more."
 msgstr ""
 " لهذا يجب أن تهتم بتصميم موقعك وكذلك بتحديث محتوى الموقع لجذب الزوار لتصفحه "
 "وزيارته مرات عديدة."
 
-#: templates/index.html:562
+#: templates/index.html:560
 msgid ""
 "Your website needs to look great and be easily readable on any screen size."
 msgstr ""
 "ولأن أغلب المستهلكون يبحثون عن الأنشطة التجارية والخدمات عبر الإنترنت "
 "باستخدام الأجهزة المحمولة أكثر فأكثر، "
 
-#: templates/index.html:563
+#: templates/index.html:561
 msgid ""
 "This is why our creative team designs every website with a mobile first "
 "mentality."
 msgstr ""
-" لهذا يجب أن يبدو موقع الويب الخاص بك جذابا وأن يكون قابلاً للاستعمال بسهولة "
-"على أي شاشة.وهنا تأتي مهمة فريقنا الإبداعي في ماركيتيا حيث يقوم بتصميم مواقع "
-"إلكترونية إحترافية"
+"لهذا يجب أن يبدو موقع الويب الخاص بك جذابا وأن يكون قابلاً للاستعمال بسهولة "
+"على أي شاشة.  "
 
-#: templates/index.html:564
+#: templates/index.html:562
 msgid "A responsive website ensures you reach a"
-msgstr "وبفكر فريد يضمن لك موقع ويب سريع الاستجابة والوصول"
+msgstr ""
+"وهنا تأتي مهمة فريقنا الإبداعي في ماركيتيا حيث يقوم بتصميم مواقع إلكترونية "
+"إحترافية"
 
-#: templates/index.html:565
+#: templates/index.html:563
 msgid " larger and diverse customer base that’s constantly on the move."
-msgstr "إلى قاعدة عملاء أكبر ومتنوعة باستمرار."
+msgstr ""
+"وبفكر فريد يضمن لك موقع ويب سريع الاستجابة والوصول إلى قاعدة عملاء أكبر "
+"ومتنوعة باستمرار."
 
-#: templates/index.html:581
+#: templates/index.html:579
 msgid "Our work isn’t just about cool campaigns and vanity metrics."
 msgstr ""
 "لا يقتصر عملنا على الحملات الإعلانية الناجحة، بل إن الأمر يتعلق : بحل "
 "المشكلات، الابتكار، تبني الإبداع، فهم ماهو مطلوب بكل دقة"
 
-#: templates/index.html:582
+#: templates/index.html:580
 msgid "It’s about solving problems. Being innovative. Embracing creativity."
-msgstr ""
-"يعد التسويق بالفيديو جزءًا مهمًا من استراتيجية التسويق الإلكتروني حيث تجذب هذه "
-"الفيديوهات اهتمام العميل بسرعة،"
+msgstr " "
+
+#: templates/index.html:581
+msgid "Understanding what is really needed."
+msgstr " "
 
 #: templates/index.html:583
-msgid "Understanding what is really needed."
+msgid "Video marketing is an important part of the E-marketing strategy,"
+msgstr ""
+"يعد التسويق بالفيديو جزءًا مهمًا من استراتيجية التسويق الإلكتروني حيث تجذب هذه "
+
+#: templates/index.html:584
+msgid "as these videos attract the attention of the customer quickly,"
+msgstr "الفيديوهات اهتمام العميل بسرعة،"
+
+#: templates/index.html:585
+msgid ""
+"so the Marketia team has the necessary experience to create your video in a "
+"way that"
 msgstr ""
 " لهذا فريق ماركيتيا يمتلك الخبرة الازمة لعمل  الفيديو الخاص بك وبطريقة "
+
+#: templates/index.html:586
+msgid ""
+"aligns with your marketing goals to leave a positive impression of your "
+"business on everyone who watches it."
+msgstr ""
 "تتماشى مع أهدافك التسويقية لترك انطباع إيجابي عن نشاطك التجاري لدى كل من "
 "يشاهده"
 
-#: templates/index.html:594
+#: templates/index.html:597
 msgid "لا يقتصر عملنا على الحملات الإعلانية الناجحة"
 msgstr ""
 
-#: templates/index.html:595
+#: templates/index.html:598
 msgid "بل إن الأمر يتعلق بحل المشكلات, الابتكار، تبني الإبداع"
 msgstr ""
 
-#: templates/index.html:596
+#: templates/index.html:599
 msgid "وفهم ماهو مطلوب بكل دقة"
 msgstr ""
 
-#: templates/index.html:612
+#: templates/index.html:615
 msgid "We are the distinguished services you are looking for...!"
 msgstr "نقدم الحلول المتكاملة والمتميزة التي تبحث عنها ...!"
 
-#: templates/index.html:613
+#: templates/index.html:616
 msgid "From the first moment we set out, we put the element of"
 msgstr ""
 "منذ اللحظة الأولى التي انطلقنا فيها، نضع عنصر الإبداع والتميز في الاعتبار "
 "لنجعل التسويق"
 
-#: templates/index.html:614
+#: templates/index.html:617
 msgid "creativity and excellence in mind, to make marketing in the field"
 msgstr "في مجال تكنولوجيا المعلومات تخصصنا لإكتسابنا خبرات طويلة."
 
-#: templates/index.html:615
+#: templates/index.html:618
 msgid "of information technology our specialty, which is full of long and"
 msgstr ""
 "تتنوع خدمات الشركة لتشمل كل الخدمات والحلول الإستراتيجية لجميع احتياجات عملك،"
 
-#: templates/index.html:616
+#: templates/index.html:619
 msgid "qualified experiences."
 msgstr " "
 
-#: templates/index.html:617
+#: templates/index.html:620
 msgid "The company's services vary to include all services strategic solutions"
 msgstr "من خلال فريقنا المبتكر وقادتهم الخبراء الذين يبذلون كل جهودهم "
 
-#: templates/index.html:618
+#: templates/index.html:621
 msgid ""
 "and services to all your business needs, all of these services are provided "
 "by"
 msgstr " لتحقيق النتائج "
 
-#: templates/index.html:619
+#: templates/index.html:622
 msgid ""
 "our innovative team and their expert leaders who employ all of their efforts "
 "to"
 msgstr " "
 
-#: templates/index.html:619
+#: templates/index.html:622
 msgid "achieve the desired results and customer satisfaction."
 msgstr " المرجوة ونيل رضا العملاء."
 
-#: templates/index.html:648
+#: templates/index.html:651
 msgid "Identify Customers"
 msgstr "تحديد الاحتياجات"
 
-#: templates/index.html:649
+#: templates/index.html:652
 msgid "Identifying customers needs"
 msgstr "تحديد احتياجات العملاء"
 
-#: templates/index.html:659
+#: templates/index.html:662
 msgid "Satisfy Customers"
 msgstr " استهداف المناسبين للنشاط"
 
-#: templates/index.html:660
+#: templates/index.html:663
 msgid "Targeting the right people"
 msgstr "استهداف العملاء المناسبين"
 
-#: templates/index.html:670
+#: templates/index.html:673
 msgid "Retain Customers"
 msgstr "اكتساب الولاء"
 
-#: templates/index.html:671
+#: templates/index.html:674
 msgid "Earning customers loyalty"
 msgstr "اكتساب ولاء العملاء"
 
-#: templates/index.html:687
+#: templates/index.html:690
 msgid "Let’s get the conversation started."
 msgstr "يمكنك التواصل مع فريقنا .. الآن"
 
-#: templates/index.html:688
+#: templates/index.html:691
 msgid ""
 "Our strength is in bringing together creative skills, operational systems,"
 msgstr "تكمن قوتنا في الجمع بين المهارات الإبداعية وأنظمة التشغيل"
 
-#: templates/index.html:689
+#: templates/index.html:692
 msgid ""
 " and processes. We secure technology to translate our clients’ ideas and "
 "strategies"
 msgstr " والعمليات. نحن نستخدم التكنولوجيا لترجمة أفكار عملائنا واستراتيجياتهم"
 
-#: templates/index.html:690
+#: templates/index.html:693
 msgid " into marketing collateral, and a broad range of other media output."
 msgstr "إلى خطط تسويقية ومجموعة واسعة من التصميمات والأفكار."
 
-#: templates/index.html:692
+#: templates/index.html:695
 msgid ""
 "Get in touch with us and know how can digital marketing and creative work "
 "can help"
 msgstr "تواصل معنا واعرف كيف يمكن للتسويق الرقمي والعمل الإبداعي أن يساعدا في"
 
-#: templates/index.html:693
+#: templates/index.html:696
 msgid " scale your business."
 msgstr "توسيع نطاق عملك."
 
-#: templates/index.html:716
+#: templates/index.html:719
 msgid "696 El-Horeya Road, Loran, Alexandria, Egypt"
 msgstr "696 طريق الحرية - لوران - الإسكندرية - مصر"
 
-#: templates/index.html:717
+#: templates/index.html:720
 msgid "+20 103 227 0919"
 msgstr "0919 227 103 20+"
 
-#: templates/index.html:730
+#: templates/index.html:733
 msgid "All Rights Reserved"
 msgstr "جميع الحقوق محفوظة"
 
-#: templates/index.html:730
+#: templates/index.html:733
 msgid "2022"
 msgstr ""
 

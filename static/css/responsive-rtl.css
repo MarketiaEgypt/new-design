@@ -1,7 +1,7 @@
 /* in general */
 @media only screen and (max-width: 1000px) {
 	.navbar-brand {
-		width: 36% !important;
+		/* width: 36% !important; */
 		margin-left: 0% !important;
 	}
 }
@@ -28,7 +28,7 @@
 		display: none;
 	}
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 50px;
+		font-size: 30px;
 	}
 	.banner-inside {
 		text-align: center;
@@ -55,6 +55,7 @@
 	}
 	.hero-banner-sec .banner-inside p {
 		font-size: 16px;
+		display: none;
 	}
 	.hero-image-right {
 		display: none;
@@ -267,7 +268,7 @@
 
 	/* contact */
 	.contact-right-img {
-		display: none;
+		display: block;
 	}
 
 	.footer-copyright .copyright p {
@@ -285,14 +286,21 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	/* hero */
 	.hero-banner-sec .banner-inside h1 {
-        font-size: 43px;
-        margin-top: 0%;
+		font-size: 25px;
+		line-height: 1.3;
+		width: 19rem;
+		word-wrap: break-word;
+		text-align: right !important;
+		text-shadow: 0px 0px 5px #dcbdf3;
+		margin: 6% 0% 11% 0%;
+		color: #f2ecf4;
 	}
 	.hero-banner-sec .banner-inside h1 br {
 		display: none;
 	}
 	.hero-banner-sec .banner-inside p {
 		font-size: 16px;
+		display: none;
 	}
 	.hero-image-right {
 		display: block;
@@ -496,7 +504,7 @@
 
 	/* contact */
 	.contact-right-img {
-		display: none;
+		display: block;
 	}
 	.copyright {
 		margin-bottom: 30px;
@@ -516,9 +524,14 @@
 @media only screen and (min-width: 480px) and (max-width: 575px) {
 	/* hero */
 	.hero-banner-sec .banner-inside h1 {
-        font-size: 42px;
-        margin-top: -27%;
-        margin-bottom: -14%;
+		font-size: 25px;
+		line-height: 1.3;
+		width: 19rem;
+		word-wrap: break-word;
+		text-align: right !important;
+		text-shadow: 0px 0px 5px #dcbdf3;
+		margin: 6% 0% 11% 0%;
+		color: #f2ecf4;
 	}
 	.hero-banner-sec .banner-inside h1 br {
 		display: none;
@@ -526,6 +539,7 @@
 	.hero-banner-sec .banner-inside p {
 		font-size: 16px;
 		text-shadow: 0px 0px 8px #000;
+		display: none;
 	}
 	.hero-image-right {
 	    display: block;
@@ -534,8 +548,8 @@
 	.hero-banner-sec {
 		/*background: none;*/
 		margin-bottom: 0% !important;
-        margin-top: 15% !important;
-        padding-top: 30% !important;
+        margin-top: 16% !important;
+        padding-top: 9% !important;
 	}
 	.services-slider{
 	    display: block !important;
@@ -741,6 +755,9 @@
 	    padding-top: 0px !important;
 	    background: none !important;
 	}
+	.contactud-sec .contact-inside-title .title h6{
+		font-size: 29px;
+	}
 
 	/* sale */
 	.anni-title h3 {
@@ -793,7 +810,7 @@
 
 	/* contact */
 	.contact-right-img {
-		display: none;
+		display: block;
 	}
 	.copyright {
         /* margin-bottom: 30px; */
@@ -829,12 +846,14 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	/* hero */
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 30px;
+		font-size: 25px;
 		line-height: 1.3;
-		width: 20rem;
+		width: 19rem;
 		word-wrap: break-word;
 		text-align: right !important;
 		text-shadow: 0px 0px 5px #dcbdf3;
+		margin: 6% 0% 11% 0%;
+		color: #f2ecf4;
 	}
 	.hero-banner-sec .banner-inside h1 br {
 		display: none;
@@ -845,6 +864,7 @@
         width: 19rem;
         word-wrap: break-word;
         font-weight: 400;
+		display: none;
 	}
 	.hero-banner-sec .banner-inside p br{
 	    display: none !important;
@@ -1033,6 +1053,10 @@
 	}
 	.easy-to-begin-sec .title{
 		padding-bottom: 13%;
+	}
+	.easy-to-begin-sec .title h6{
+		margin-bottom: 0%;
+		line-height: 1.3;
 	}
 	.inside-txt-dwnd.title{
 		padding-top: 0% !important;
@@ -1272,8 +1296,8 @@
         background: linear-gradient(358deg, #d5aff0 ,#b16be3, #3A235A) !important;
 	}
 	.footer-copyright{
-	    padding-top: 50px !important;
-
+	    /* padding-top: 50px !important; */
+		padding: 3% 0% 6% 0% !important;
 	}
 	.footer-copyright .copyright{
 		text-align: center;
