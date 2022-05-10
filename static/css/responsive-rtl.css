@@ -288,7 +288,7 @@
 	.hero-banner-sec .banner-inside h1 {
 		font-size: 24px;
 		line-height: 1.3;
-		width: 19rem;
+		width: 18rem;
 		word-wrap: break-word;
 		text-align: right !important;
 		text-shadow: 0px 0px 5px #dcbdf3;
@@ -526,7 +526,7 @@
 	.hero-banner-sec .banner-inside h1 {
 		font-size: 24px;
 		line-height: 1.3;
-		width: 19rem;
+		width: 18rem;
 		word-wrap: break-word;
 		text-align: right !important;
 		text-shadow: 0px 0px 5px #dcbdf3;
@@ -848,7 +848,7 @@
 	.hero-banner-sec .banner-inside h1 {
 		font-size: 24px;
 		line-height: 1.3;
-		width: 19rem;
+		width: 18rem;
 		word-wrap: break-word;
 		text-align: right !important;
 		text-shadow: 0px 0px 5px #dcbdf3;
@@ -878,8 +878,8 @@
 		min-width: auto !important;
 	}
 	.hero-banner-sec {
-		padding: 10% 0% 10% 0% !important;
-        margin-top: 15%;
+		padding: 13% 0% 13% 0% !important;
+        margin-top: 18%;
 	}
 	.hero-banner-sec .banner-inside .btn {
 		width: 100%;
@@ -982,7 +982,7 @@
 	}
 	.single-dwn-prm .text {
 		padding-top: 10px;
-		padding-left: 0;
+		padding-right: 10px;
 	}
 	.single-dwn-prm .icon {
 		float: right;
@@ -1132,7 +1132,7 @@
 		font-size: 16px;
 		font-weight: 900;
 		display: block;
-		margin: 4% 0% 4% 0%;
+		margin: 4% 0% 8% 0%;
 	}
 	.download-app-sec{
 
@@ -1289,6 +1289,12 @@
 		text-align: justify;
 		font-weight: 400;
 		font-size: 16px;
+	}
+	.inside-txt-dwnd.title p{
+		line-height: 2;
+	}
+	.inside-txt-dwnd.title p br{
+		
 	}
 
 	/* contact */

@@ -532,6 +532,7 @@
 	.inside-txt-dwnd.title p{
 		right: 0px !important;
 		width: 100% !important;
+		line-height: 2;
 	}
 
 	/* sale */
@@ -890,6 +891,7 @@
         text-align: center !important;
         width: 100% !important;
         right: 22px !important;
+		line-height: 2;
 	}
 
 	/* sale */
@@ -1271,7 +1273,7 @@
         padding-top: 0% !important;
 	}
 	.download-app-sec h2{
-	    font-size: 24px;
+	    font-size: 23px;
 	}
 	.download-app-sec br{
 	    display: none !important;

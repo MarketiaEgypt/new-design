@@ -268,7 +268,7 @@ menue style
   font-weight: bold;
   /* line-height: 2.2; */
    margin-top: 1px;
-  font-size: 17px !important;
+  font-size: 16px !important;
   font-weight: 600;
   /*text-transform: uppercase;*/
   /* padding: 0px 7px !important;
@@ -287,7 +287,7 @@ menue style
   color: #000;
   padding: 6px 12px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   border: 0;
   outline: 0;
   /* background-color: #c80000; */
@@ -354,7 +354,7 @@ menue style
     width: 100%;
     text-align: left;
     padding: 5px 15px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .navbar.center-brand .nav-item.drop_menu ul li a:hover{
   color: #1a56f0;
@@ -427,7 +427,7 @@ Start Banner style
   outline: 0;
   padding: 13px 36px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -701,7 +701,7 @@ Start video play style
 .inside-video-txt p{
     color: #ffffff;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 40px;
     line-height: 2.9em;
     text-align: justify;
@@ -1048,7 +1048,7 @@ Start About product style
 .single-about p{
   font-weight: 400;
   color: #42435d;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
 }
 .single-about .img img{
@@ -1064,7 +1064,7 @@ Start About product style
   -webkit-transition: 0.3s all ease; */
   -moz-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.5;
   border: 2px solid #523d80;
   padding: 4px 4px;
@@ -1128,7 +1128,7 @@ Start Easy to begin style
   background-position: right bottom;
 }
 .easy-to-begin-sec .title h2{
-    font-size: 19px !important;
+    font-size: 24px !important;
     color: #42435d !important;
 }
 .easy-to-begin-sec .title{
@@ -1190,7 +1190,7 @@ Start Easy to begin style
 .begin-inside-line .begin-four .icon i{
 /*  width: 60%;
   margin-top: -6%;*/
-  font-size: 70px;
+  font-size: 24px;
   color: #fff;
   line-height: 0.7;
 }   
@@ -1321,7 +1321,7 @@ Start Easy to begin style
   top: 25px;
   text-align: center;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1368,7 +1368,7 @@ Start Easy to begin style
     text-align: right;
     /*padding-top: 12%;*/
     padding: 10%;
-    font-size: 29px;
+    font-size: 24px;
 }
 .begin-right-image .text h1{
     color: #5e4084;
@@ -1448,7 +1448,7 @@ Start Anniversary sale style
 .anni-title h3{
   color: #ffffff;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 24px;
 }
 
 .single-anni-inside{
@@ -1468,7 +1468,7 @@ Start Anniversary sale style
   color: #ffffff;
   padding-bottom: 40px;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 24px;
   transition: 0.3s;
 }
 .single-anni-inside:hover h4{
@@ -1483,7 +1483,7 @@ Start Anniversary sale style
   outline: 0;
   color: #ffffff;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=111, Color=#060A01)";/*IE 8*/
 -moz-box-shadow: 3px 8px 10px 1px rgba(6,10,1,0.3);/*FF 3.5+*/
 -webkit-box-shadow: 3px 8px 10px 1px rgba(6,10,1,0.3);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
@@ -1501,7 +1501,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Col
   text-transform: uppercase;
   padding: 12px 36px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   outline: 0;
   border: 0;
   background-color: #fa3613;
@@ -1715,7 +1715,7 @@ Start Our product style
 .single-product-show .product-info h5{
   font-weight: 600;
   color: #000000;
-  font-size: 20px;
+  font-size: 24px;
 
 }
 .single-product-show .product-info ul li{
@@ -1729,7 +1729,7 @@ Start Our product style
   padding-left: 4px;
   font-weight: 400;
   color: #42435d;
-  font-size: 14px;
+  font-size: 16px;
   padding-right: 4px;
 }
 .single-product-show .product-info .rev-count a{
@@ -1740,7 +1740,7 @@ Start Our product style
 .single-product-show .product-info h4{
   font-weight: 600;
   color: #254ce9;
-  font-size: 28px;
+  font-size: 24px;
   padding-top: 18px;
 }
 .single-product-show .product-info .btn{
@@ -1844,7 +1844,7 @@ Start Testimonials style
 .slider-content-feed .text-inside p{
   font-weight: 400;
   color: #000000;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7em;
 }
 .client-thumb-nav img{
@@ -2115,7 +2115,7 @@ Start user gallery style
 .single-fact h3{
   color: #ffffff;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 24px;
   line-height: 1.3em;
 }
 .single-fact p{
@@ -2183,7 +2183,7 @@ Start Download apps style
   padding-bottom: 0px;
   color: #9161c3 !important;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.5em;
   margin: 0% -4% -11% -5%;
 }
@@ -2210,7 +2210,7 @@ Start Download apps style
   background-color: #254ce9;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   text-align: left;
   border-radius: 10px;
@@ -2296,14 +2296,14 @@ Start Contact and footer style
 .footer-copyright .copyright p{
   color: #ffffff !important;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: -4%;
 }
 .footer-copyright .all-right{
   color: #fff !important;
   text-align: left;
   /* margin: 22% 0% 0% 0%; */
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .footer-copyright .contact-form-in p {
@@ -2921,7 +2921,7 @@ Close Home two style
 
 }
 .card .content .title{
-    font-size: 26px;
+    font-size: 24px;
     color: #4e3a7c;
     font-weight: 600;
     text-align: center;
@@ -2931,7 +2931,7 @@ Close Home two style
 .card .content p{
   text-align: center;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 
