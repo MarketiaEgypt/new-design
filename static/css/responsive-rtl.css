@@ -28,7 +28,7 @@
 		display: none;
 	}
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.banner-inside {
 		text-align: center;
@@ -48,7 +48,7 @@
 		text-align: center;
 	}
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.hero-banner-sec .banner-inside h1 br {
 		display: none;
@@ -135,7 +135,7 @@
 		background: none;
 	}
 	.small-dvc-inside h2 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.small-dvc-img {
 		margin-top: 0px;
@@ -146,7 +146,7 @@
 
 	/* video */
 	.inside-video-txt h2 {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: 1.4em;
 		text-align: center;
 		font-weight: 600;
@@ -161,7 +161,7 @@
 
 	/* title */
 	.title h2 {
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.title p br {
 		display: none;
@@ -194,7 +194,7 @@
 	.begin-right-image .text h1{
 		color: #5e4084;
 		font-weight: 600;
-		font-size: 30px;
+		font-size: 24px;
 		margin-right: -9%;
 	}
 	.begin-right-image .text .list{
@@ -203,7 +203,7 @@
 	.begin-right-image .text .list li{
 		list-style-type: square;
 		font-weight: 400;
-		font-size: 17px;
+		font-size: 16px;
 		margin-right: 0%;
 		line-height: 1.9;
 		color: #42435d;
@@ -217,10 +217,10 @@
 
 	/* sale */
 	.anni-title h3 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.single-anni-inside h4 {
-		font-size: 34px;
+		font-size: 24px;
 	}
 
 	/* map */
@@ -286,7 +286,7 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	/* hero */
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 25px;
+		font-size: 24px;
 		line-height: 1.3;
 		width: 19rem;
 		word-wrap: break-word;
@@ -381,7 +381,7 @@
 		background: none;
 	}
 	.small-dvc-inside h2 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.small-dvc-img {
 		margin-top: 40px;
@@ -389,7 +389,7 @@
 
 	/* video */
 	.inside-video-txt h2 {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: 1.4em;
 	}
 
@@ -402,7 +402,7 @@
 
 	/* title */
 	.title h2 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.title p br {
 		display: none;
@@ -435,7 +435,7 @@
 	.begin-right-image .text h1{
 		color: #5e4084;
 		font-weight: 600;
-		font-size: 30px;
+		font-size: 24px;
 		margin-right: -9%;
 	}
 	.begin-right-image .text .list{
@@ -444,7 +444,7 @@
 	.begin-right-image .text .list li{
 		list-style-type: square;
 		font-weight: 400;
-		font-size: 17px;
+		font-size: 16px;
 		margin-right: 0%;
 		line-height: 1.9;
 		color: #42435d;
@@ -455,10 +455,10 @@
 
 	/* sale */
 	.anni-title h3 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.single-anni-inside h4 {
-		font-size: 34px;
+		font-size: 24px;
 	}
 
 	/* feature */
@@ -524,7 +524,7 @@
 @media only screen and (min-width: 480px) and (max-width: 575px) {
 	/* hero */
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 25px;
+		font-size: 24px;
 		line-height: 1.3;
 		width: 19rem;
 		word-wrap: break-word;
@@ -641,7 +641,7 @@
 		padding-top: 0%;
 	}
 	.small-dvc-inside h2 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.small-dvc-img {
 		margin-top: 40px;
@@ -649,7 +649,7 @@
 
 	/* video */
 	.inside-video-txt h2 {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: 1.4em;
 	}
 
@@ -667,7 +667,7 @@
 
 	/* title */
 	.title h2 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.title p br {
 		/*display: none;*/
@@ -703,7 +703,7 @@
 	.begin-right-image .text h1{
 		color: #5e4084;
 		font-weight: 600;
-		font-size: 30px;
+		font-size: 24px;
 		margin-right: -9%;
 	}
 	.begin-right-image .text .list{
@@ -712,7 +712,7 @@
 	.begin-right-image .text .list li{
 		list-style-type: square;
 		font-weight: 400;
-		font-size: 17px;
+		font-size: 16px;
 		margin-right: 0%;
 		line-height: 1.9;
 		color: #42435d;
@@ -737,7 +737,7 @@
 	}
 	.download-app-sec h2{
         width: 100%;
-        font-size: 30px !important;
+        font-size: 24px !important;
         text-align: center !important;
 	}
 	.inside-txt-dwnd.title{
@@ -756,15 +756,15 @@
 	    background: none !important;
 	}
 	.contactud-sec .contact-inside-title .title h6{
-		font-size: 29px;
+		font-size: 24px;
 	}
 
 	/* sale */
 	.anni-title h3 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.single-anni-inside h4 {
-		font-size: 34px;
+		font-size: 24px;
 	}
 
 	/* feature */
@@ -846,7 +846,7 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	/* hero */
 	.hero-banner-sec .banner-inside h1 {
-		font-size: 25px;
+		font-size: 24px;
 		line-height: 1.3;
 		width: 19rem;
 		word-wrap: break-word;
@@ -995,14 +995,14 @@
 		padding-bottom: 0% !important;
 	}
 	.small-dvc-inside h2 {
-		font-size: 30px;
+		font-size: 24px;
 		text-align: center;
 	}
 	.small-dvc-inside p{
 		font-weight: 400;
 		padding-bottom: 4px;
 		color: #000000b8;
-		font-size: 17px;
+		font-size: 16px;
 		text-align: justify;
 	}
 	.small-dvc-inside p br{
@@ -1017,15 +1017,15 @@
 
 	/* video */
 	.inside-video-txt h2 {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: 1.8;
 		text-align: center;
 	}
 	.inside-video-txt p{
-		padding-top: 20px !important;
-		margin-bottom: 0% !important;
+		padding-top: 10px !important;
+		margin: 0% 5% 0% 5% !important;
 		font-weight: 400;
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.video-play-promo iframe{
 	    width: 100% !important;
@@ -1041,7 +1041,7 @@
 
 	/* title */
 	.title h2 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.title p br {
 		/*display: none;*/
@@ -1102,7 +1102,7 @@
 	.begin-right-image .text h1{
 		color: #5e4084;
 		font-weight: 600;
-		font-size: 30px;
+		font-size: 24px;
 		margin-right: -9%;
 	}
 	.begin-right-image .text .list{
@@ -1111,7 +1111,7 @@
 	.begin-right-image .text .list li{
 		list-style-type: square;
 		font-weight: 400;
-		font-size: 17px;
+		font-size: 16px;
 		margin-right: 0%;
 		line-height: 1.9;
 		color: #42435d;
@@ -1129,7 +1129,7 @@
 		display: none;
 	}
 	.easy-to-begin-sec .title p span{
-		font-size: 19px;
+		font-size: 16px;
 		font-weight: 900;
 		display: block;
 		margin: 4% 0% 4% 0%;
@@ -1138,7 +1138,7 @@
 
 	}
 	.download-app-sec h2{
-		font-size: 30px;
+		font-size: 24px;
 		margin: 0% 0% 5% 0%;
 		text-align: center;
 	}
@@ -1153,7 +1153,7 @@
 	}
 	.contactud-sec .contact-inside-title p{
 		margin: 8% 0% 2% 0%;
-		font-size: 17px;
+		font-size: 16px;
 		font-weight: 400;
 	}
 	.contactud-sec .contact-inside-title p br{
@@ -1163,10 +1163,10 @@
 
 	/* sale */
 	.anni-title h3 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.single-anni-inside h4 {
-		font-size: 34px;
+		font-size: 24px;
 	}
 	.anni-shop-btn .btn {
 		width: 100%;
@@ -1181,11 +1181,11 @@
 		margin-top: -5%;
 	}
 	.feature-txt-in h4{
-		font-size: 30px;
+		font-size: 24px;
 		text-align: center !important;
 	}
 	.feature-txt-in h4 br{
-
+		display: none;
 	}
 	.feature-txt-in p,
 	.feature-txt-in .list li{
@@ -1202,7 +1202,7 @@
 		padding-bottom: 6%;
 	}
 	.amazing-feature-sec .title h2{
-		font-size: 30px;
+		font-size: 24px;
 	}
 
 	/* testimonial */
@@ -1253,7 +1253,7 @@
 		padding: 6% 0% 6% 0% !important;
 	}
     .where-we-are-map .title h2{
-        font-size: 30px !important;
+        font-size: 24px !important;
     }
     .where-we-are-map .title p{
         line-height: 2.4;
@@ -1288,7 +1288,7 @@
 	.inside-txt-dwnd.title p{
 		text-align: justify;
 		font-weight: 400;
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	/* contact */
