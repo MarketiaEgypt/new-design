@@ -396,7 +396,7 @@ Start Banner style
   background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
-  padding-top: 8%;
+  padding-top: 15%;
   padding-bottom: 7%;
   margin-top: 5%;
 }
@@ -413,7 +413,7 @@ Start Banner style
 }
 .hero-banner-sec .banner-inside p{
   padding-top: 70px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   font-size: 24px;
   line-height: 1.7em;
@@ -637,13 +637,17 @@ Start small devices style
 .small-dvc-inside p br{
   display: none;
 } 
+
+.small-device-sltn .small-dvc-img{
+  margin-top: 0%;
+  width: 101%;
+}
 .small-device-sltn .small-dvc-img img{
-   /* margin-top: 13%;*/
-    margin-top: 8%;
-    width: 100%;
-/*    min-width: 600px;*/
-    position: relative;
-/*    left: 24%;*/
+  width: 100%;
+ /* min-width: 614px;*/
+  position: relative;
+  /*right: 24%;
+  top: 100px;*/
 }
 
 /* -------------------------------- 
@@ -702,7 +706,8 @@ Start video play style
     color: #ffffff;
     font-weight: 400;
     font-size: 16px;
-    padding-top: 40px;
+    /* padding-top: 40px; */
+    padding-top: 3px;
     line-height: 2.9em;
     text-align: justify;
 }
@@ -985,7 +990,7 @@ Start About product style
   position: relative;
   z-index: 5;
   padding: 26px 23px;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-top: 50px;
   border-radius: 10px;
   margin-bottom: 0%;
@@ -1572,9 +1577,9 @@ Start Amazing feature style
 .feature-txt-in h4{
   font-weight: 600;
   color: #9161c3;
-  font-size: 24px;
-  line-height: 1.3em;
-  padding-bottom: 24px;
+  font-size: 22px;
+  line-height: 1.6em;
+  padding-bottom: 12px;
   text-align: right !important;
 }
 .feature-txt-in p, .list li{
@@ -2297,7 +2302,7 @@ Start Contact and footer style
   color: #ffffff !important;
   font-weight: 400;
   font-size: 16px;
-  margin-left: -4%;
+  margin-left: -6%;
 }
 .footer-copyright .all-right{
   color: #fff !important;
@@ -2309,11 +2314,11 @@ Start Contact and footer style
 .footer-copyright .contact-form-in p {
   font-size: 16px;
   color: #fff !important;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 2.4;
 }
 .footer-copyright .contact-form-in p a{
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #fff !important;
 }
 .footer-copyright .contact-form-in p i {
@@ -2430,8 +2435,8 @@ content:'\f1cb';
   padding-left: 1px;
 }
 .social-footer li .btn:hover{
-  background-color: #254ce9;
-  border-color: #254ce9;
+  background-color: #b16be3;
+  border-color: #fff;
 }
 .social-footer li .btn{
   color: #ffffff;

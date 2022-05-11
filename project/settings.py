@@ -42,7 +42,6 @@ INSTALLED_APPS = [
 
     # My Apps
     'Marketia',
-    'tof',
 ]
 
 MIDDLEWARE = [
