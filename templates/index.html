@@ -62,21 +62,21 @@
   
 
     <!--fontawesome cdn-->
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
 
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  media="print" onload="this.onload=null;this.removeAttribute('media');">
 
     <!-- Slider Owl Carousel -->
 
     <!-- Google Fonts -->
     <!-- Font Title -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
 
 
     <!-- responsive css -->
@@ -86,14 +86,7 @@
     {% else %}
         <link rel="stylesheet" href="{% static 'css/responsive-rtl.css' %}">
     {% endif %}
-    
-    <!--modernizr-->
-    <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script>
 
-    
-    <!-- CHat Live whatsapp -->
-{#    <script src="https://apps.elfsight.com/p/platform.js"></script>#}
-    <!-- <div class="elfsight-app-9ace16e1-53f6-4df3-ba08-d92f83a5e215" id="live-chat"></div> -->
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
     <div class="se-pre-con"></div>
@@ -205,7 +198,7 @@
                 <div class="col-md-6 col-xl-3 col-lg-3 services-rtl">
                     <div class="single-about">
                         <div class="img">
-                            <img src="{{services.image.url}}" loading="lazy">
+                            <img src="{{services.image.url}}">
                         </div>
                          {% get_current_language as LANGUAGE_CODE %}
                          {% if LANGUAGE_CODE == 'en' %}
@@ -232,7 +225,7 @@
                 {% for services in object_list %}
                 <div class="card">
                     <div class="img">
-                        <img src="{{services.image.url}}" alt="" loading="lazy" />
+                        <img src="{{services.image.url}}" alt="" />
                     </div>
                     <div class="content">
                          {% get_current_language as LANGUAGE_CODE %}
@@ -296,9 +289,9 @@
                             <div class="feature-image">
                             {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/1.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/english/1.webp' %}"  alt=""/>
                             {% else %}
-                                <img src="{% static 'img/new-design/arabic/1.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/1.webp' %}"  alt=""/>
                             {% endif %}
                             </div>
                         </div>
@@ -347,9 +340,9 @@
                             <div class="feature-image">
                             {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/2.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/english/2.webp' %}"  alt=""/>
                             {% else %}  
-                                <img src="{% static 'img/new-design/arabic/2.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/2.webp' %}" alt=""/>
                             {% endif %}
                             </div>
                         </div>
@@ -362,9 +355,9 @@
                             <div class="feature-image">
                              {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/3.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/english/3.webp' %}" alt=""/>
                             {% else %}
-                                <img src="{% static 'img/new-design/arabic/3.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/3.webp' %}"  alt=""/>
                             {% endif %}
                             </div>
                         </div>
@@ -406,9 +399,9 @@
                             <div class="feature-image">
                              {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/4.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/english/4.webp' %}" alt=""/>
                             {% else %}
-                                <img src="{% static 'img/new-design/arabic/4.webp' %}" loading="lazy" alt=""/>
+                                <img src="{% static 'img/new-design/arabic/4.webp' %}"  alt=""/>
                             {% endif %}
                             </div>
                         </div>
@@ -442,7 +435,7 @@
                                 <div class="begin-one">
                                     <div class="icon">
                                         <!-- <i class="fas fa-clipboard-list"></i> -->
-                                        <img src="{% static 'img/icon/planing.png' %}" loading="lazy"/>
+                                        <img src="{% static 'img/icon/planing.png' %}" />
                                         <p>1</p>
                                     </div>
                                     <h5>{% trans "Planning" %}</h5>
@@ -452,7 +445,7 @@
                                 <div class="begin-two">
                                     <div class="icon">
                                         <!-- <i class="fas fa-image"></i> -->
-                                        <img src="{% static 'img/icon/design.png' %}" loading="lazy"/>
+                                        <img src="{% static 'img/icon/design.png' %}" />
                                         <p>2</p>
                                     </div>
                                      <h5>{% trans "Design" %}</h5>
@@ -462,7 +455,7 @@
                                 <div class="begin-three">
                                     <div class="icon">
                                         <!-- <i class="fas fa-cogs mt-1"></i> -->
-                                        <img src="{% static 'img/icon/settings.png' %}" loading="lazy"/>
+                                        <img src="{% static 'img/icon/settings.png' %}" />
                                         <p>3</p>
                                     </div>
                                     <h5>{% trans "Customization" %}</h5>
@@ -472,7 +465,7 @@
                                 <div class="begin-four">
                                     <div class="icon">
                                         <!-- <i class="fas fa-rocket mt-2"></i> -->
-                                        <img src="{% static 'img/icon/launch.png' %}" loading="lazy" />
+                                        <img src="{% static 'img/icon/launch.png' %}" />
                                         <p>4</p>
                                     </div>
                                     <h5>{% trans "Launch" %}</h5>
@@ -482,9 +475,9 @@
                                 <div class="begin-responsive">
                                     {% get_current_language as LANGUAGE_CODE %}
                                      {% if LANGUAGE_CODE == 'en' %}
-                                        <img class="line-shape" src="{% static 'img/new-design/english/steps-ecommerce-en.webp' %}" alt="" loading="lazy" />
+                                        <img class="line-shape" src="{% static 'img/new-design/english/steps-ecommerce-en.webp' %}" alt=""/>
                                     {% else %}
-                                        <img class="line-shape" src="{% static 'img/new-design/arabic/steps-ecommerce-ar.webp' %}" alt="" loading="lazy" />
+                                        <img class="line-shape" src="{% static 'img/new-design/arabic/steps-ecommerce-ar.webp' %}" alt="" " />
                                     {% endif %}
 
                                 </div>
@@ -493,9 +486,9 @@
                         </div>
                         {% get_current_language as LANGUAGE_CODE %}
                         {% if LANGUAGE_CODE == 'en' %}
-                            <img class="line-shape" src="{% static 'img/icon/line.png' %}" alt="" loading="lazy" />
+                            <img class="line-shape" src="{% static 'img/icon/line.png' %}" alt="" />
                         {% else %}
-                            <img class="line-shape" src="{% static 'img/icon/line-rtl.png' %}" alt="" loading="lazy" />
+                            <img class="line-shape" src="{% static 'img/icon/line-rtl.png' %}" alt=""  />
                         {% endif %}    
                     </div><!--/.begin-inside-line-->
 
@@ -517,7 +510,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6 image">
-                                    <img src="{% static 'img//new-design/english/online-shopping.webp' %}" alt="" loading="lazy" />
+                                    <img src="{% static 'img//new-design/english/online-shopping.webp' %}" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -537,7 +530,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6 image">
-                                    <img src="{% static 'img//new-design/arabic/ecommerce-rtl.webp' %}" alt="" loading="lazy" />
+                                    <img src="{% static 'img//new-design/arabic/ecommerce-rtl.webp' %}" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -558,9 +551,9 @@
                     <div class="download-img-prm">
                         {% get_current_language as LANGUAGE_CODE %}
                         {% if LANGUAGE_CODE == 'en' %}
-                            <img src="{% static 'img/new-design/english/website-en.webp' %}" alt="" loading="lazy" />
+                            <img src="{% static 'img/new-design/english/website-en.webp' %}" alt=""  />
                         {% else %}
-                            <img src="{% static 'img/new-design/arabic/website-ar.webp' %}" alt="" loading="lazy" />
+                            <img src="{% static 'img/new-design/arabic/website-ar.webp' %}" alt=""  />
                         {% endif %}
                     </div>
                 </div>
@@ -603,7 +596,7 @@
                 </div>
                 <div class="col-md-6 w-100" >
                     <iframe src="https://player.vimeo.com/video/696534558?h=d08a1a8bee"
-                            width="640" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen loading="lazy">
+                            width="640" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen >
                     </iframe>
                 </div>
 
@@ -735,7 +728,7 @@
                             <li><a href="https://www.instagram.com/marketiaegy/?hl=en" target="_blank" class="btn"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="mailto:contactus@marketiaegy.com" target="_blank" class="btn"><i class="fas fa-envelope"></i></a></li>
                          </ul>
-                         <img src="{% static 'img/new-image/marketia-logo.png' %}" alt="logo" class="logo-default" loading="lazy">
+                         <img src="{% static 'img/new-image/marketia-logo.png' %}" alt="logo" class="logo-default">
                          <p class="all-right">{% trans "All Rights Reserved" %} &copy;{% trans "2022" %}</p>
                     </div>
                 </div>
@@ -750,6 +743,8 @@
 
 
 
+      <!--modernizr-->
+    <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script>
 
     <!--jquery-->
     <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>

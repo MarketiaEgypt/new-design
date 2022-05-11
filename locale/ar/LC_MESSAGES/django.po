@@ -1452,7 +1452,7 @@ msgstr ""
 
 #: templates/index.html:387
 msgid "Our Services and solutions are carried out by our innovative team ."
-msgstr "يقوم فريقنا بتنفيذ خدامتنا وحلولنا بكل دقة"
+msgstr "يقوم فريقنا بتنفيذ خدماتنا وحلولنا بكل دقة"
 
 #: templates/index.html:388
 msgid "Our promise to each client is simple: you'll have our full attention,"
