@@ -310,13 +310,17 @@
 	}
 	.hero-banner-sec {
 		/*background: none;*/
-		margin-top: 12%;
+		margin-top: 10%;
 	}
 
 	/* nav */
 	nav .navbar-nav {
 		background: #b979e6;
-		margin-top: 12px;
+		padding: 4px;
+		border-radius: 5px;
+		line-height: 2 !important;
+		text-align: right;
+		right: 0% !important;
 	}
 	.navbar .nav-item a {
 		padding: 10px 15px;
@@ -341,17 +345,30 @@
 		margin-right: 0;
 	}
 	.navbar .navbar-toggler {
-	    font-size: 16px;
+		font-size: 16px;
+		border: 1px solid #fff;
+		color: #fff;
+		border-radius: 5px;
+		height: 50px;
+		width: 50px;
+		padding: 0;
+		outline: none;
+		float: left;
+		left: 0%;
+		position: relative;
+		margin: 0% auto 2% 3%;
+	    /* font-size: 16px;
 	    border: 1px solid #fff;
 	    color: #fff;
 	    border-radius: 5px;
 	    height: 50px;
 	    width: 50px;
 	    padding: 0;
-	    outline: none;
+	    outline: none; */
 	}
 	.navbar.navbar-expand-lg {
 	    padding: 15px;
+		/* padding: 0% 0% 2% 0%; */
 	    box-shadow: 0 0 11px -4px #1a56f0;
 	    -webkit-box-shadow: 0 0 11px -4px #1a56f0;
 	    -moz-box-shadow: 0 0 11px -4px #1a56f0;
@@ -359,6 +376,12 @@
 	.navbar a.navbar-brand {
 		display: inherit;
 		padding: 0;
+		position: absolute;
+		margin: 1% auto;
+		float: right;
+		right: 2%;
+		/* display: inherit;
+		padding: 0; */
 	}
 	.navbar.navbar-expand-lg.active_sc {
 		background-color: #fff;
@@ -366,6 +389,16 @@
 	}
 	.navbar.navbar-expand-lg.active_sc:hover {
 		background-color: #fff;
+	}
+	.single-about {
+		margin-bottom: 0%;
+		display: none !important;
+	}
+	.services-slider, .owl-carousel{
+	    display: block !important;
+	}
+	.services-slider .container{
+		margin: 0 auto;
 	}
 
 	/* feauture */
@@ -405,7 +438,7 @@
 		font-size: 24px;
 	}
 	.title p br {
-		display: none;
+		/* display: none; */
 	}
 
 	/* easy to begin */
@@ -417,7 +450,8 @@
 	}
 	.begin-inside-line .begin-one,
 	.begin-inside-line .begin-two,
-	.begin-inside-line .begin-three {
+	.begin-inside-line .begin-three,
+	.begin-inside-line .begin-four {
 		margin-bottom: 40px;
 		display: none;
 	}
@@ -449,9 +483,22 @@
 		line-height: 1.9;
 		color: #42435d;
 	}
+	
+	.begin-inside-line .begin-responsive{
+		display: block !important;
+	}
+	.begin-inside-line .begin-responsive .line-shape {
+		display: block !important;
+		position: absolute;
+		right: 3%;
+	}
 	.easy-to-begin-sec {
 		padding-bottom: 80px;
 	}
+	.easy-to-begin-sec .title {
+		padding-bottom: 10%;
+	}
+
 
 	/* sale */
 	.anni-title h3 {
@@ -509,9 +556,13 @@
 	.copyright {
 		margin-bottom: 30px;
 	}
+	.footer-copyright .copyright,
+	.contactud-sec .contact-form-in p{
+		text-align: center;
+	}
 	.footer-copyright .copyright p {
 		text-align: center;
-		display: none !important;
+		/* display: none !important; */
 	}
 	.social-footer {
 		text-align: center;
@@ -551,7 +602,7 @@
         margin-top: 16% !important;
         padding-top: 9% !important;
 	}
-	.services-slider{
+	.services-slider, .owl-carousel{
 	    display: block !important;
 	}
 
@@ -607,7 +658,7 @@
 	.navbar a.navbar-brand {
 		display: inherit;
 		padding: 0;
-        width: 32% !important;
+        /* width: 32% !important; */
         margin-right: 0% !important;
 		/*width: 41%;
 		right: 60%;*/
@@ -638,10 +689,10 @@
 	/* small dvc */
 	.small-device-sltn {
 		background: none;
-		padding-top: 0%;
+		padding-top: 0% !important;
 	}
 	.small-dvc-inside h2 {
-		font-size: 24px;
+		font-size: 23px;
 	}
 	.small-dvc-img {
 		margin-top: 40px;
@@ -741,7 +792,14 @@
         text-align: center !important;
 	}
 	.inside-txt-dwnd.title{
-	    padding-top: 0% !important;
+	    padding-top: 15% !important;
+	}
+	.inside-video-txt{
+		text-align: center;
+    	padding: 3% 3% 3% 3%;
+	}
+	.video-play-promo{
+		padding: 3% 0% 25% 0% !important;
 	}
 	.video-play-promo iframe{
 	    width: 100% !important;
