@@ -300,12 +300,12 @@
 	.hero-banner-sec .banner-inside h1 {
 		/* font-size: 28px;
 		margin-top: -20%; */
-		font-size: 24px;
-		margin-top: -16%;
+		font-size: 34px;
+		margin-top: -26%;
 		text-shadow: 0px 0px 5px #dcbdf3;
 	}
 	.hero-banner-sec .banner-inside h1 br {
-		display: none;
+		display: block;
 	}
 	.hero-banner-sec .banner-inside p {
 		font-size: 16px;
@@ -321,7 +321,7 @@
 	}
 	.hero-banner-sec {
 		 /*background: none;*/
-		margin-top: 10%;
+		margin-top: 8%;
     	padding-top: 25%;
 		
 	}
@@ -407,12 +407,13 @@
 	/* small dvc */
 	.small-device-sltn {
 		background: none;
+		padding: 0% 0% 0% 0% !important;
 	}
 	.small-device-sltn .small-dvc-img {
         margin: 2% 0% 5% 0% !important;
     }
 	.small-dvc-inside h2 {
-		font-size: 24px;
+		font-size: 22px;
 		width: 100% !important;
 	}
 	.small-dvc-img {
@@ -490,7 +491,7 @@
 		font-weight: 600;
 		font-size: 24px;
 		width: 100%;
-		margin: 0% 0% 0% 0%;
+		margin: 5% 0% 0% 0%;
 		text-align: center;
 		line-height: 1.3;
 	}
@@ -509,7 +510,7 @@
 
 	}
 	.easy-to-begin-sec {
-		padding-bottom: 80px;
+		padding-bottom: 0px;
 	}
 
 	/* web development */
@@ -518,7 +519,7 @@
 		line-height: 1.3 !important;
 	}
 	.begin-inside-line .begin-responsive{
-	    display: block;
+	    display: block !important;
 	}
 	.begin-inside-line .begin-responsive .line-shape{
 	    display: block !important;
@@ -528,6 +529,12 @@
 	}
 	.owl-carousel {
 	    display: block !important;
+	}
+	.video-play-promo{
+		padding: 3% 0% 11% 0% !important;
+	}
+	.inside-video-txt p{
+		padding: 2% 0% 19% 0%;
 	}
 	.inside-txt-dwnd.title p{
 		right: 0px !important;
@@ -597,6 +604,13 @@
 	.copyright {
 		margin-bottom: 21px;
     	margin-top: 13%;
+		text-align: center;
+	}
+	.footer-copyright .copyright{
+		text-align: center;
+		margin: 0% 0% 0% 0%;
+	}
+	.footer-copyright .contact-form-in{
 		text-align: center;
 	}
 	.footer-copyright .copyright p {
