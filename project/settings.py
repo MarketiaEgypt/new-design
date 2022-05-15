@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +43,9 @@ INSTALLED_APPS = [
 
     # My Apps
     'Marketia',
+    'blog',
+    'taggit',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -113,6 +117,13 @@ LANGUAGE_CODE = 'ar'
 LANGUAGES = (
     ('ar', 'Arabic'),
     ('en', 'English'),
+)
+MODELTRANSLATION_LANGUAGES = ('ar', 'en')
+
+
+MODELTRANSLATION_TRANSLATION_FILES = (
+    'Marketia.translation',
+    # 'blog.translation',
 )
 
 LOCALE_PATHS = (

@@ -1,168 +1,7 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
 {% load i18n %}
-<html>
-
-<head>
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>{% trans "Marketia for Business Solutions" %}</title>
-    <!-- Standard Favicon -->
-    <link rel="icon" href="{% static 'img/logo.png' %}">
-
-    <!-- Touch Icons - iOS and Android 2.1+ -->
-    <link rel="apple-touch-icon" href="img/fav/android-icon-48x48.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/android-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png" />
-    
-    <!--bootstrap v4.0.0-->
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-    {% else %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min-rtl.css' %}">
-    {% endif %}    
-
-    <!--reset css-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
-    <!--main style-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/uni-style.css' %}">
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}" />
-    {% else %}
-        <link type="text/css" rel="stylesheet" href="{% static 'css/style-rtl.css'%}" />
-    {% endif %}    
-
-    <!--slick slider-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}"/>
-    <!-- animate css -->
-    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
-    <!-- venobox -->
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-        <link rel="stylesheet" href="{% static 'css/venobox.css' %}">
-    {% else %}    
-        <link rel="stylesheet" href="{% static 'css/venobox-rtl.css' %}">
-    {% endif %}
-    <!--owl slider-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.min.css' %}"/>
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}"/>
-    {% else %}    
-        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min-rtl.css' %}"/>
-    {% endif %}
-  
-
-    <!--fontawesome cdn-->
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-
-    <!-- Slider Owl Carousel -->
-
-    <!-- Google Fonts -->
-    <!-- Font Title -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-
-
-    <!-- responsive css -->
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    {% else %}
-        <link rel="stylesheet" href="{% static 'css/responsive-rtl.css' %}">
-    {% endif %}
-
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-    <div class="se-pre-con"></div>
-
-    <!-- main nav start -->
-    <nav class="navbar navbar-expand-lg fixed-top center-brand static-nav">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-            {% get_current_language as LANGUAGE_CODE %}
-            {% if LANGUAGE_CODE == 'en' %}
-                <img src="{% static 'img/new-image/LOGO-ltr.png' %}" alt="logo" class="logo-default" loading="lazy">
-            {% else %}
-                <img src="{% static 'img/new-image/LOGO-rtl.png' %}" alt="logo" class="logo-default" loading="lazy">
-            {% endif %}    
-            </a>
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xeronav">
-                <i class="fas fa-bars fa-2x"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="xeronav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"> <a class="nav-link active" href="#homes">{% trans "Home" %}</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services_id">{% trans "Services" %}</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#digital_id">{% trans "Digital Marketing" %}</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ecommerce_id">{% trans "E-Commerce" %}</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#web_id">{% trans "Web development" %}</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about_id">{% trans "About us" %}</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact_id">{% trans "contact us" %}</a>
-                    </li>
-                    <li class="nav-item">
-                        {% get_current_language as LANGUAGE_CODE %}
-                        {% get_available_languages as LANGUAGES %}
-                        {% get_language_info_list for LANGUAGES as languages %}
-                        <form action="{% url 'set_language' %}" method="post">
-                        {% csrf_token %}
-                        <input name="next" type="hidden" value="{{ redirect_to }}" />
-                            {% for language in languages %}
-                                {% if language.code != LANGUAGE_CODE %}
-                                    <button type="submit" name="language" value="{{ language.code }}" 
-                                    style="border: none;background: none;">
-                                        <p class="nav-link mt-xs-1 mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0">
-                                        {% if language.code == 'en' %}
-                                            <img src="https://img.icons8.com/color/40/000000/usa.png" style="margin-top: 4px;cursor: pointer;position: relative;" loading="lazy"/>
-                                        {% else %}
-                                            <img src="https://img.icons8.com/color/40/000000/egypt.png" style="margin-top: 7px;cursor: pointer;position: relative;" loading="lazy"/>
-                                        {% endif %}
-
-                                        </p>
-                                    </button>
-                                {% endif %}
-                            {% endfor %}
-                        </form>      
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- /.navbar -->
-
+{% block body %}
     <!--hero-banner-->
     <header class="hero-banner-sec text-xs-center" id="homes">
         <div class="container">
@@ -194,20 +33,14 @@
                     </div><!--/.title-->
                 </div>
                 <div class="w-100"></div>
-                {% for services in object_list %}
+                {% for services in services.all %}
                 <div class="col-md-6 col-xl-3 col-lg-3 services-rtl">
                     <div class="single-about">
                         <div class="img">
                             <img src="{{services.image.url}}" loading="lazy">
                         </div>
-                         {% get_current_language as LANGUAGE_CODE %}
-                         {% if LANGUAGE_CODE == 'en' %}
-                            <h4>{{services.name_en}}</h4>
-                            <p>{{services.description_en}}</p>
-                         {% else %}
-                            <h4>{{services.name_ar}}</h4>
-                            <p>{{services.description_ar}}</p>
-                         {% endif %}
+                            <h4>{{services.name}}</h4>
+                            <p>{{services.description}}</p>
                     </div><!--/.single-about-->
                 </div>
                 {% endfor %}
@@ -222,20 +55,14 @@
     <div class="services-slider">
         <div class="container">
             <div class="slider owl-carousel">
-                {% for services in object_list %}
+                {% for services in services.all %}
                 <div class="card">
                     <div class="img">
-                        <img src="{{services.image.url}}" alt="" loading="lazy" />
+                        <img src="{{services.image}}" alt="" loading="lazy" />
                     </div>
                     <div class="content">
-                         {% get_current_language as LANGUAGE_CODE %}
-                         {% if LANGUAGE_CODE == 'en' %}
-                            <div class="title card-font">{{services.name_en}}</div>
-                            <p class="card-font">{{services.description_en}}</p>
-                        {% else %}
-                             <div class="title card-font">{{services.name_ar}}</div>
-                            <p class="card-font">{{services.description_ar}}</p>
-                        {% endif %}
+                           <div class="title card-font">{{services.name}}</div>
+                            <p class="card-font">{{services.description}}</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -637,6 +464,7 @@
     </section>
     <!--About Us-->
 
+
     <!--Our Features-->
     <section class="hero-dwn-prmo" id="about_id">
         <div class="container">
@@ -679,6 +507,7 @@
     </section>
     <!--Our Features-->
 
+
     <!--contact us-->
     <section class="contactud-sec" id="contact_id">
         <div class="container">
@@ -709,68 +538,38 @@
             </div>
             <div class="w-100"></div>
         </div><!--/.container-->
-        <div class="footer-copyright responsive">
-           <div class="container">
-                <div class="row">
-                <div class="col-md-6">
-                     <div class="contact-form-in">
-                        <p class="address"><i class="fa fa-map-marker"></i><a href="#">{% trans "696 El-Horeya Road, Loran, Alexandria, Egypt" %}</a> </p>
-                        <p class="phone"><i class="fa fa-phone"></i> <a href="tel:+20 103 227 0919">{% trans "+20 103 227 0919" %}</a> </p>
-                        <p class="email"><i class="fa fa-envelope"></i> <a href="mailto:contactus@marketiaegy.com" target="_blank"> contactus@marketiaegy.com</a> </p>
-                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="copyright">
-                         <ul class="social-footer">
-                            <li><a href="https://www.facebook.com/Marketia-for-Business-Solutions-111826808025402" target="_blank" class="btn"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/marketia-egypt" class="btn"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="https://www.instagram.com/marketiaegy/?hl=en" target="_blank" class="btn"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="mailto:contactus@marketiaegy.com" target="_blank" class="btn"><i class="fas fa-envelope"></i></a></li>
-                         </ul>
-                         <img src="{% static 'img/new-image/marketia-logo.png' %}" alt="logo" class="logo-default" loading="lazy">
-                         <p class="all-right">{% trans "All Rights Reserved" %} &copy;{% trans "2022" %}</p>
-                    </div>
-                </div>
-            </div>
-           </div>
-        </div><!--/.footer-copyright-->
     </section>
     <!--contact us-->
 
-    <!-- Back To Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- News Section -->
+    <section class="news-section" id="blog_id">
+        <div class="auto-container">
+            <div class="sec-title">
+                <span class="float-text">{% trans "Blogs" %}</span>
+                <h2>{% trans "News & Articals" %}</h2>
+            </div>
+            <div class="row">
+                {% for post in posts %}
+                <!-- News Block -->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{{post.image.url}}" alt=""></figure>
+                            <div class="overlay-box"><a href="{{post.get_absolute_url}}" target="_blank"><i class="fa fa-link"></i></a></div>
+                        </div>
+                        <div class="caption-box">
+                            <h3><a href="{{post.get_absolute_url}}" target="_blank">{{post.title}}</a></h3>
+                            <ul class="info">
+                                <li>{{post.created_at|date:"F j, Y"}}</li>
+                                <li>{{post.author}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!--End News Section -->
 
-
-
-      <!--modernizr-->
-    <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script>
-
-    <!--jquery-->
-    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
-    <!--bootstrap v4 js-->
-    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
-    <!--popper js-->
-    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
-    <!--video popup-->
-    <script src="{% static 'js/vendor/video.popup.js' %}"></script>
-
-    <script src="{% static 'js/venobox.min.js' %}"></script>    
-    <!--slick slider-->
-    <script defer src="{% static 'js/vendor/slick-min.js' %}"></script>
-    <!-- Wow js -->
-    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
-    <!-- counter js -->
-    <script src="{% static 'js/vendor/counter.js' %}"></script>
-    <!--owl js-->
-    <script src="{% static 'js/vendor/owl-carousel.js' %}"></script>
-    <!--easing js-->
-    <script src="{% static 'js/vendor/easing.js' %}"></script>
-    <!--main script-->
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'ar' %}
-        <script src="{% static 'js/main-rtl.js' %}"></script>
-    {% else %}    
-        <script src="{% static 'js/main.js' %}"></script>
-    {% endif %}    
-</body>
-</html>
+{% endblock body %}

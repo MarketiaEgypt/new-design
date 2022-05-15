@@ -26,6 +26,8 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('i18n/', include('django.conf.urls.i18n')),
     path('', include('Marketia.urls', namespace='marketia')),
+    path('summernote/', include('django_summernote.urls')),
+    path('blog/', include('blog.urls', namespace='blog')),
     prefix_default_language=False,
 )
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

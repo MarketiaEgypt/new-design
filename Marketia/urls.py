@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import ServicesList
+
+from . import views
 
 
 app_name = 'Marketia'
 
 urlpatterns = [
-    path('', ServicesList.as_view(), name='services_list'),
+    path('', views.home, name='home'),
 
 ]

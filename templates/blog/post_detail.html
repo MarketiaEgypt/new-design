@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block body %}
+
+<div class="page-wrapper">
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'img/new-design/english/blog/10.jpg' %});">
+        <div class="auto-container">
+            <div class="inner-container clearfix">
+                <div class="title-box">
+                    <h1>News Detail</h1>
+                    <span class="title">The Interior speak for themselves</span>
+                </div>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Blog Detail</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- Blog Detail -->
+    <div class="blog-detail style-two">
+        <div class="inner-container">
+            <!-- News Block -->
+            <div class="news-block-two">
+                <div class="inner-box">
+                     <div class="image-box">
+                        <figure class="image"><img src="{% static 'img/new-design/english/blog/blog-single-1.jpg' %}" alt=""></figure>
+                    </div>
+
+                    <div class="caption-box">
+                        <div class="inner">
+                            <h3>In Good Taste: Mark Finlay Architects & Interiors.</h3>
+                            <ul class="info">
+                                <li>06 June 2018,</li>
+                                <li><a href="blog-detail-2.html">John Smith,</a></li>
+                                <li><a href="blog-detail-2.html">3 Commets</a></li>
+                            </ul>
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on integration.</p>
+                            <blockquote>
+                                <i class="fas fa-quote-left"></i> Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks and mortar solutions without functional solutions.
+                            </blockquote>
+                            <div class="tow-column row">
+                                <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                                    <figure class="image"><img src="{% static 'img/new-design/english/blog/post-image-1.jpg' %}" alt=""></figure>
+                                </div>
+                                <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                                    <p>Collaboratively administrate empowered markets via plug and play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Keeping your eye on the ball while performing a deep dive on the start-u0p mentality to derive convergence integration. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Podcasting operational change management inside of workflows to establish a framework. Keeping your eye on the ball.</p>
+                                </div>
+                            </div>
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="tags clearfix">
+                <span class="title">Tags:</span>
+                {% for tag in tags %}
+                <ul>
+                    <li><a >{{tag.name}}</a></li>
+                </ul>
+                {% endfor %}
+            </div>
+
+            <!-- Share Option -->
+            <div class="share-option">
+                <span class="title">Share This:</span>
+                <ul class="social-icon-colored clearfix">
+                    <li class="facebook"><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li class="twitter"><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li class="google-plus"><a href="#"><i class="fab fa-google-plus"></i>Google Plus</a></li>
+                    <li class="pinterest"><a href="#"><i class="fab fa-pinterest-p"></i>Pinterest</a></li>
+                    <li class="mail"><a href="#"><i class="fas fa-envelope"></i>Mail to Friends</a></li>
+                </ul>
+            </div>
+
+                        <div class="row">
+                <div class="comments-column col-lg-12 col-md-12 col-sm-12">
+                    <!-- Comments Area -->
+                    <div class="comments-area">
+                        <div class="group-title"><h2>Comments</h2></div>
+                        <div class="comment-box">
+                            <div id="disqus_thread"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Detail -->
+</div>
+
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+    var disqus_config = function () {
+    this.page.url = "http://127.0.0.1:8000/{{post.get_absolute_url}}";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "{{post.slug}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://tester-2yrdyhsxzm.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endblock body %}

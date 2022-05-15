@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block body %}
+
+<div class="page-wrapper">
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'img/new-design/english/blog/10.jpg' %});">
+        <div class="auto-container">
+            <div class="inner-container clearfix">
+                <div class="title-box">
+                    <h1>News & Artical</h1>
+                    <span class="title">The Interior speak for themselves</span>
+                </div>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Home</a></li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- Sidebar Page Container -->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="blog-classic">
+                        <!-- News Block -->
+                         {% for post in object_list %}
+                        <div class="news-block-two wow fadeIn">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="#"><img src="{% static 'img/new-design/english/blog/blog-post-1.jpg' %}" alt=""></a></figure>
+                                </div>
+                                <div class="caption-box">
+                                    <div class="inner">
+                                        <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
+                                        <ul class="info">
+                                            <li>06 June 2018,</li>
+                                            <li><a href="{{post.get_absolute_url}}">{{post.created_at|date:"F j, Y"}}</a></li>
+                                        </ul>
+                                        <div class="text">{{post.description|safe}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <!--Post Share Options-->
+                     {% if is_paginated %}
+                        <div class="styled-pagination">
+                        <ul class="clearfix">
+                            {% if page_obj.has_previous %}
+                            <li class="prev-post"><a href="?page={{ page_obj.previous_page_number }}">
+                                <span class="fas fa-long-arrow-alt-left"></span> Prev</a>
+                            </li>
+                            {% else %}
+                            <li class="prev-post disabled"><a href="#">
+                                <span class="fas fa-long-arrow-alt-left"></span> Prev</a>
+                            </li>
+
+                            {% endif %}
+
+                            {% for i in paginator.page_range %}
+                                {% if page_obj.number == i %}
+                                <li class=""><a href="?page={{ i }}">{{ i }}</a></li>
+                                {% else %}
+                                <li class=""><a href="?page={{ i }}">{{ i }}</a></li>
+                                {% endif %}
+				            {% endfor %}
+
+
+                            {% if page_obj.has_next %}
+                            <li class="next-post"><a href="?page={{ page_obj.next_page_number }}">
+                                <span class="fas fa-long-arrow-alt-right"></span> Next</a>
+                            </li>
+                            {% else %}
+                            <li class="next-post disabled"><a href="#">
+                                <span class="fas fa-long-arrow-alt-right"></span> Next</a>
+                            </li>
+
+                            {% endif %}
+                        </ul>
+                    </div>
+                     {% endif %}
+
+                </div>
+
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar default-sidebar">
+
+                        <!--search box-->
+                        <div class="sidebar-widget search-box">
+                            <form action="{% url 'blog:post_list' %}" method="GET">
+                                <div class="form-group">
+                                    <input type="search" name="q" value="" placeholder="{% trans 'Search.....' %}" required="">
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="sidebar-widget categories">
+                            <div class="sidebar-title"><h3>{% trans "Catagories" %}</h3></div>
+
+                            <ul class="cat-list">
+                            {% for category in categories %}
+                                <li><a href="{% url 'blog:post_by_category' category.slug %}">{{category.name}} <span>{{category.post_count}}</span></a></li>
+                            {% endfor %}
+                            </ul>
+
+                        </div>
+
+                         <!-- Latest News -->
+                        <div class="sidebar-widget latest-news">
+                            <div class="sidebar-title"><h3>{% trans "Recent Post" %}</h3></div>
+                            <div class="widget-content">
+                                {% for post in recent_posts %}
+                                <article class="post">
+                                    <div class="post-thumb"><a href="{{post.get_absolute_url}}"><img src="{{post.image.url}}" alt=""></a></div>
+                                    <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
+                                    <div class="post-info">{{post.author}}</div>
+                                </article>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="sidebar-widget tags">
+                            <div class="sidebar-title"><h3>{% trans "Keywords" %}</h3></div>
+                             {% for tag in tags %}
+                            <ul class="tag-list clearfix">
+                                <li><a href="#">{{tag.name}}</a></li>
+                            </ul>
+                            {% endfor %}
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sidebar Container -->
+
+</div>
+
+{% endblock body %}
