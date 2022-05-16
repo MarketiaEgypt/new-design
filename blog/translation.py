@@ -12,7 +12,7 @@ class TagTranslationOptions(TranslationOptions):
 
 
 class PostTranslationOptions(TranslationOptions):
-    fields = ('author', 'title', 'description_one', 'description_two',)
+    fields = ('author', 'title', 'description_one', 'description_two','description_three','description_blockquote',)
 
 
 translator.register(Post, PostTranslationOptions)

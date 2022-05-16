@@ -3,20 +3,19 @@
 {% load i18n %}
 {% block body %}
 
-<div class="page-wrapper">
+<div class="page-wrapper
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
+            rtl
+            {% else %}
+            ltr
+            {% endif %}">
 
     <!--Page Title-->
-    <section class="page-title" style="background-image:url({% static 'img/new-design/english/blog/10.jpg' %});">
+    <section class="page-title">
         <div class="auto-container">
             <div class="inner-container clearfix">
-                <div class="title-box">
-                    <h1>News & Artical</h1>
-                    <span class="title">The Interior speak for themselves</span>
-                </div>
-                <ul class="bread-crumb clearfix">
-                    <li><a href="/">Home</a></li>
-                    <li>Blogs</li>
-                </ul>
+
             </div>
         </div>
     </section>
@@ -34,14 +33,14 @@
                         <div class="news-block-two wow fadeIn">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="#"><img src="{% static 'img/new-design/english/blog/blog-post-1.jpg' %}" alt=""></a></figure>
+                                    <figure class="image"><a href="#"><img src="{{post.image_list.url}}" alt=""></a></figure>
                                 </div>
                                 <div class="caption-box">
                                     <div class="inner">
                                         <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
                                         <ul class="info">
-                                            <li>06 June 2018,</li>
                                             <li><a href="{{post.get_absolute_url}}">{{post.created_at|date:"F j, Y"}}</a></li>
+                                            <li>{{post.author}}</li>
                                         </ul>
                                         <div class="text">{{post.description|safe}}</div>
                                     </div>
@@ -57,11 +56,11 @@
                         <ul class="clearfix">
                             {% if page_obj.has_previous %}
                             <li class="prev-post"><a href="?page={{ page_obj.previous_page_number }}">
-                                <span class="fas fa-long-arrow-alt-left"></span> Prev</a>
+                                <span class="fas fa-long-arrow-alt-left"></span> {% trans "Prev" %}</a>
                             </li>
                             {% else %}
                             <li class="prev-post disabled"><a href="#">
-                                <span class="fas fa-long-arrow-alt-left"></span> Prev</a>
+                                <span class="fas fa-long-arrow-alt-left"></span> {% trans "Prev" %}</a>
                             </li>
 
                             {% endif %}
@@ -77,11 +76,11 @@
 
                             {% if page_obj.has_next %}
                             <li class="next-post"><a href="?page={{ page_obj.next_page_number }}">
-                                <span class="fas fa-long-arrow-alt-right"></span> Next</a>
+                                <span class="fas fa-long-arrow-alt-right"></span> {% trans "Next" %}</a>
                             </li>
                             {% else %}
                             <li class="next-post disabled"><a href="#">
-                                <span class="fas fa-long-arrow-alt-right"></span> Next</a>
+                                <span class="fas fa-long-arrow-alt-right"></span> {% trans "Next" %}</a>
                             </li>
 
                             {% endif %}
@@ -111,7 +110,7 @@
 
                             <ul class="cat-list">
                             {% for category in categories %}
-                                <li><a href="{% url 'blog:post_by_category' category.slug %}">{{category.name}} <span>{{category.post_count}}</span></a></li>
+                                <li><a href="{% url 'blog:post_by_category' category.slug %}">{{category.name}} <span>({{category.post_count}})</span></a></li>
                             {% endfor %}
                             </ul>
 
