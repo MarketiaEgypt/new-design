@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-15 10:44+0200\n"
+"POT-Creation-Date: 2022-05-16 17:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1290,6 +1290,42 @@ msgstr "جميع الحقوق محفوظة"
 msgid "2022"
 msgstr ""
 
+#: templates/blog/post_detail.html:63
+msgid "Tags:"
+msgstr "الكلمات المفتاحية:"
+
+#: templates/blog/post_detail.html:73
+msgid "Share This:"
+msgstr "شارك المدونة:"
+
+#: templates/blog/post_detail.html:86
+msgid "Comments"
+msgstr "تعليقات:"
+
+#: templates/blog/post_list.html:59 templates/blog/post_list.html:63
+msgid "Prev"
+msgstr "السابق"
+
+#: templates/blog/post_list.html:79 templates/blog/post_list.html:83
+msgid "Next"
+msgstr "التالي"
+
+#: templates/blog/post_list.html:101
+msgid "Search....."
+msgstr "أبحث ....."
+
+#: templates/blog/post_list.html:109
+msgid "Catagories"
+msgstr "الأقسام"
+
+#: templates/blog/post_list.html:121
+msgid "Recent Post"
+msgstr "المقالات الاخيرة"
+
+#: templates/blog/post_list.html:135
+msgid "Keywords"
+msgstr "كلمات مفتاحية"
+
 #: templates/home/index.html:13
 msgid "Let us take your business"
 msgstr "طور من ظهورك الرقمي"
@@ -1737,3 +1773,13 @@ msgstr "تواصل معنا واعرف كيف يمكن للتسويق الرقم
 #: templates/home/index.html:523
 msgid " scale your business."
 msgstr "توسيع نطاق عملك."
+
+#: templates/home/index.html:548
+#, fuzzy
+#| msgid "Blog"
+msgid "Blogs"
+msgstr "المدونة"
+
+#: templates/home/index.html:549
+msgid "News & Articals"
+msgstr ""
