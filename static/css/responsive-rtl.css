@@ -1277,6 +1277,9 @@
 	.contactud-sec{
 		padding-top: 0% !important;
 	}
+	.contact-inside-title{
+		margin-top: 10%;
+	}
 	.contactud-sec .contact-inside-title p{
 		margin: 8% 0% 2% 0%;
 		font-size: 16px;
@@ -1468,7 +1471,7 @@
 	.news-section{
 		text-align: center;
     	margin: 0 auto;
-		padding: 100px 0 20px;
+		padding: 16px 0 20px 0px !important;
 	}
 	.news-block .image-box{
 		width: 100%;
@@ -1483,6 +1486,7 @@
 	}
 	.news-section .sec-title{
 		text-align: center;
+		margin-bottom: 10px;
 	}
 	.news-block .image-box{
 		margin: 0 auto;
