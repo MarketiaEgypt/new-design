@@ -1787,13 +1787,13 @@ Start Where we are map style
   font-size: 24px;
 }
 .begin-inside-line .begin-three .icon p{
-  color: #234fec;
-  border: 1px solid #234fec;
+  color: #583978;
+  border: 1px solid #583978;
 }
 
 .begin-inside-line .begin-four .icon p{
-  color: #234fec;
-  border: 1px solid #234fec;
+  color: #583978;
+  border: 1px solid #583978;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left -100px bottom -100px;
@@ -2510,7 +2510,7 @@ Start Contact and footer style
 }
 .responsive{
   margin: 0 auto;
-  background-image: url(../img/footer.jpg);
+  background-image: url(../img/footer.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
