@@ -3766,13 +3766,13 @@ Close Home two style
 }
 
 .sec-title h2{
-	position: relative;
-	display: block;
-	font-size: 30px;
-	line-height: 40px;
-	color: #2f2f2f;
-	font-weight: 500;
-	padding: 16px 0;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  line-height: 40px;
+  color: #9161c3;
+  font-weight: 600;
+  padding: 16px 0;
 }
 .auto-container{
 	position:static;
@@ -3916,16 +3916,6 @@ Close Home two style
 	text-transform: uppercase;
 	opacity: .10;
 	font-family: "Arimo", sans-serif;
-}
-
-.sec-title h2{
-	position: relative;
-	display: block;
-	font-size: 30px;
-	line-height: 40px;
-	color: #2f2f2f;
-	font-weight: 500;
-	padding: 16px 0;
 }
 
 

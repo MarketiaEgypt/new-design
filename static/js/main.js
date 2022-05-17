@@ -130,38 +130,6 @@ $('.slider-nav').slick({
   /*=========================== slick slider testimonial ===========================*/
 
 
-
-/*=========================== video player active ===========================*/
-/*video popup*/
-$("#videos").videoPopup({
-      autoplay: 1,
-      controlsColor: 'white',
-      showVideoInformations: 0,
-      width: 1000,
-      customOptions: {
-          rel: 0,
-          end: 60
-      }
-});
-  //======================================
-    //========== venobox video ============
-    //======================================
-    $(function(){
-        $('.venobox').venobox();
-    });
-/*=========================== video player active ===========================*/
-
-
-/*=========================== counter js active ===========================*/
-
-    $('.counter').counterUp({
-        delay: 4,
-        time: 4000
-    });
-
-/*=========================== close counter js active ===========================*/
-
-
 /*=========================== gallery js ===========================*/
 var owls = $("#gallerys-owl");
     owls.owlCarousel({

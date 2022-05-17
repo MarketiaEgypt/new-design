@@ -271,6 +271,8 @@ menue style
   /* margin-top: -6px; */
 }
 .navbar-brand .logo-default {
+  max-width: 80%;
+  margin-top: 3%;
     /* position: inherit !important;
     left: unset !important;
     max-width: 100%;
@@ -2314,6 +2316,7 @@ Start Download apps style
   /*margin-top: 7% !important;*/
   margin-bottom: 5% !important;
   position: relative;
+  padding-top: 0px !important;
 }
 .download-app-sec:before{
   content: '';
@@ -3838,8 +3841,8 @@ Close Home two style
 	display: block;
 	font-size: 30px;
 	line-height: 40px;
-	color: #2f2f2f;
-	font-weight: 500;
+	color: #9161c3;
+	font-weight: 600;
 	padding: 16px 0;
 }
 .auto-container{
