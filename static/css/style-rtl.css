@@ -308,8 +308,12 @@ menue style
    margin-right: 0% !important; */
   /* width: 12% !important; */
   line-height: 0;
+  margin-right: -4rem !important;
 }
 .navbar-brand .logo-default{
+  max-width: 80%;
+  margin-top: 3%;
+  /* margin-right: -5%; */
     /* position: inherit !important;
     left: unset !important;
     max-width: 100%;
@@ -392,7 +396,7 @@ Start Banner style
   position: relative;
   /* z-index: 9; */
   overflow: hidden;
-  background-image: url(../img/new-design/arabic/rocket-right.gif);
+  background-image: url(../img/new-design/arabic/banner1-rtl.webp);
   background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;

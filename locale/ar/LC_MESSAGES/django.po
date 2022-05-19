@@ -1240,7 +1240,7 @@ msgstr ""
 
 #: templates/base.html:15
 msgid "Marketia for Business Solutions"
-msgstr "ماركيتيا لحلول الأعمال"
+msgstr "ماركيتيا فور بيزنس سوليوشن"
 
 #: templates/base.html:111
 msgid "Home"

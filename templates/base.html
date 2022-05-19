@@ -29,8 +29,6 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min-rtl.css' %}">
     {% endif %}
 
-    <!--reset css-->
-    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}"> -->
     <!--main style-->
     <link rel="stylesheet" type="text/css" href="{% static 'css/uni-style.css' %}">
     {% get_current_language as LANGUAGE_CODE %}
@@ -51,8 +49,7 @@
     {% else %}
         <link rel="stylesheet" href="{% static 'css/venobox-rtl.css' %}">
     {% endif %}
-    <!--owl slider-->
-    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.min.css' %}"/> -->
+
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'en' %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}"/>
@@ -98,9 +95,9 @@
             <a class="navbar-brand" href="/">
             {% get_current_language as LANGUAGE_CODE %}
             {% if LANGUAGE_CODE == 'en' %}
-                <img src="{% static 'img/new-image/LOGO-new.webp' %}" alt="logo" class="logo-default" loading="lazy">
+                <img src="{% static 'img/new-image/LOGO-ltr.webp' %}" alt="logo" class="logo-default" loading="lazy">
             {% else %}
-                <img src="{% static 'img/new-image/LOGO-rtl.png' %}" alt="logo" class="logo-default" loading="lazy">
+                <img src="{% static 'img/new-image/LOGO-rtl.webp' %}" alt="logo" class="logo-default" loading="lazy">
             {% endif %}
             </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xeronav">
@@ -214,22 +211,15 @@
     <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
     <!--bootstrap v4 js-->
     <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
-    <!--popper js-->
-    <!-- <script src="{% static 'js/vendor/popper.min.js' %}"></script> -->
-    <!--video popup-->
-    <!-- <script src="{% static 'js/vendor/video.popup.js' %}"></script> -->
 
-    <!-- <script src="{% static 'js/venobox.min.js' %}"></script> -->
     <!--slick slider-->
     <script defer src="{% static 'js/vendor/slick-min.js' %}"></script>
     <!-- Wow js -->
     <script src="{% static 'lib/wow/wow.min.js' %}"></script>
-    <!-- counter js -->
-    <!-- <script src="{% static 'js/vendor/counter.js' %}"></script> -->
+
     <!--owl js-->
     <script src="{% static 'js/vendor/owl-carousel.js' %}"></script>
-    <!--easing js-->
-    <!-- <script src="{% static 'js/vendor/easing.js' %}"></script> -->
+
     <!--main script-->
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'ar' %}

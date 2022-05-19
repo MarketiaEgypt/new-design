@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1000px) {
 	.navbar-brand {
 		/* width: 36% !important; */
-		margin-left: 0% !important;
+		margin-right: 0% !important;
 	}
 }
 /* @media only screen and (min-width: 1200px) {
@@ -1017,7 +1017,8 @@
 
 	/* nav */
 	.navbar .navbar-nav{
-		margin-right: 0%!important;
+		/* margin-right: 0%!important; */
+		margin: 0% 8% 3% 0% !important;
 	}
 	nav .navbar-nav {
 		background: #b979e6;
@@ -1085,7 +1086,8 @@
 	}
 	.navbar.navbar-expand-lg.active_sc {
 		background-color: #fff;
-		padding: 15px!important;
+		/* padding: 15px!important; */
+		padding: 0px 15px 0px 15px !important;
 	}
 	.navbar.navbar-expand-lg.active_sc:hover {
 		background-color: #fff;
@@ -1326,6 +1328,9 @@
 
 	.amazing-feature-sec{
 		padding: 8% 0% 0% 0% !important;
+	}
+	.amazing-feature-sec .single-feature{
+		/* padding-left: 0% !important; */
 	}
 	.amazing-feature-sec .title{
 		padding-bottom: 6%;
