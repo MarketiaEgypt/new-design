@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1000px) {
 	.navbar-brand {
 		/* width: 36% !important; */
-		margin-right: -9% !important;
+		margin-right: -10% !important;
 	}
 }
 /* @media only screen and (min-width: 1200px) {
@@ -1018,7 +1018,7 @@
 	/* nav */
 	.navbar .navbar-nav{
 		/* margin-right: 0%!important; */
-		margin: 0% 8% 3% 0% !important;
+		margin: 0% 0% 3% 0% !important;
 	}
 	nav .navbar-nav {
 		background: #b979e6;
