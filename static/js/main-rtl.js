@@ -203,3 +203,8 @@ $(".slider").owlCarousel({
     }
 
 });
+
+$(document).ready(function () {
+  let exist_script = $(".append-after-script");
+  exist_script.after('<script src="https://apps.elfsight.com/p/platform.js" defer></script>');
+})

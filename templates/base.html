@@ -85,6 +85,10 @@
         <link rel="stylesheet" href="{% static 'css/responsive-rtl.css' %}">
     {% endif %}
 
+        <!--modernizr-->
+    <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script>
+<!--    <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
+    <div class="elfsight-app-90298383-8ed9-41fd-8413-dd05e89dc7dd"></div>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 <!--    <div class="se-pre-con"></div>-->
@@ -97,7 +101,7 @@
             {% if LANGUAGE_CODE == 'en' %}
                 <img src="{% static 'img/new-image/LOGO-ltr.webp' %}" alt="logo" class="logo-default" loading="lazy">
             {% else %}
-                <img src="{% static 'img/new-image/LOGO-rtl.webp' %}" alt="logo" class="logo-default" loading="lazy">
+                <img src="{% static 'img/new-image/LOGO-ltr.webp' %}" alt="logo" class="logo-default" loading="lazy">
             {% endif %}
             </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xeronav">

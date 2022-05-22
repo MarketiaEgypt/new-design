@@ -195,7 +195,7 @@ menue style
 }
 
 .navbar.navbar-expand-lg.active_sc .navbar-brand{
-  margin-right: 0% !important;
+  margin-left: 0% !important;
   margin-top: 1% !important;
   line-height: 1;
 }
@@ -308,12 +308,12 @@ menue style
    margin-right: 0% !important; */
   /* width: 12% !important; */
   line-height: 0;
-  margin-right: -3rem !important;
+  margin-right: -4rem !important;
 }
 .navbar-brand .logo-default{
   max-width: 80%;
   margin-top: 3%;
-  /* margin-right: -5%; */
+  margin-right: 30%;
     /* position: inherit !important;
     left: unset !important;
     max-width: 100%;
@@ -4411,4 +4411,9 @@ Close Home two style
 	line-height: 1.2em;
 	color: #222222;
 	font-weight: 500;
+}
+
+.gFMxIq{
+  right: auto !important; 
+  left: 0 !important;
 }

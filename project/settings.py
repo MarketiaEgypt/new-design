@@ -123,7 +123,7 @@ MODELTRANSLATION_LANGUAGES = ('ar', 'en')
 
 MODELTRANSLATION_TRANSLATION_FILES = (
     'Marketia.translation',
-    # 'blog.translation',
+    'blog.translation',
 )
 
 LOCALE_PATHS = (
