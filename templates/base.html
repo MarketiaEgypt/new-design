@@ -29,6 +29,8 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min-rtl.css' %}">
     {% endif %}
 
+    <!--reset css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
     <!--main style-->
     <link rel="stylesheet" type="text/css" href="{% static 'css/uni-style.css' %}">
     {% get_current_language as LANGUAGE_CODE %}
@@ -109,27 +111,27 @@
             </button>
             <div class="collapse navbar-collapse" id="xeronav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"> <a class="nav-link active" href="#homes">{% trans "Home" %}</a>
+                    <li class="nav-item"> <a class="nav-link active" href="/">{% trans "Home" %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#services_id">{% trans "Services" %}</a>
+                        <a class="nav-link" href="/#services_id">{% trans "Services" %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#digital_id">{% trans "Digital Marketing" %}</a>
+                        <a class="nav-link" href="/#digital_id">{% trans "Digital Marketing" %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#ecommerce_id">{% trans "E-Commerce" %}</a>
+                        <a class="nav-link" href="/#ecommerce_id">{% trans "E-Commerce" %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#web_id">{% trans "Web development" %}</a>
+                        <a class="nav-link" href="/#web_id">{% trans "Web development" %}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#about_id">{% trans "About us" %}</a>
+                        <a class="nav-link" href="/#about_id">{% trans "About us" %}</a>
                     </li>
 
                     <li class="nav-item">
@@ -137,7 +139,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact_id">{% trans "contact us" %}</a>
+                        <a class="nav-link" href="/#contact_id">{% trans "contact us" %}</a>
                     </li>
                     <li class="nav-item">
                         {% get_current_language as LANGUAGE_CODE %}
@@ -210,26 +212,34 @@
 
       <!--modernizr-->
     <!-- <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script> -->
-
     <!--jquery-->
+    <!-- <script src="{% static 'js/jquery.js' %}"></script> -->
     <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
     <!--bootstrap v4 js-->
     <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <!--popper js-->
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <!--video popup-->
+    <script src="{% static 'js/vendor/video.popup.js' %}"></script>
 
+    <script src="{% static 'js/venobox.min.js' %}"></script>    
     <!--slick slider-->
     <script defer src="{% static 'js/vendor/slick-min.js' %}"></script>
     <!-- Wow js -->
     <script src="{% static 'lib/wow/wow.min.js' %}"></script>
-
+    <!-- counter js -->
+    <script src="{% static 'js/vendor/counter.js' %}"></script>
     <!--owl js-->
     <script src="{% static 'js/vendor/owl-carousel.js' %}"></script>
+    <!--easing js-->
+    <script src="{% static 'js/vendor/easing.js' %}"></script>
 
     <!--main script-->
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'ar' %}
-        <script src="{% static 'js/main-rtl.js' %}"></script>
-    {% else %}
+    {% if LANGUAGE_CODE == 'en' %}
         <script src="{% static 'js/main.js' %}"></script>
+    {% else %}
+        <script src="{% static 'js/main-rtl.js' %}"></script>
     {% endif %}
 </body>
 </html>

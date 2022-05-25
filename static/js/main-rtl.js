@@ -25,47 +25,69 @@ $(function($) {
   /*=========================== click to section ===========================*/
  //smooth scrool
    // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
+  //  $('body').scrollspy({target: ".navbar", offset: 50});   
 
-  // Add smooth scrolling on all links inside the navbar
-  $("#xeronav a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+  //  // Add smooth scrolling on all links inside the navbar
+  //  $("#xeronav a").on('click', function(event) {
+  //    // Make sure this.hash has a value before overriding default behavior
+  //    if (this.hash !== "") {
+  //      // Prevent default anchor click behavior
+  //      event.preventDefault();
+ 
+  //      // Store hash
+  //      var hash = this.hash;
+ 
+  //      // Using jQuery's animate() method to add smooth page scroll
+  //      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  //      $('html, body').animate({
+  //        scrollTop: $(hash).offset().top
+  //      }, 800, function(){
+    
+  //        // Add hash (#) to URL when done scrolling (default click behavior)
+  //        window.location.hash = hash;
+  //      });
+  //    }  // End if
+  //  });
 
-      // Store hash
-      var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }  // End if
-  });
-  /*=========================== click to section ===========================*/
-
+   	//Update Header Style and Scroll to Top
+	// function headerStyle() {
+	// 	if($('#xeronav a').length){
+	// 		var windowpos = $(window).scrollTop();
+	// 		var siteHeader = $('#xeronav a');
+	// 		var sticky_header = $('#xeronav.sticky-header, .header-style-two .outer-container, .header-style-four .header-lower, .header-style-six .outer-container');
+	// 		var scrollLink = $('.scroll-to-top');
+	// 		if (windowpos > 55) {
+	// 			siteHeader.addClass('fixed-header');
+	// 			sticky_header.addClass("animated slideInDown");
+	// 			scrollLink.fadeIn(300);
+	// 		} else {
+	// 			siteHeader.removeClass('fixed-header');
+	// 			sticky_header.removeClass("animated slideInDown");
+	// 			scrollLink.fadeOut(300);
+	// 		}
+	// 	}
+	// }
+	
+	// headerStyle();
+   /*=========================== click to section ===========================*/
+ 
  
 
     // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
-  });
-
-
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+        $('.back-to-top').fadeIn('slow');
+      } else {
+        $('.back-to-top').fadeOut('slow');
+      }
+    });
+    $('.back-to-top').click(function(){
+      $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+      return false;
+    });
+  
+  
   /*=========================== preloader ===========================*/
   // Wait for window load
   // $(window).on('load', function() {
@@ -84,6 +106,35 @@ $(function($) {
   
   // Initiate the wowjs animation library
   new WOW().init();
+/*=========================== video player active ===========================*/
+/*video popup*/
+$("#videos").videoPopup({
+  autoplay: 1,
+  controlsColor: 'white',
+  showVideoInformations: 0,
+  width: 1000,
+  customOptions: {
+      rel: 0,
+      end: 60
+  }
+});
+//======================================
+//========== venobox video ============
+//======================================
+$(function(){
+    $('.venobox').venobox();
+});
+/*=========================== video player active ===========================*/
+
+
+/*=========================== counter js active ===========================*/
+
+$('.counter').counterUp({
+    delay: 4,
+    time: 4000
+});
+
+/*=========================== close counter js active ===========================*/
 
   /*=========================== slick slider testimonial ===========================*/
   
