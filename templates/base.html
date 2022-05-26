@@ -26,37 +26,37 @@
     {% if LANGUAGE_CODE == 'en' %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     {% else %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min-rtl.css' %}">
+        <link rel="preload" type="text/css" href="{% static 'css/bootstrap.min-rtl.css' %}" as="style" onload="this.rel='stylesheet'">
     {% endif %}
 
     <!--reset css-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+    <link rel="preload" type="text/css" href="{% static 'css/normalize.css' %}" as="style" onload="this.rel='stylesheet'">
     <!--main style-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/uni-style.css' %}">
+    <link rel="preload" type="text/css" href="{% static 'css/uni-style.css' %}" as="style" onload="this.rel='stylesheet'">
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'en' %}
         <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}" />
     {% else %}
-        <link type="text/css" rel="stylesheet" href="{% static 'css/style-rtl.css'%}" />
+        <link type="text/css" rel="preload" href="{% static 'css/style-rtl.css'%}" as="style" onload="this.rel='stylesheet'" />
     {% endif %}
 
     <!--slick slider-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}"/>
+    <link rel="preload" type="text/css" href="{% static 'css/slick.css' %}" as="style" onload="this.rel='stylesheet'"/>
     <!-- animate css -->
-    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="preload" as="style" onload="this.rel='stylesheet'">
     <!-- venobox -->
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'en' %}
         <link rel="stylesheet" href="{% static 'css/venobox.css' %}">
     {% else %}
-        <link rel="stylesheet" href="{% static 'css/venobox-rtl.css' %}">
+        <link rel="preload" href="{% static 'css/venobox-rtl.css' %}" as="style" onload="this.rel='stylesheet'"/>
     {% endif %}
 
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'en' %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}"/>
     {% else %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min-rtl.css' %}"/>
+        <link rel="preload" type="text/css" href="{% static 'css/owl.carousel.min-rtl.css' %}" as="style" onload="this.rel='stylesheet'"/>
     {% endif %}
 
 
@@ -88,7 +88,7 @@
     {% endif %}
 
         <!--modernizr-->
-    <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script>
+    <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}" ></script>
 <!--    <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
     <div class="elfsight-app-90298383-8ed9-41fd-8413-dd05e89dc7dd"></div>
 </head>
