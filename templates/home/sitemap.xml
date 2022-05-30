@@ -1,57 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-  <loc>http://marketiaegy.com/</loc>
+  <loc>https://marketiaegy.com/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/#services_id</loc>
+  <loc>https://marketiaegy.com/blog/post_list/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/#digital_id</loc>
+  <loc>https://marketiaegy.com/blog/how-do-you-get-smart-digital-marketing/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/#ecommerce_id</loc>
+  <loc>https://marketiaegy.com/blog/how-can-a-marketing-company-help-you-grow-your-business/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/#web_id</loc>
+  <loc>https://marketiaegy.com/blog/social-media-optimization-techniques/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/#about_id</loc>
+  <loc>https://marketiaegy.com/blog/category/business/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/blog/post_list/</loc>
+  <loc>https://marketiaegy.com/blog/category/digital-marketing/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/#contact_id</loc>
+  <loc>https://marketiaegy.com/blog/category/e-commerce/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/blog/how-do-you-get-smart-digital-marketing/</loc>
+  <loc>https://marketiaegy.com/blog/category/seo/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://marketiaegy.com/blog/how-can-a-marketing-company-help-you-grow-your-business/</loc>
+  <loc>https://marketiaegy.com/blog/category/technologies/</loc>
+  <lastmod>2022-05-30T15:33:03+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
-<url>
-  <loc>http://marketiaegy.com/blog/social-media-optimization-techniques/</loc>
-</url>
-<url>
-  <loc>http://marketiaegy.com/tel:+20 103 227 0919</loc>
-</url>
-<url>
-  <loc>http://marketiaegy.com/blog/category/business/</loc>
-</url>
-<url>
-  <loc>http://marketiaegy.com/blog/category/digital-marketing/</loc>
-</url>
-<url>
-  <loc>http://marketiaegy.com/blog/category/e-commerce/</loc>
-</url>
-<url>
-  <loc>http://marketiaegy.com/blog/category/seo/</loc>
-</url>
-<url>
-  <loc>http://marketiaegy.com/blog/category/technologies/</loc>
-</url>
-<url>
-  <loc></loc>
-</url>
+
+
 </urlset>
