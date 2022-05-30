@@ -37,7 +37,7 @@
                 <div class="col-md-6 col-xl-3 col-lg-3 services-rtl">
                     <div class="single-about">
                         <div class="img">
-                            <img src="{{services.image.url}}" loading="lazy">
+                            <img src="{{services.image.url}}" alt="services-image" loading="lazy">
                         </div>
                             <h4>{{services.name}}</h4>
                             <p>{{services.description}}</p>
@@ -58,7 +58,7 @@
                 {% for services in services.all %}
                 <div class="card">
                     <div class="img">
-                        <img src="{{services.image.url}}" alt="" loading="lazy" />
+                        <img src="{{services.image.url}}" alt="services-image" loading="lazy" />
                     </div>
                     <div class="content">
                            <div class="title card-font">{{services.name}}</div>
@@ -116,9 +116,9 @@
                             <div class="feature-image">
                             {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/1.webp' %}"  alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/english/1.webp' %}"  alt="Digital Marketing" loading="lazy"/>
                             {% else %}
-                                <img src="{% static 'img/new-design/arabic/1.webp' %}"  alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/arabic/1.webp' %}"  alt="Digital Marketing" loading="lazy"/>
                             {% endif %}
                             </div>
                         </div>
@@ -167,9 +167,9 @@
                             <div class="feature-image">
                             {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/2.webp' %}" alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/english/2.webp' %}" alt="SEO Marketia" loading="lazy"/>
                             {% else %}  
-                                <img src="{% static 'img/new-design/arabic/2.webp' %}" alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/arabic/2.webp' %}" alt="SEO Marketia" loading="lazy"/>
                             {% endif %}
                             </div>
                         </div>
@@ -182,9 +182,9 @@
                             <div class="feature-image">
                              {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/3.webp' %}" alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/english/3.webp' %}" alt="PPC Ads" loading="lazy"/>
                             {% else %}
-                                <img src="{% static 'img/new-design/arabic/3.webp' %}"  alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/arabic/3.webp' %}"  alt="PPC Ads" loading="lazy"/>
                             {% endif %}
                             </div>
                         </div>
@@ -226,9 +226,9 @@
                             <div class="feature-image">
                              {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}
-                                <img src="{% static 'img/new-design/english/4.webp' %}" alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/english/4.webp' %}" alt="Services solutions" loading="lazy"/>
                             {% else %}
-                                <img src="{% static 'img/new-design/arabic/4.webp' %}"  alt="" loading="lazy"/>
+                                <img src="{% static 'img/new-design/arabic/4.webp' %}"  alt="Services solution" loading="lazy"/>
                             {% endif %}
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                                 <div class="begin-one">
                                     <div class="icon">
                                         <!-- <i class="fas fa-clipboard-list"></i> -->
-                                        <img src="{% static 'img/icon/planing.webp' %}"  loading="lazy"/>
+                                        <img src="{% static 'img/icon/planing.webp' %}"  alt="Planing Build Ecommerce Marketia" loading="lazy"/>
                                         <p>1</p>
                                     </div>
                                     <h5>{% trans "Planning" %}</h5>
@@ -272,7 +272,7 @@
                                 <div class="begin-two">
                                     <div class="icon">
                                         <!-- <i class="fas fa-image"></i> -->
-                                        <img src="{% static 'img/icon/design.webp' %}" loading="lazy"/>
+                                        <img src="{% static 'img/icon/design.webp' %}" alt="Design Ecommerce Marketia" loading="lazy"/>
                                         <p>2</p>
                                     </div>
                                      <h5>{% trans "Design" %}</h5>
@@ -282,7 +282,7 @@
                                 <div class="begin-three">
                                     <div class="icon">
                                         <!-- <i class="fas fa-cogs mt-1"></i> -->
-                                        <img src="{% static 'img/icon/settings.webp' %}" loading="lazy"/>
+                                        <img src="{% static 'img/icon/settings.webp' %}" alt="Settings Ecommerce Marketia" loading="lazy"/>
                                         <p>3</p>
                                     </div>
                                     <h5>{% trans "Customization" %}</h5>
@@ -292,7 +292,7 @@
                                 <div class="begin-four">
                                     <div class="icon">
                                         <!-- <i class="fas fa-rocket mt-2"></i> -->
-                                        <img src="{% static 'img/icon/launch.webp' %}" loading="lazy"/>
+                                        <img src="{% static 'img/icon/launch.webp' %}" alt="Launch Ecommerce Marketia" loading="lazy"/>
                                         <p>4</p>
                                     </div>
                                     <h5>{% trans "Launch" %}</h5>
@@ -302,9 +302,9 @@
                                 <div class="begin-responsive">
                                     {% get_current_language as LANGUAGE_CODE %}
                                      {% if LANGUAGE_CODE == 'en' %}
-                                        <img class="line-shape" src="{% static 'img/new-design/english/steps-ecommerce-en.webp' %}" alt="" loading="lazy"/>
+                                        <img class="line-shape" src="{% static 'img/new-design/english/steps-ecommerce-en.webp' %}" alt="Steps Ecommerce" loading="lazy"/>
                                     {% else %}
-                                        <img class="line-shape" src="{% static 'img/new-design/arabic/steps-ecommerce-ar.webp' %}" alt="" loading="lazy"/>
+                                        <img class="line-shape" src="{% static 'img/new-design/arabic/steps-ecommerce-ar.webp' %}" alt="Steps Ecommerce" loading="lazy"/>
                                     {% endif %}
 
                                 </div>
@@ -313,9 +313,9 @@
                         </div>
                         {% get_current_language as LANGUAGE_CODE %}
                         {% if LANGUAGE_CODE == 'en' %}
-                            <img class="line-shape" src="{% static 'img/icon/line.webp' %}" alt="" loading="lazy"/>
+                            <img class="line-shape" src="{% static 'img/icon/line.webp' %}" alt="Line Steps" loading="lazy"/>
                         {% else %}
-                            <img class="line-shape" src="{% static 'img/icon/line-rtl.webp' %}" alt="" loading="lazy"/>
+                            <img class="line-shape" src="{% static 'img/icon/line-rtl.webp' %}" alt="Line Steps" loading="lazy"/>
                         {% endif %}    
                     </div><!--/.begin-inside-line-->
 
@@ -337,7 +337,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6 image">
-                                    <img src="{% static 'img//new-design/english/online-shopping.webp' %}" alt="" loading="lazy"/>
+                                    <img src="{% static 'img//new-design/english/online-shopping.webp' %}" alt="Online Shopping" loading="lazy"/>
                                 </div>
                             </div>
                         </div>
@@ -357,7 +357,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6 image">
-                                    <img src="{% static 'img//new-design/arabic/ecommerce-rtl.webp' %}" alt="" />
+                                    <img src="{% static 'img//new-design/arabic/ecommerce-rtl.webp' %}" alt="Online Shopping" />
                                 </div>
                             </div>
                         </div>
@@ -378,9 +378,9 @@
                     <div class="download-img-prm">
                         {% get_current_language as LANGUAGE_CODE %}
                         {% if LANGUAGE_CODE == 'en' %}
-                            <img src="{% static 'img/new-design/english/website-en.webp' %}" alt="" loading="lazy"/>
+                            <img src="{% static 'img/new-design/english/website-en.webp' %}" alt="Web Design" loading="lazy"/>
                         {% else %}
-                            <img src="{% static 'img/new-design/arabic/website-ar.webp' %}" alt="" loading="lazy"/>
+                            <img src="{% static 'img/new-design/arabic/website-ar.webp' %}" alt="Web Design" loading="lazy"/>
                         {% endif %}
                     </div>
                 </div>
@@ -453,9 +453,9 @@
                     <div class="small-dvc-img">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% if LANGUAGE_CODE == 'en' %}
-                        <img src="{% static 'img/new-design/english/custemer.webp' %}" alt="" loading="lazy"/>
+                        <img src="{% static 'img/new-design/english/custemer.webp' %}" alt="About Us Marketia" loading="lazy"/>
                     {% else %}    
-                        <img src="{% static 'img/new-design/arabic/custemer.webp' %}" alt="" loading="lazy"/>
+                        <img src="{% static 'img/new-design/arabic/custemer.webp' %}" alt="About Us Marketia" loading="lazy"/>
                     {% endif %}    
                     </div>
                 </div>
@@ -529,9 +529,9 @@
                     <div class="contact-right-img text-center">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% if LANGUAGE_CODE == 'en' %}
-                        <img src="{% static 'img/new-design/english/contact-us.webp' %}" alt=""/>
+                        <img src="{% static 'img/new-design/english/contact-us.webp' %}" alt="Contact Us Marketia"/>
                     {% else %}
-                        <img src="{% static 'img/new-design/arabic/contact-us.webp' %}" alt=""/>
+                        <img src="{% static 'img/new-design/arabic/contact-us.webp' %}" alt="Contact Us Marketia"/>
                     {% endif %}
                     </div>
                 </div>
@@ -554,7 +554,7 @@
                 <div class="news-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{post.image_home.url}}" alt=""></figure>
+                            <figure class="image"><img src="{{post.image_home.url}}" alt="Posts Marketia"></figure>
                             <div class="overlay-box"><a href="{{post.get_absolute_url}}"></a></div>
                         </div>
                         <div class="caption-box">

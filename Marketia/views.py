@@ -16,3 +16,11 @@ def home(request):
         'posts': posts,
         'services': services,
     })
+
+
+def sitemap(request):
+    return render(request, 'home/sitemap.xml')
+
+
+def robots(request):
+    return render(request, 'home/robots.txt')

@@ -5,14 +5,18 @@
 
 <head>
     <meta charset="utf-8">
-
+    <!-- Start SEO -->
+    <title>{% trans "Marketia for Business Solutions" %}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>{% trans "Marketia for Business Solutions" %}</title>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+    <meta name="description" content="Marketia is an Egyptian company working in the field of advanced technology, especially e-marketing, web design and e-stores">
+    <meta name="keywords" content="Stores - shop - online - commerce - electronic - cart - shopping  - websites - commercial site - website - Egypt - Saudi Arabia - service - post - payment-Company - Electronic - Services - Marketing - Content - Designs - Graphic - Video - Motion - Montage - Packages - Sponsored Ads - Campaigns">
+    {% else %}
+    <meta name="description" content="ماركيتيا شركة مصرية  تعمل في مجال التكنولوجيا المتطورة وبالأخص التسويق الإلكتروني وتصميم المواقع الإلكترونية والمتاجر الإلكترونية">
+    <meta name="keywords" content="متاجر- متجر - إلكتروني -تجارة - إلكترونية -سلة -تسوق -شوب -شوبنج -مواقع -موقع-تجاري-ويب- سايت -مصر -السعودية -خدمية -بوستات -دفع -شركة- تسويق- إلكترونية- خدمات -تسويقية-ماركتنج-محتوى -تصاميم -جرافيك -فيديو- موشن -مونتاج -باقات -إعلانات ممولة -حملات">
+    {% endif %}
     <!-- Standard Favicon -->
     <link rel="icon" href="{% static 'img/logo.webp' %}">
 
@@ -154,9 +158,9 @@
                                     style="border: none;background: none;">
                                         <p class="nav-link mt-xs-1 mt-sm-2 mt-md-2 mt-lg-0 mt-xl-0">
                                         {% if language.code == 'en' %}
-                                            <img src="https://img.icons8.com/color/40/000000/usa.png" style="margin-top: 4px;cursor: pointer;position: relative;" loading="lazy"/>
+                                            <img src="https://img.icons8.com/color/40/000000/usa.png" alt="usa-en-lang" style="margin-top: 4px;cursor: pointer;position: relative;" loading="lazy"/>
                                         {% else %}
-                                            <img src="https://img.icons8.com/color/40/000000/egypt.png" style="margin-top: 7px;cursor: pointer;position: relative;" loading="lazy"/>
+                                            <img src="https://img.icons8.com/color/40/000000/egypt.png" alt="saudi-arabia-lang" style="margin-top: 7px;cursor: pointer;position: relative;" loading="lazy"/>
                                         {% endif %}
 
                                         </p>
