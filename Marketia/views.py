@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.urls import reverse
 from django.views.generic import ListView
 from Marketia.models import Services
 # Create your views here.
@@ -20,8 +19,8 @@ def home(request):
 
 
 def sitemap(request):
-    return reverse(request, 'home/sitemap.xml')
+    return render(request, 'home/sitemap.xml')
 
 
 def robots(request):
-    return reverse(request, 'home/robots.txt')
+    return render(request, 'home/robots.txt')
