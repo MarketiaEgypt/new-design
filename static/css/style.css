@@ -1338,8 +1338,8 @@ Start Easy to begin style
 .begin-right-image .text h2{
     color: #5e4084 !important;
     font-size: 24px;
-    width: 800px;
-    margin-left: -14%;
+    /* width: 800px; */
+    /* margin-left: -14%; */
     font-weight: 900;
 }
 .begin-right-image .text .list{
