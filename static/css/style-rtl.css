@@ -181,7 +181,7 @@ menue style
 }
 .navbar.navbar-expand-lg.active_sc{
   background-color: #ac99bd;
-  padding: 0px !important;
+  padding: none !important;
   z-index: 999;
   transition: 0.3s all;
   /* padding-top: 20px !important;

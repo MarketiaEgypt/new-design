@@ -143,7 +143,7 @@ menue style
 .navbar.navbar-expand-lg.active_sc{
   background-color: #ac99bd;
   line-height: 0;
-  padding: 0px !important;
+  padding: none !important;
   z-index: 999;
   transition: 0.3s all;
   /* background-color: rgba(37,76,233,0.3); */
