@@ -211,7 +211,19 @@ $(".slider").owlCarousel({
 
 
 
-$(document).ready(function () {
-  let exist_script = $(".append-after-script");
-  exist_script.after('<script src="https://apps.elfsight.com/p/platform.js" defer></script>');
+$('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:5,
+  autoplay:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
 })

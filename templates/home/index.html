@@ -464,7 +464,6 @@
     </section>
     <!--About Us-->
 
-
     <!--Our Features-->
     <section class="hero-dwn-prmo" id="about_id">
         <div class="container">
@@ -506,6 +505,20 @@
         </div><!--/.container-->
     </section>
     <!--Our Features-->
+
+
+    <!--what client say-->
+    <div class="client">
+        <h3>{% trans "Success Partners" %}</h3>
+        <div class="brand-carousel section-padding owl-carousel">
+            {% for logo in clients %}
+              <div class="single-logo">
+                <img src="{{logo.image.url}}" alt="">
+              </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!--what client say-->
 
 
     <!--contact us-->

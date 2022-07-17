@@ -1118,6 +1118,9 @@
 	.single-dwn-prm .icon {
 		float: right;
 	}
+	.section-padding .single-logo{
+		margin-right: 30%;
+	}
 
 	/* small dvc */
 	.small-device-sltn {

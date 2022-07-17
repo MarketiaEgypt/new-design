@@ -1197,6 +1197,9 @@
 	.single-dwn-prm .icon {
 		float: none;
 	}
+	.section-padding .single-logo{
+		margin-right: 30%;
+	}
 	.contactud-sec{
 	    padding: 0px 0px 0px 0px !important;
 	}

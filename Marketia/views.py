@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView
-from Marketia.models import Services
+from Marketia.models import Services, ClientLogo
 # Create your views here.
 from blog.models import Post
 
@@ -11,10 +11,12 @@ from blog.models import Post
 
 def home(request):
     posts = Post.objects.all()[:3]
-    services = Services.objects.all
+    services = Services.objects.all()
+    clients = ClientLogo.objects.all()
     return render(request, 'home/index.html', {
         'posts': posts,
         'services': services,
+        'clients': clients
     })
 
 

@@ -140,14 +140,14 @@ $('.counter').counterUp({
 
   /*=========================== slick slider testimonial ===========================*/
   
-  
- $('.slider-single').slick({
+   $('.slider-single').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
   asNavFor: '.slider-nav',
-	 autoplay: false,
+  autoplay: false,
+  rtl: true,
 });
 $('.slider-nav').slick({
   slidesToShow: 5,
@@ -181,8 +181,6 @@ $('.slider-nav').slick({
     }]
 
 });
-		
-
   /*=========================== slick slider testimonial ===========================*/
 
 
@@ -257,7 +255,25 @@ $(".slider").owlCarousel({
 
 });
 
-$(document).ready(function () {
-  let exist_script = $(".append-after-script");
-  exist_script.after('<script src="https://apps.elfsight.com/p/platform.js" defer></script>');
+
+
+
+$('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:5,
+  autoplay:true,
+  rtl: true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
 })
+
+

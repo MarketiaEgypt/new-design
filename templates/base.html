@@ -47,7 +47,9 @@
     {% endif %}
 
     <!--slick slider-->
-    <link rel="preload" type="text/css" href="{% static 'css/slick.css' %}" as="style" onload="this.rel='stylesheet'"/>
+    <link rel="preload" type="text/css" href="{% static 'css/slick.css' %}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <!-- animate css -->
     <link href="{% static 'lib/animate/animate.min.css' %}" rel="preload" as="style" onload="this.rel='stylesheet'">
     <!-- venobox -->
@@ -93,9 +95,8 @@
         <link rel="stylesheet" href="{% static 'css/responsive-rtl.css' %}">
     {% endif %}
 
-<!--    <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
-<!--    <div class="elfsight-app-90298383-8ed9-41fd-8413-dd05e89dc7dd"></div>-->
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
    <div class="se-pre-con"></div>
 
@@ -218,7 +219,11 @@
       <!--modernizr-->
     <!-- <script class="append-after-script" src="{% static 'js/vendor/modernizr.js' %}"></script> -->
     <!--jquery-->
-    <!-- <script src="{% static 'js/jquery.js' %}"></script> -->
+<!--     <script src="{% static 'js/jquery.js' %}"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
     <!--bootstrap v4 js-->
     <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>

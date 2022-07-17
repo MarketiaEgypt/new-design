@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-17 10:36+0200\n"
+"POT-Creation-Date: 2022-07-17 11:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1238,55 +1238,55 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: templates/base.html:15
+#: templates/base.html:9
 msgid "Marketia for Business Solutions"
 msgstr "ماركيتيا فور بيزنس سوليوشن"
 
-#: templates/base.html:111
+#: templates/base.html:119
 msgid "Home"
 msgstr "الرئيسية"
 
-#: templates/base.html:115
+#: templates/base.html:123
 msgid "Services"
 msgstr "خدماتنا"
 
-#: templates/base.html:119
+#: templates/base.html:127
 msgid "Digital Marketing"
 msgstr "التسويق الإلكتروني"
 
-#: templates/base.html:123
+#: templates/base.html:131
 msgid "E-Commerce"
 msgstr "التجارة الإلكترونية"
 
-#: templates/base.html:127
+#: templates/base.html:135
 msgid "Web development"
 msgstr "المواقع الإلكترونية"
 
-#: templates/base.html:131
+#: templates/base.html:139
 msgid "About us"
 msgstr "عن ماركيتيا"
 
-#: templates/base.html:135
+#: templates/base.html:143
 msgid "Blog"
 msgstr "المدونة"
 
-#: templates/base.html:139
+#: templates/base.html:147
 msgid "contact us"
 msgstr "تواصل معنا"
 
-#: templates/base.html:182
+#: templates/base.html:189
 msgid "696 El-Horeya Road, Loran, Alexandria, Egypt"
 msgstr "696 طريق الحرية - لوران - الإسكندرية - مصر"
 
-#: templates/base.html:183
+#: templates/base.html:190
 msgid "+20 103 227 0919"
 msgstr "0919 227 103 20+"
 
-#: templates/base.html:196
+#: templates/base.html:203
 msgid "All Rights Reserved"
 msgstr "جميع الحقوق محفوظة"
 
-#: templates/base.html:196
+#: templates/base.html:203
 msgid "2022"
 msgstr ""
 
@@ -1721,63 +1721,67 @@ msgstr " "
 msgid "achieve the desired results and customer satisfaction."
 msgstr " المرجوة ونيل رضا العملاء."
 
-#: templates/home/index.html:478
+#: templates/home/index.html:477
 msgid "Identify Customers"
 msgstr "تحديد الاحتياجات"
 
-#: templates/home/index.html:479
+#: templates/home/index.html:478
 msgid "Identifying customers needs"
 msgstr "تحديد احتياجات العملاء"
 
-#: templates/home/index.html:489
+#: templates/home/index.html:488
 msgid "Satisfy Customers"
 msgstr "الاستهداف الصحيح"
 
-#: templates/home/index.html:490
+#: templates/home/index.html:489
 msgid "Targeting the right people"
 msgstr "دراسة سلوك العملاء"
 
-#: templates/home/index.html:500
+#: templates/home/index.html:499
 msgid "Retain Customers"
 msgstr "اكتساب الولاء"
 
-#: templates/home/index.html:501
+#: templates/home/index.html:500
 msgid "Earning customers loyalty"
 msgstr "اكتساب ولاء العملاء"
 
-#: templates/home/index.html:517
+#: templates/home/index.html:512
+msgid "Success Partners"
+msgstr "شركاء النجاح"
+
+#: templates/home/index.html:530
 msgid "Let’s get the conversation started."
 msgstr "يمكنك التواصل مع فريقنا .. الآن"
 
-#: templates/home/index.html:518
+#: templates/home/index.html:531
 msgid ""
 "Our strength is in bringing together creative skills, operational systems,"
 msgstr "تكمن قوتنا في الجمع بين المهارات الإبداعية وأنظمة التشغيل"
 
-#: templates/home/index.html:519
+#: templates/home/index.html:532
 msgid ""
 " and processes. We secure technology to translate our clients’ ideas and "
 "strategies"
 msgstr " والعمليات. نحن نستخدم التكنولوجيا لترجمة أفكار عملائنا واستراتيجياتهم"
 
-#: templates/home/index.html:520
+#: templates/home/index.html:533
 msgid " into marketing collateral, and a broad range of other media output."
 msgstr "إلى خطط تسويقية ومجموعة واسعة من التصميمات والأفكار."
 
-#: templates/home/index.html:522
+#: templates/home/index.html:535
 msgid ""
 "Get in touch with us and know how can digital marketing and creative work "
 "can help"
 msgstr "تواصل معنا واعرف كيف يمكن للتسويق الرقمي والعمل الإبداعي أن يساعدا في"
 
-#: templates/home/index.html:523
+#: templates/home/index.html:536
 msgid " scale your business."
 msgstr "توسيع نطاق عملك."
 
-#: templates/home/index.html:548
+#: templates/home/index.html:561
 msgid "Blogs"
 msgstr "المدونة"
 
-#: templates/home/index.html:549
+#: templates/home/index.html:562
 msgid "Articles"
 msgstr "مقالاتنا"
